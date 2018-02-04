@@ -3,7 +3,7 @@
  <a href="https://github.com/bencasalino">
         <img class="header--github animated slideInDown" src="../../static/github.png" alt="Github Logo" />
       </a>
-      <img class="header--logo animated slideInLeft" src="../../static/field.png" alt="Logo" />
+      <img class="header--logo animated slideInLeft" src="../../static/colo2.png" alt="Logo" />
       <h1 class="header--logo__text">
         Soccer Field
          Directory
@@ -36,14 +36,17 @@ float:right;
 .header--logo { 
 	float: left;
 	font-size: 1rem; 
+  padding-right: 1rem;
 
 }
 
 .header--logo__text { 
 	/* float: left; */
-		margin: 0 0 .5rem .2rem;
+		/* margin: 0 1rem .5rem 1rem; */
 		letter-spacing: .2rem;
 	font-size: 3rem; 
+  line-height: 3.4rem;
+  font-weight: 400;
 	color: white;
 	  	font-family: 'Arvo', serif;
 }

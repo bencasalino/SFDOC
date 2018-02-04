@@ -3,9 +3,7 @@
     <div class="container--image">
          <img class="test" src="../../static/banner4.png" alt="Logo" />
     </div>
-      <div class="cta--container">
-          <button> Indoor</button><button>Outdoor</button>
-      </div>
+     
     <div class="shine container--herotext">
      <h2> This is a directory containting all Colorado indoor/outdoor soccer facilities information.  </h2>  
     </div>
@@ -13,6 +11,9 @@
         <a href="#" class="to-content animated zoomInDown">Get Started!</a>
           <img class="shine arrow" src="../../static/arrow.png" alt="arrow" />
         </div>
+         <div class="cta--container">
+          <button> Indoor</button><button>Outdoor</button>
+      </div>
     </div>
   </div>
 </template>
@@ -24,9 +25,9 @@ export default {
 </script>
 
 <style scoped>
-/* #TheAboutSection {
-  	
-} */
+#TheAboutSection {
+background-color: white;
+}
 .container--image {
   display:flex;
   justify-content:center; 
@@ -42,7 +43,7 @@ box-shadow:  0px 29px 53px -19px rgba(0,0,0,0.75);
     display:flex;
   justify-content:center; 
   font-size: 2rem;
-  margin-top: -150px;
+  margin-top: -90px;
   padding-bottom: 36px;
   /* height: 100px; */
 }
@@ -50,13 +51,13 @@ box-shadow:  0px 29px 53px -19px rgba(0,0,0,0.75);
 .cta--container {
     display:flex;
   justify-content:center; 
-    margin-top: -70px;
-    padding-bottom: 56px;
+    /* margin-top: -70px;
+    padding-bottom: 56px; */
 }
 
 .container--arrow {
   background-color: white;
-  color: #2A876A;
+
       display:flex;
       font-weight: 900;
       flex-direction: column;
@@ -64,9 +65,9 @@ box-shadow:  0px 29px 53px -19px rgba(0,0,0,0.75);
       align-items: center;
       font-size: 2rem;
       height: 200px;
-      margin:0 0rem 2rem 0rem;
+      margin:0 0rem 1rem 0rem;
       	font-family: 'Arvo', serif;
-        border: 2px rgba(0,0,0,0.05) solid;
+        /* border: 2px rgba(0,0,0,0.05) solid; */
 }
 
 .to-content {
@@ -100,9 +101,10 @@ box-shadow:  0px 29px 53px -19px rgba(0,0,0,0.75);
 }
 
 button {
-  background-color: goldenrod;
-  padding: 5px;
-  border-radius: 2px;
+  background-color: #2A876A;
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
    	font-family: 'Arvo', serif;
           margin:1rem 1rem 1rem 1rem;
              border: 2px rgba(0,0,0,0.05) solid;
@@ -111,9 +113,10 @@ button {
 }
 
 button:hover {
-  background-color: #2A876A;
-  padding: 5px;
-  border-radius: 2px;
+  background-color: gold;
+  padding: 8px;
+  color: black;
+  border-radius: 6px;
    	font-family: 'Arvo', serif;
           margin:1rem 1rem 1rem 1rem;
              border: 2px rgba(0,0,0,0.05) solid;
