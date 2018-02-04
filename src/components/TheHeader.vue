@@ -5,7 +5,11 @@
       </a>
       <img class="header--logo animated slideInLeft" src="../../static/field.png" alt="Logo" />
       <h1 class="header--logo__text">
-        Soccer Field Directory<br /> of Colorado
+        Soccer Field
+         Directory
+       <br />
+       <em> of Colorado</em>
+        
       </h1>
   </header>
 </template>

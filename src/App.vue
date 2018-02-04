@@ -5,7 +5,7 @@
       <TheAboutSection/>
       <TheAside/>
     </main>
-    <TheFooter/>
+    <!-- <TheFooter/> -->
   </div>
 </template>
 
@@ -13,7 +13,7 @@
 import TheHeader from './components/TheHeader';
 import TheAside from './components/TheAside';
 import TheAboutSection from './components/TheAboutSection';
-import TheFooter from './components/TheFooter';
+// import TheFooter from './components/TheFooter';
 
 export default {
   name: 'App',
@@ -21,7 +21,7 @@ export default {
     TheHeader,
     TheAside,
     TheAboutSection,
-    TheFooter
+    // TheFooter
   },
 };
 </script>
