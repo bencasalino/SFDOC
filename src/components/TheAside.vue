@@ -1,7 +1,7 @@
 <template>
   <aside id="TheAside">
       <!-- outdoor-delte a field -->
-    <div class="form--container" id="indoor--form__delete">
+    <div class="animated slideInLeft form--container" id="indoor--form__delete">
         <form action="">
             <p class="form--title">   Delete a Field: </p>
                 <br>
@@ -11,7 +11,7 @@
         </form>
     </div>
           <!-- outdoor-show a single field -->
-    <div class="form--container" id="indoor--form__display">
+    <div class="animated slideInLeft form--container" id="indoor--form__display">
         <form action="">
             <p class="form--title">   Display a Field: </p>
                 <br>
@@ -40,9 +40,8 @@ display: block;
 #indoor--form__delete {
 max-height: 300px;
 max-width: 400px; 
-background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
-background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
-background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+background-color: white;
+color: black;
 padding: 20px;
 margin-bottom: 1rem;
 }
@@ -50,9 +49,8 @@ margin-bottom: 1rem;
 #indoor--form__display {
 max-height: 300px;
 max-width: 400px; 
-background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
-background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
-background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+background-color: white;
+color: black;
 padding: 20px;
 margin-bottom: 1rem;
 }

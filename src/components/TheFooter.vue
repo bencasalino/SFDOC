@@ -1,8 +1,9 @@
 <template>
-  <div id="TheFooter">
-    <!-- <small>copy 2018 </small>
-        test -->
-  </div>
+<div id="TheFooter" class="wrapper">
+    <footer class="footer">
+    test
+    </footer>
+</div>
 </template>
 
 <script>
@@ -11,9 +12,15 @@ export default {
     }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+
 #TheFooter {
-/* background-color: blue;  */
+background-color: white;
+color: black;
+height:10vh; 
+display:flex;
+justify-content:center; 
+position:sticky;
 }
 </style>

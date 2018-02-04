@@ -2,25 +2,25 @@
   <div id="app">
     <TheHeader/>
     <main>
-             <TheAside/>
-             <TheFields /> 
+      <TheAboutSection/>
+      <TheAside/>
     </main>
-    <!-- <TheFooter/> -->
+    <TheFooter/>
   </div>
 </template>
 
 <script>
 import TheHeader from './components/TheHeader';
 import TheAside from './components/TheAside';
+import TheAboutSection from './components/TheAboutSection';
 import TheFooter from './components/TheFooter';
-import TheFields from './components/TheFields';
 
 export default {
   name: 'App',
   components: {
     TheHeader,
     TheAside,
-    TheFields,
+    TheAboutSection,
     TheFooter
   },
 };
@@ -57,6 +57,10 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+/* #App {
+  height: 50vh;
+} */
 body {
 	line-height: 1;
   text-decoration: none; 
@@ -64,6 +68,7 @@ body {
 	background-color: #2A876A;
 	color: white; 
   	font-family: 'Dosis', serif;
+    /* height: 50vh; */
 }
 ol, ul {
   list-style: none;
@@ -84,8 +89,6 @@ table {
 
 /* end reset styles  */
 
-#TheFields {
-  float: right;
-}
+
 
 </style>
