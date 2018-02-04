@@ -44,7 +44,7 @@
                 <input class="form--button" type="submit" value="Submit">
         </form>
     </div>
-          <div class="tri animated slideInLeft"></div>
+          <!-- <div class="tri animated slideInLeft"></div> -->
    <!-- indoor-update a single field -->
     <div class="animated slideInLeft form--container" id="indoor--form__update">
         <form action="">
@@ -67,7 +67,7 @@
                 <input class="form--button" type="submit" value="Submit">
         </form>
     </div>
-      <div class="tri animated slideInLeft"></div>
+      <!-- <div class="tri animated slideInLeft"></div> -->
       <br/>
       <!-- begin outdoor -->
           <div class="animated slideInLeft form--container" id="outdoor--form__delete">
@@ -113,7 +113,7 @@
                 <input class="form--button" type="submit" value="Submit">
         </form>
     </div>
-          <div class="tri animated slideInLeft"></div>
+          <!-- <div class="tri animated slideInLeft"></div> -->
    <!-- outdoor-update a single field -->
     <div class="animated slideInLeft form--container" id="outdoor--form__update">
         <form action="">
@@ -136,7 +136,7 @@
                 <input class="form--button" type="submit" value="Submit">
         </form>
     </div>
-      <div class="tri animated slideInLeft"></div>
+      <!-- <div class="tri animated slideInLeft"></div> -->
       <br/>
   
   
@@ -185,7 +185,7 @@ max-height: 300px;
 max-width: 400px; 
 background-color: white;
 color: black;
-padding: 20px 20px 0 20px;
+padding: 20px;
 margin-top: 4rem;
 }
 #indoor--form__update {
@@ -193,7 +193,7 @@ max-height: 300px;
 max-width: 400px; 
 background-color: white;
 color: black;
-padding: 20px 20px 0 20px;
+padding: 20px;
 margin-top: 4rem;
 }
 
@@ -222,7 +222,7 @@ max-height: 300px;
 max-width: 400px; 
 background-color: white;
 color: black;
-padding: 20px 20px 0 20px;
+padding: 20px;
 margin-top: 4rem;
 }
 #outdoor--form__update {
@@ -230,7 +230,7 @@ max-height: 300px;
 max-width: 400px; 
 background-color: white;
 color: black;
-padding: 20px 20px 0 20px;
+padding: 20px;
 margin-top: 4rem;
 }
 
@@ -261,7 +261,7 @@ margin: 10px 0 0 0;
              border: 2px rgba(0,0,0,0.05) solid;
   
 }
-
+/* 
 .tri {
     float: left;
     width: 0;
@@ -269,6 +269,12 @@ height: 0;
 border-style: solid;
 border-width: 50px 200px 0 0;
 border-color: white transparent transparent transparent;
+} */
+
+.form--container {
+    -webkit-box-shadow: 0px 10px 5px -2px rgba(0,0,0,0.33);
+-moz-box-shadow: 0px 10px 5px -2px rgba(0,0,0,0.33);
+box-shadow: 0px 10px 5px -2px rgba(0,0,0,0.33);
 }
 
 </style>
