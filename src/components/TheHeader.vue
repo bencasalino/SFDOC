@@ -4,9 +4,9 @@
         <img class="header--github animated slideInDown" src="../../static/github.png" alt="Github Logo" />
       </a>
       <img class="header--logo animated slideInLeft" src="../../static/field.png" alt="Logo" />
-      <span class="header--logo__text">
+      <h1 class="header--logo__text">
         Soccer Field Directory<br /> of Colorado
-      </span>
+      </h1>
   </header>
 </template>
 
@@ -20,12 +20,12 @@ export default {
 <style scoped>
 #TheHeader {
 height: 10vh;
-
+margin-bottom: 4rem;
 }
 
 /* my stlyes  */
 .header--github {
-float: right; 
+float:right;
 }
 
 
@@ -36,7 +36,7 @@ float: right;
 }
 
 .header--logo__text { 
-	float: left;
+	/* float: left; */
 		margin: .5rem 0 .5rem .2rem;
 		letter-spacing: .2rem;
 	font-size: 3rem; 

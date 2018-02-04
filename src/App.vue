@@ -2,20 +2,25 @@
   <div id="app">
     <TheHeader/>
     <main>
-      <p>test</p>
+             <TheAside/>
+             <TheFields /> 
     </main>
-    <TheFooter/>
+    <!-- <TheFooter/> -->
   </div>
 </template>
 
 <script>
 import TheHeader from './components/TheHeader';
+import TheAside from './components/TheAside';
 import TheFooter from './components/TheFooter';
+import TheFields from './components/TheFields';
 
 export default {
   name: 'App',
   components: {
     TheHeader,
+    TheAside,
+    TheFields,
     TheFooter
   },
 };
@@ -78,4 +83,9 @@ table {
 }
 
 /* end reset styles  */
+
+#TheFields {
+  float: right;
+}
+
 </style>
