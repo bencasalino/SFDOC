@@ -37,7 +37,7 @@ float:right;
 
 .header--logo__text { 
 	/* float: left; */
-		margin: .5rem 0 .5rem .2rem;
+		margin: 0 0 .5rem .2rem;
 		letter-spacing: .2rem;
 	font-size: 3rem; 
 	color: white;
