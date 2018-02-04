@@ -1,9 +1,11 @@
 <template>
   <header id="TheHeader">
+  
+        <img class="shine header--github animated slideInDown" src="../../static/github.png" alt="Github Logo" />
+         
  <a href="https://github.com/bencasalino">
-        <img class="header--github animated slideInDown" src="../../static/github.png" alt="Github Logo" />
       </a>
-      <img class="header--logo animated slideInLeft" src="../../static/colo2.png" alt="Logo" />
+      <img class="shine header--logo animated slideInLeft" src="../../static/colo2.png" alt="Logo" />
       <h1 class="header--logo__text">
         Soccer Field
          Directory
@@ -31,7 +33,6 @@ margin-bottom: 4rem;
 .header--github {
 float:right;
 }
-
 
 .header--logo { 
 	float: left;
@@ -68,5 +69,8 @@ float:right;
     -webkit-mask-position: -50%;
   }
 }
+
+
+
 
 </style>

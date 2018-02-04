@@ -8,12 +8,14 @@
      <h2> This is a directory containting all Colorado indoor/outdoor soccer facilities information.  </h2>  
     </div>
         <div class="container--arrow">
-        <a href="#" class="to-content animated zoomInDown">Get Started!</a>
+        <p href="#" class="to-content animated zoomInDown">Get Started!</p>
           <img class="shine arrow" src="../../static/arrow.png" alt="arrow" />
         </div>
          <div class="cta--container">
           <button> Indoor</button><button>Outdoor</button>
+          
       </div>
+         <img class="shine header--logo animated slideInLeft" src="../../static/colo2.png" alt="Logo" />
     </div>
   </div>
 </template>
@@ -32,6 +34,12 @@ background-color: white;
   display:flex;
   justify-content:center; 
   
+}
+
+.header--logo {
+height: 50px;
+padding: 5px;  
+opacity: 50%;
 }
 .test {
   -webkit-box-shadow:  0px 29px 53px -19px rgba(0,0,0,0.75);
@@ -123,6 +131,9 @@ button:hover {
   
 }
 
+p {
+  color: #2A876A;
+}
 
 
 </style>

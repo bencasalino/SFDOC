@@ -4,8 +4,11 @@
     <main>
       <TheAboutSection/>
       <TheAside/>
+      <TheFields/>
     </main>
-    <!-- <TheFooter/> -->
+    <!-- <footer>
+        <TheFooter/>  
+    </footer> -->
   </div>
 </template>
 
@@ -13,6 +16,7 @@
 import TheHeader from './components/TheHeader';
 import TheAside from './components/TheAside';
 import TheAboutSection from './components/TheAboutSection';
+import TheFields from './components/TheFields';
 // import TheFooter from './components/TheFooter';
 
 export default {
@@ -21,7 +25,8 @@ export default {
     TheHeader,
     TheAside,
     TheAboutSection,
-    // TheFooter
+    // TheFooter,
+    TheFields
   },
 };
 </script>

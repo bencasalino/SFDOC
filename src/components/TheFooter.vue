@@ -1,8 +1,8 @@
 <template>
 <div id="TheFooter" class="wrapper">
-    <footer class="footer">
+    <!-- <footer class="footer">
     test
-    </footer>
+    </footer> -->
 </div>
 </template>
 
@@ -21,6 +21,6 @@ color: black;
 height:10vh; 
 display:flex;
 justify-content:center; 
-position:sticky;
+position:fixed;
 }
 </style>
