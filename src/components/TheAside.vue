@@ -1,6 +1,9 @@
 <template>
   <aside id="TheAside">
-      <!-- indoor-delte a field -->
+                <h1>INDOOR</h1>
+      <div class="inline">
+          <!-- <h1>INDOOR</h1> -->
+<!-- indoor-delte a field -->
     <div class="animated slideInLeft form--container" id="indoor--form__delete">
         <form action="">
             <p class="form--title">   Delete Indoor Field: </p>
@@ -10,8 +13,8 @@
             <input class="form--button" type="submit" value="Submit">
         </form>
     </div>
-          <!-- <div class="tri animated slideInLeft"></div> -->
-          <!-- indoor-show a single field -->
+
+<!-- indoor-show a single field -->
     <div class="animated slideInLeft form--container" id="indoor--form__display">
         <form action="">
             <p class="form--title">   Display Indoor Field: </p>
@@ -21,7 +24,8 @@
             <input class="form--button" type="submit" value="Submit">
         </form>
     </div>
-          <!-- <div class="tri animated slideInLeft"></div> -->
+    </div>
+    <div class="inline">
     <!-- indoor-add a single field -->
     <div class="animated slideInLeft form--container" id="indoor--form__add">
         <form action="">
@@ -44,7 +48,8 @@
                 <input class="form--button" type="submit" value="Submit">
         </form>
     </div>
-          <!-- <div class="tri animated slideInLeft"></div> -->
+
+
    <!-- indoor-update a single field -->
     <div class="animated slideInLeft form--container" id="indoor--form__update">
         <form action="">
@@ -67,9 +72,13 @@
                 <input class="form--button" type="submit" value="Submit">
         </form>
     </div>
+ </div>
       <!-- <div class="tri animated slideInLeft"></div> -->
       <br/>
       <!-- begin outdoor -->
+                        <h1>OUTDOOR</h1>
+            <div class="inline">
+        
           <div class="animated slideInLeft form--container" id="outdoor--form__delete">
         <form action="">
             <p class="form--title">   Delete Outdoor Field: </p>
@@ -79,7 +88,7 @@
             <input class="form--button" type="submit" value="Submit">
         </form>
     </div>
-          <!-- <div class="tri animated slideInLeft"></div> -->
+
           <!-- outdoor-show a single field -->
     <div class="animated slideInLeft form--container" id="outdoor--form__display">
         <form action="">
@@ -90,7 +99,8 @@
             <input class="form--button" type="submit" value="Submit">
         </form>
     </div>
-          <!-- <div class="tri animated slideInLeft"></div> -->
+    </div>
+      <div class="inline">
     <!-- outdoor-add a single field -->
     <div class="animated slideInLeft form--container" id="outdoor--form__add">
         <form action="">
@@ -113,7 +123,7 @@
                 <input class="form--button" type="submit" value="Submit">
         </form>
     </div>
-          <!-- <div class="tri animated slideInLeft"></div> -->
+
    <!-- outdoor-update a single field -->
     <div class="animated slideInLeft form--container" id="outdoor--form__update">
         <form action="">
@@ -136,10 +146,10 @@
                 <input class="form--button" type="submit" value="Submit">
         </form>
     </div>
-      <!-- <div class="tri animated slideInLeft"></div> -->
+
+    </div>
+    
       <br/>
-  
-  
   </aside>
 </template>
 
@@ -156,81 +166,83 @@ export default {
 #TheAside {
   margin-top: 20px;
   color: black;
-  float: left;
-  display: block;
+  /* float: left; */
+  /* display: block; */
 }
 
-/* indoor */
+/* indoor---------------------------------------------------------------------- */
 #indoor--form__delete {
   max-height: 300px;
-  max-width: 400px;
+  max-width: 200px;
   background-color: white;
   color: black;
-  padding: 20px;
-  margin-top: 4rem;
+  padding: 20px 2px 20px 20px;
+  margin-top: 1rem;
 }
 
 #indoor--form__display {
   max-height: 300px;
-  max-width: 400px;
+  max-width: 200px;
   background-color: white;
   color: black;
-  padding: 20px;
-  margin-top: 4rem;
+  padding: 20px 2px 20px 20px;
+  margin-top: 1rem;
 }
-
+/* indoor---------------------------------------------------------------------- */
 #indoor--form__add {
   max-height: 300px;
-  max-width: 400px;
+  max-width: 200px;
   background-color: white;
   color: black;
-  padding: 20px;
-  margin-top: 4rem;
-}
-#indoor--form__update {
-  max-height: 300px;
-  max-width: 400px;
-  background-color: white;
-  color: black;
-  padding: 20px;
-  margin-top: 4rem;
+  padding: 20px 2px 20px 20px;
+  margin-top: 1rem;
 }
 
-/* outdoor */
+#indoor--form__update {
+  max-height: 300px;
+  max-width: 200px;
+  background-color: white;
+  color: black;
+  padding: 20px 2px 20px 20px;
+  margin-top: 1rem;
+}
+
+/* outdoor---------------------------------------------------------------------- */
 
 #outdoor--form__delete {
   max-height: 300px;
-  max-width: 400px;
+  max-width: 200px;
   background-color: white;
   color: black;
-  padding: 20px;
-  margin-top: 4rem;
+  padding: 20px 2px 20px 20px;
+  margin-top: 1rem;
 }
 
 #outdoor--form__display {
   max-height: 300px;
-  max-width: 400px;
+  max-width: 200px;
   background-color: white;
   color: black;
-  padding: 20px;
-  margin-top: 4rem;
+  padding: 20px 2px 20px 20px;
+  margin-top: 1rem;
 }
+/* outdoor---------------------------------------------------------------------- */
 
 #outdoor--form__add {
   max-height: 300px;
-  max-width: 400px;
+  max-width: 200px;
   background-color: white;
   color: black;
-  padding: 20px;
-  margin-top: 4rem;
+  padding: 20px 2px 20px 20px;
+  margin-top: 1rem;
 }
 #outdoor--form__update {
   max-height: 300px;
-  max-width: 400px;
+  max-width: 200px;
   background-color: white;
   color: black;
-  padding: 20px;
-  margin-top: 4rem;
+  padding: 20px 2px 20px 20px;
+  margin-top: 1rem;
 }
 
 .form--button {
@@ -257,19 +269,15 @@ export default {
   /* margin:1rem 1rem 1rem 1rem; */
   border: 2px rgba(0, 0, 0, 0.05) solid;
 }
-/* 
-.tri {
-    float: left;
-    width: 0;
-height: 0;
-border-style: solid;
-border-width: 50px 200px 0 0;
-border-color: white transparent transparent transparent;
-} */
 
 .form--container {
   -webkit-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
   -moz-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
   box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
+}
+
+.inline {
+  display: flex;
+  flex-direction: row;
 }
 </style>

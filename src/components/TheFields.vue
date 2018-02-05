@@ -8,7 +8,6 @@
             <span class="lat"> 23.32</span>
             <span class="long"> -55.09 </span>
             <button class="url"> Website</button>
-            
     </div>
     <div class="map">
     </div>
