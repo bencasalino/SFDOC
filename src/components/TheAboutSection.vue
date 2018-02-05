@@ -4,12 +4,12 @@
          <img class="test" src="../../static/banner4.png" alt="Logo" />
     </div>
      
-    <div class="shine container--herotext">
+    <div class="container--herotext">
      <h2> This is a directory containting all Colorado indoor/outdoor soccer facilities information.  </h2>  
     </div>
         <div class="container--arrow">
-        <p href="#" class="to-content animated zoomInDown">Get Started!</p>
-          <img class="shine arrow" src="../../static/arrow.png" alt="arrow" />
+        <p href="#" class="to-content animated zoomInDown shine">Get Started!</p>
+          <img class="arrow" src="../../static/white-arrow.png" alt="arrow" />
         </div>
          <div class="cta--container">
           <button> Indoor</button><button>Outdoor</button>
@@ -28,7 +28,7 @@ export default {
 
 <style scoped>
 #TheAboutSection {
-background-color: white;
+background-color: #2A876A;
 }
 .container--image {
   display:flex;
@@ -47,47 +47,6 @@ opacity: 50%;
 box-shadow:  0px 29px 53px -19px rgba(0,0,0,0.75);
 }
 
-.container--herotext {
-    display:flex;
-  justify-content:center; 
-  font-size: 2rem;
-  margin-top: -90px;
-  padding-bottom: 36px;
-  /* height: 100px; */
-}
-
-.cta--container {
-    display:flex;
-  justify-content:center; 
-    /* margin-top: -70px;
-    padding-bottom: 56px; */
-}
-
-.container--arrow {
-  background-color: white;
-
-      display:flex;
-      font-weight: 900;
-      flex-direction: column;
-      justify-content:center; 
-      align-items: center;
-      font-size: 2rem;
-      height: 200px;
-      margin:0 0rem 1rem 0rem;
-      	font-family: 'Arvo', serif;
-        /* border: 2px rgba(0,0,0,0.05) solid; */
-}
-
-.to-content {
-    text-decoration: none;
-        list-style: none;
-}
-
-.arrow {
-  padding-top: 10px;
-  max-height: 60px;
-  max-width: 60px;
-}
 
 
 
@@ -135,5 +94,50 @@ p {
   color: #2A876A;
 }
 
+
+.container--herotext {
+  color: white;
+    display:flex;
+  justify-content:center; 
+  font-size: 2rem;
+  margin-top: -90px;
+  padding-bottom: 36px;
+  /* height: 100px; */
+}
+
+.cta--container {
+    display:flex;
+  justify-content:center; 
+    /* margin-top: -70px;
+    padding-bottom: 56px; */
+          color:white;
+}
+
+.container--arrow {
+      background-color: #2A876A;
+      color:white;
+      display:flex;
+      font-weight: 900;
+      flex-direction: column;
+      justify-content:center; 
+      align-items: center;
+      font-size: 2rem;
+      height: 180px;
+      /* margin:0 0rem 1rem 0rem; */
+      	font-family: 'Arvo', serif;
+}
+
+.to-content {
+    text-decoration: none;
+        list-style: none;
+              color:white;
+}
+
+.arrow {
+  padding-top: 10px;
+  max-height: 60px;
+  max-width: 60px;
+        color:white;
+}
 
 </style>

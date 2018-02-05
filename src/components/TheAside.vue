@@ -147,108 +147,105 @@
 
 <script>
 export default {
-  name: 'TheAside'
-    }
+  name: "TheAside"
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 #TheAside {
-    margin-top: 20px;
-color: black;
-float: left; 
-display: block;
+  margin-top: 20px;
+  color: black;
+  float: left;
+  display: block;
 }
-
 
 /* indoor */
 #indoor--form__delete {
-max-height: 300px;
-max-width: 400px; 
-background-color: white;
-color: black;
-padding: 20px;
-margin-top: 4rem;
+  max-height: 300px;
+  max-width: 400px;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  margin-top: 4rem;
 }
 
 #indoor--form__display {
-max-height: 300px;
-max-width: 400px; 
-background-color: white;
-color: black;
-padding: 20px;
-margin-top: 4rem;
+  max-height: 300px;
+  max-width: 400px;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  margin-top: 4rem;
 }
 
 #indoor--form__add {
-max-height: 300px;
-max-width: 400px; 
-background-color: white;
-color: black;
-padding: 20px;
-margin-top: 4rem;
+  max-height: 300px;
+  max-width: 400px;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  margin-top: 4rem;
 }
 #indoor--form__update {
-max-height: 300px;
-max-width: 400px; 
-background-color: white;
-color: black;
-padding: 20px;
-margin-top: 4rem;
+  max-height: 300px;
+  max-width: 400px;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  margin-top: 4rem;
 }
 
 /* outdoor */
 
 #outdoor--form__delete {
-max-height: 300px;
-max-width: 400px; 
-background-color: white;
-color: black;
-padding: 20px;
-margin-top: 4rem;
+  max-height: 300px;
+  max-width: 400px;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  margin-top: 4rem;
 }
 
 #outdoor--form__display {
-max-height: 300px;
-max-width: 400px; 
-background-color: white;
-color: black;
-padding: 20px;
-margin-top: 4rem;
+  max-height: 300px;
+  max-width: 400px;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  margin-top: 4rem;
 }
 
 #outdoor--form__add {
-max-height: 300px;
-max-width: 400px; 
-background-color: white;
-color: black;
-padding: 20px;
-margin-top: 4rem;
+  max-height: 300px;
+  max-width: 400px;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  margin-top: 4rem;
 }
 #outdoor--form__update {
-max-height: 300px;
-max-width: 400px; 
-background-color: white;
-color: black;
-padding: 20px;
-margin-top: 4rem;
+  max-height: 300px;
+  max-width: 400px;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  margin-top: 4rem;
 }
 
 .form--button {
-margin: 10px 0 0 0;
+  margin: 10px 0 0 0;
 }
 
-
 .form--button {
-  background-color: #2A876A;
+  background-color: #2a876a;
   color: white;
   padding: 8px;
   border-radius: 4px;
-   	font-family: 'Arvo', serif;
-          /* margin:1rem 1rem 1rem 1rem; */
-             border: 2px rgba(0,0,0,0.05) solid;
-                          font-size: 1rem;
-  
+  font-family: "Arvo", serif;
+  /* margin:1rem 1rem 1rem 1rem; */
+  border: 2px rgba(0, 0, 0, 0.05) solid;
+  font-size: 1rem;
 }
 
 .form--button:hover {
@@ -256,10 +253,9 @@ margin: 10px 0 0 0;
   padding: 8px;
   color: black;
   border-radius: 6px;
-   	font-family: 'Arvo', serif;
-          /* margin:1rem 1rem 1rem 1rem; */
-             border: 2px rgba(0,0,0,0.05) solid;
-  
+  font-family: "Arvo", serif;
+  /* margin:1rem 1rem 1rem 1rem; */
+  border: 2px rgba(0, 0, 0, 0.05) solid;
 }
 /* 
 .tri {
@@ -272,9 +268,8 @@ border-color: white transparent transparent transparent;
 } */
 
 .form--container {
-    -webkit-box-shadow: 0px 10px 5px -2px rgba(0,0,0,0.33);
--moz-box-shadow: 0px 10px 5px -2px rgba(0,0,0,0.33);
-box-shadow: 0px 10px 5px -2px rgba(0,0,0,0.33);
+  -webkit-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
+  -moz-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
+  box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
 }
-
 </style>

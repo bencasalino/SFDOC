@@ -18,44 +18,47 @@
 
 <script>
 export default {
-  name: 'TheHeader'
-    }
+  name: "TheHeader"
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 #TheHeader {
-height: 10vh;
-margin-bottom: 4rem;
+  height: 10vh;
+  margin-bottom: 4rem;
 }
 
 /* my stlyes  */
 .header--github {
-float:right;
+  float: right;
 }
 
-.header--logo { 
-	float: left;
-	font-size: 1rem; 
+.header--logo {
+  float: left;
+  font-size: 1rem;
   padding-right: 1rem;
-
 }
 
-.header--logo__text { 
-	/* float: left; */
-		/* margin: 0 1rem .5rem 1rem; */
-		letter-spacing: .2rem;
-	font-size: 3rem; 
+.header--logo__text {
+  /* float: left; */
+  /* margin: 0 1rem .5rem 1rem; */
+  letter-spacing: 0.2rem;
+  font-size: 3rem;
   line-height: 3.4rem;
   font-weight: 400;
-	color: white;
-	  	font-family: 'Arvo', serif;
+  color: white;
+  font-family: "Arvo", serif;
 }
-
 
 /* effect-shine */
 .header--logo__text:hover {
-  -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+  -webkit-mask-image: linear-gradient(
+    -75deg,
+    rgba(0, 0, 0, 0.6) 30%,
+    #000 50%,
+    rgba(0, 0, 0, 0.6) 70%
+  );
   -webkit-mask-size: 200%;
   animation: shine 2s infinite;
 }
@@ -64,13 +67,9 @@ float:right;
   from {
     -webkit-mask-position: 150%;
   }
-  
+
   to {
     -webkit-mask-position: -50%;
   }
 }
-
-
-
-
 </style>

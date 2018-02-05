@@ -8,19 +8,17 @@
 
 <script>
 export default {
-  name: 'TheFooter'
-    }
+  name: "TheFooter"
+};
 </script>
 
 <style scoped>
-
-
 #TheFooter {
-background-color: white;
-color: black;
-height:10vh; 
-display:flex;
-justify-content:center; 
-position:fixed;
+  background-color: white;
+  color: black;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
 }
 </style>
