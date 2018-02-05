@@ -2,9 +2,9 @@
   <div id="app">
     <TheHeader/>
     <main>
-      <TheAboutSection/>
-      <TheAside/>
-      <TheFields/>
+      <!-- <TheAboutSection/> -->
+      <!-- <TheAside/>
+      <TheFields/> -->
     </main>
     <!-- <footer>
         <TheFooter/>  
@@ -14,29 +14,30 @@
 
 <script>
 import TheHeader from "./components/TheHeader";
-import TheAside from "./components/TheAside";
-import TheAboutSection from "./components/TheAboutSection";
-import TheFields from "./components/TheFields";
+// import TheAside from "./components/TheAside";
+// import TheAboutSection from "./components/TheAboutSection";
+// import TheFields from "./components/TheFields";
 // import TheFooter from './components/TheFooter';
 
 export default {
   name: "App",
   components: {
     TheHeader,
-    TheAside,
-    TheAboutSection,
+    // TheAside,
+    // TheAboutSection,
     // TheFooter,
-    TheFields
+    // TheFields
   }
 };
 </script>
 
 <style>
-/* fonts imports */
+/* fonts imports------------------------------------------------------------------ */
 @import url("https://fonts.googleapis.com/css?family=Lato|Roboto|Roboto+Condensed|PT+Sans+Narrow");
 @import url(https://fonts.googleapis.com/css?family=Dosis:300,400);
-/* end fonts  */
-/* reset 2.0 styles  */
+/* end fonts---------------------------------------------------------------------  */
+
+/* reset 2.0 styles -------------------------------------------------------------- */
 html,
 body,
 div,
@@ -125,7 +126,6 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
 article,
 aside,
 details,
@@ -140,9 +140,6 @@ section {
   display: block;
 }
 
-/* #App {
-  height: 50vh;
-} */
 body {
   line-height: 1;
   text-decoration: none;
@@ -150,7 +147,6 @@ body {
   background-color: #2a876a;
   color: white;
   font-family: "Dosis", serif;
-  /* height: 50vh; */
 }
 ol,
 ul {
@@ -172,6 +168,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+/* end reset styles-------------------------------------------------------------  */
 
-/* end reset styles  */
 </style>
