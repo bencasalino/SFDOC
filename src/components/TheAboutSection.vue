@@ -15,7 +15,7 @@
           <button> Indoor</button><button>Outdoor</button>
           
       </div>
-         <img class="shine header--logo animated slideInLeft" src="../../static/colo2.png" alt="Logo" />
+         <!-- <img class="shine header--logo animated slideInLeft" src="../../static/colo2.png" alt="Logo" /> -->
     </div>
   </div>
 </template>

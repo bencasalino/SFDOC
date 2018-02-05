@@ -1,8 +1,9 @@
 <template>
   <aside id="TheAside">
-                <h1>INDOOR</h1>
+
+                <h1 class="display--title">      
+                       <img class="header--logo" src="../../static/colo2.png" alt="Logo" />INDOOR</h1>
       <div class="inline">
-          <!-- <h1>INDOOR</h1> -->
 <!-- indoor-delte a field -->
     <div class="animated slideInLeft form--container" id="indoor--form__delete">
         <form action="">
@@ -76,7 +77,8 @@
       <!-- <div class="tri animated slideInLeft"></div> -->
       <br/>
       <!-- begin outdoor -->
-                        <h1>OUTDOOR</h1>
+                <h1 class="display--title">      
+                       <img class="header--logo" src="../../static/colo2.png" alt="Logo" />OUTDOOR</h1>
             <div class="inline">
         
           <div class="animated slideInLeft form--container" id="outdoor--form__delete">
@@ -277,6 +279,25 @@ export default {
 }
 
 .inline {
+  display: flex;
+  flex-direction: row;
+}
+
+.display--title {
+  font-size: 1rem;
+  background-color: black;
+  color: white;
+  max-width: 70px;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  -webkit-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
+  -moz-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
+  box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
+}
+
+.header--logo {
+  max-height: 50px;
   display: flex;
   flex-direction: row;
 }
