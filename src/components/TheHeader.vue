@@ -1,9 +1,7 @@
 <template>
   <header id="TheHeader">
-  
-        <img class="shine header--github animated slideInDown" src="../../static/github.png" alt="Github Logo" />
-         
- <a href="https://github.com/bencasalino">
+    <img class="shine header--github animated slideInDown" src="../../static/github.png" alt="Github Logo" />
+         <a href="https://github.com/bencasalino">
       </a>
       <img class="shine header--logo animated slideInLeft" src="../../static/colo2.png" alt="Logo" />
       <h1 class="header--logo__text">
@@ -11,38 +9,25 @@
          Directory
        <br />
        <em> of Colorado</em>
-        
       </h1>
   </header>
 </template>
-
+// end html ---------------------------------------------------------------------------
 <script>
 export default {
   name: "TheHeader"
 };
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+// end js ---------------------------------------------------------------------------
 <style scoped>
+/* my stlyes  ----------------------------------------------------------------------*/
 #TheHeader {
   height: 10vh;
-  margin-bottom: 4rem;
 }
-
-/* my stlyes  */
-.header--github {
-  float: right;
-}
-
 .header--logo {
   float: left;
-  font-size: 1rem;
-  padding-right: 1rem;
 }
-
 .header--logo__text {
-  /* float: left; */
-  /* margin: 0 1rem .5rem 1rem; */
   letter-spacing: 0.2rem;
   font-size: 3rem;
   line-height: 3.4rem;
@@ -51,7 +36,11 @@ export default {
   font-family: "Arvo", serif;
 }
 
-/* effect-shine */
+.header--github {
+  float: right;
+}
+
+/* effect-shine -------------------------------------------------------------------*/
 .header--logo__text:hover {
   -webkit-mask-image: linear-gradient(
     -75deg,
@@ -72,4 +61,6 @@ export default {
     -webkit-mask-position: -50%;
   }
 }
+/* end shine --------------------------------------------------------------------- */
 </style>
+// end styles -----------------------------------------------------------------------
