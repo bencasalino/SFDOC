@@ -8,17 +8,22 @@
      <h2> This is a directory containting all Colorado indoor/outdoor soccer facilities information.  </h2>  
     </div>
     <div class="container--getstarted">
-        <div class="">
+        <!-- <div class=""> -->
         <p class="text--getstarted" href="#">Get Started!</p>
-          <img class="image--arrow" src="../../static/white-arrow.png" alt="arrow image" />
-        </div>  
-    </div>
-         <!-- <div class="cta--container">
-          <button> Indoor</button><button>Outdoor</button>
-        </div> -->
-         <!-- <img class="shine header--logo animated slideInLeft" src="../../static/colo2.png" alt="Logo" /> -->
-    </div>
-  </div>
+          <img class="image--arrow animated zoomInDown" src="../../static/white-arrow.png" alt="arrow image" />
+        </div>
+         <div class="cta--container">
+          <button class="cta--indoor">
+            Indoor
+          </button>
+          <button class="cta--outdoor">
+            Outdoor
+          </button>
+        </div>
+        </div>
+
+
+
 </template>
 // end html ---------------------------------------------------------------------------
 <script>
@@ -93,18 +98,8 @@ button:hover {
   margin-top: -90px;
   padding-bottom: 36px;
 }
+/* get started estion */
 
-.container--getstarted {
-  margin-top: 20px;
-}
-
-
-.image--arrow {
-  padding-top: 10px;
-  max-height: 40px;
-  max-width: 40px;
-  color:white;
-}
 .container--getstarted {
   background-color: #2a876a;
   color: white;
@@ -114,8 +109,42 @@ button:hover {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
-  height: 180px;
+  height: 50px;
+  margin-top: 50px;
+  margin-bottom: 20px;
   font-family: "Arvo", serif;
 }
+
+.image--arrow {
+  padding-top: 10px;
+  max-height: 40px;
+  max-width: 40px;
+  color:white;
+}
+
+.cta--container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+    align-items: center;
+}
+
+.cta--outdoor{
+margin-left:150px;
+}
+
+.cta--outdoor{
+margin-right:20px;
+}
+
+.cta--outdoor:hover{
+margin-left:150px;
+}
+
+.cta--outdoor:hover{
+margin-right:20px;
+}
+
+
 </style>
 // end css ---------------------------------------------------------------------------
