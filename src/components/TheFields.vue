@@ -1,19 +1,5 @@
 <template>
-<div id="TheFields" class="wrapper">
-  <!-- info -->
-    <div class="info">
-        <p class="name"> Boulder Indoor</p>
-        <p class="city"> Boulder</p>
-        <p class="fields"> 3</p>
-        <p class="id"> 2</p>
-            <span class="lat"> 23.32</span>
-            <span class="long"> -55.09 </span>
-            <button class="url"> Website</button>
-    </div>
-    <!-- map  -->
-    <div class="map">
-    </div>
-</div>
+
 </template>
 
 <script>

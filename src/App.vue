@@ -3,8 +3,7 @@
     <TheHeader />
     <main>
       <TheAboutSection />
-      <!-- <TheAside/>
-      <TheFields/> -->
+      <TheFormSection/>
     </main>
     <!-- <footer>
         <TheFooter/>  
@@ -15,8 +14,7 @@
 <script>
 import TheHeader from "./components/TheHeader";
 import TheAboutSection from "./components/TheAboutSection";
-// import TheAside from "./components/TheAside";
-// import TheFields from "./components/TheFields";
+import TheFormSection from "./components/TheFormSection";
 // import TheFooter from './components/TheFooter';
 
 export default {
@@ -24,9 +22,8 @@ export default {
   components: {
     TheHeader,
     TheAboutSection,
-    // TheAside,
+    TheFormSection
     // TheFooter,
-    // TheFields
   }
 };
 </script>

@@ -1,7 +1,6 @@
 <template>
-  <aside id="TheAside">
-
-                <h1 class="display--title">      
+  <div id="TheFormSection">
+    <h1 class="display--title">      
                        <img class="header--logo" src="../../static/colo2.png" alt="Logo" />INDOOR</h1>
       <div class="inline">
 <!-- indoor-delte a field -->
@@ -148,28 +147,88 @@
                 <input class="form--button" type="submit" value="Submit">
         </form>
     </div>
-
     </div>
-    
       <br/>
-  </aside>
+
+
+
+  <!-- showforms section -->
+  <div class="wrapper">
+  <!-- info -->
+    <div class="info">
+        <p class="name"> Boulder Indoor</p>
+        <p class="city"> Boulder</p>
+        <p class="fields"> 3</p>
+        <p class="id"> 2</p>
+            <span class="lat"> 23.32</span>
+            <span class="long"> -55.09 </span>
+            <button class="url"> Website</button>
+    </div>
+    <!-- map  -->
+    <div class="map">
+    </div>
+</div>
+</div>
 </template>
-
-
 
 <script>
 export default {
-  name: "TheAside"
+  name: "TheFormSection"
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-#TheAside {
+/* fallbacks buttons  */
+button {
+  display: block;
+  background-color: #2a876a;
+  color: white;
+  padding: 4px;
+  border-radius: 4px;
+  font-family: "Arvo", serif;
+  margin: 1rem 1rem 1rem 1rem;
+  border: 2px rgba(0, 0, 0, 0.05) solid;
+  font-size: 1rem;
+}
+
+button:hover {
+  display: block;
+  background-color: gold;
+  padding: 4px;
+  color: black;
+  border-radius: 6px;
+  font-family: "Arvo", serif;
+  margin: 1rem 1rem 1rem 1rem;
+  border: 2px rgba(0, 0, 0, 0.05) solid;
+}
+
+.form--button {
+  background-color: #2a876a;
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+  font-family: "Arvo", serif;
+  /* margin:1rem 1rem 1rem 1rem; */
+  border: 2px rgba(0, 0, 0, 0.05) solid;
+  font-size: 1rem;
+}
+
+.form--button:hover {
+  background-color: gold;
+  padding: 8px;
+  color: black;
+  border-radius: 6px;
+  font-family: "Arvo", serif;
+  /* margin:1rem 1rem 1rem 1rem; */
+  border: 2px rgba(0, 0, 0, 0.05) solid;
+}
+
+/* fallbacks end  */
+
+#TheFormSection {
   margin-top: 20px;
   color: black;
-  /* float: left; */
-  /* display: block; */
 }
 
 /* indoor---------------------------------------------------------------------- */
@@ -251,26 +310,7 @@ export default {
   margin: 10px 0 0 0;
 }
 
-.form--button {
-  background-color: #2a876a;
-  color: white;
-  padding: 8px;
-  border-radius: 4px;
-  font-family: "Arvo", serif;
-  /* margin:1rem 1rem 1rem 1rem; */
-  border: 2px rgba(0, 0, 0, 0.05) solid;
-  font-size: 1rem;
-}
 
-.form--button:hover {
-  background-color: gold;
-  padding: 8px;
-  color: black;
-  border-radius: 6px;
-  font-family: "Arvo", serif;
-  /* margin:1rem 1rem 1rem 1rem; */
-  border: 2px rgba(0, 0, 0, 0.05) solid;
-}
 
 .form--container {
   -webkit-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
@@ -301,4 +341,56 @@ export default {
   display: flex;
   flex-direction: row;
 }
+
+/* field show styles  */
+
+
+/* .info {
+  background-color: white;
+  height: 200px;
+  width: 250px;
+  -webkit-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
+  -moz-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
+  box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
+} */
+
+/* .map {
+  background-color: white;
+  height: 200px;
+  width: 200px;
+  -webkit-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
+  -moz-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
+  box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
+} */
+
+
+
+/* .name {
+  font-size: 1.5rem;
+  padding: 0.4rem 0rem 1rem 1rem;
+}
+
+.city {
+  font-size: 1rem;
+  padding: 0rem 0rem 0.5rem 1rem;
+}
+
+.fields {
+  font-size: 1rem;
+  padding: 0.2rem 0rem 0.5rem 1rem;
+}
+.id {
+  font-size: 1rem;
+  padding: 0.2rem 0rem 0.5rem 1rem;
+}
+
+.long {
+  font-size: 0.85rem;
+  padding: 0.2rem 0rem 0.5rem 1rem;
+}
+
+.lat {
+  font-size: 0.85rem;
+  padding: 0.2rem 0rem 0.5rem 1rem;
+} */
 </style>

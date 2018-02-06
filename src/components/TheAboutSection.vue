@@ -8,7 +8,6 @@
      <h2> This is a directory containting all Colorado indoor/outdoor soccer facilities information.  </h2>  
     </div>
     <div class="container--getstarted">
-        <!-- <div class=""> -->
         <p class="text--getstarted" href="#">Get Started!</p>
           <img class="image--arrow animated zoomInDown" src="../../static/white-arrow.png" alt="arrow image" />
         </div>
@@ -20,10 +19,7 @@
             Outdoor
           </button>
         </div>
-        </div>
-
-
-
+     </div>
 </template>
 // end html ---------------------------------------------------------------------------
 <script>
@@ -33,7 +29,7 @@ export default {
 </script>
 // end js ---------------------------------------------------------------------------
 <style scoped>
-#TheAboutSection {
+#TheFormSecton {
   background-color: #2a876a;
 }
 .drop--shadow {
@@ -144,7 +140,6 @@ margin-left:150px;
 .cta--outdoor:hover{
 margin-right:20px;
 }
-
 
 </style>
 // end css ---------------------------------------------------------------------------
