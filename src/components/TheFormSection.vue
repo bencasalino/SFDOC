@@ -1,7 +1,8 @@
 <template>
   <div id="TheFormSection">
-    <h1 class="display--title">      
-                       <img class="header--logo" src="../../static/colo2.png" alt="Logo" />INDOOR</h1>
+    <div id="left">
+    <!-- <h1 class="display--title">      
+                       <img class="header--logo" src="../../static/colo2.png" alt="Logo" />INDOOR</h1> -->
       <div class="inline">
 <!-- indoor-delte a field -->
     <div class="animated slideInLeft form--container" id="indoor--form__delete">
@@ -75,12 +76,32 @@
  </div>
       <!-- <div class="tri animated slideInLeft"></div> -->
       <br/>
-      <!-- begin outdoor -->
-                <h1 class="display--title">      
-                       <img class="header--logo" src="../../static/colo2.png" alt="Logo" />OUTDOOR</h1>
+
+      <br/>
+
+
+
+  <!-- showforms section -->
+  <div class="wrapper">
+  <!-- info -->
+    <div class="info">
+        <p class="name"> Boulder Indoor</p>
+        <p class="city"> Boulder</p>
+        <p class="fields"> 3</p>
+        <p class="id"> 2</p>
+            <span class="lat"> 23.32</span>
+            <span class="long"> -55.09 </span>
+            <button class="url"> Website</button>
+    </div>
+    <!-- map  -->
+    <div class="map">
+    </div>
+</div>
+<!-- end left  -->
+</div>
+<div id="right">
             <div class="inline">
-        
-          <div class="animated slideInLeft form--container" id="outdoor--form__delete">
+          <div class="animated slideInRight form--container" id="outdoor--form__delete">
         <form action="">
             <p class="form--title">   Delete Outdoor Field: </p>
                 <br>
@@ -91,7 +112,7 @@
     </div>
 
           <!-- outdoor-show a single field -->
-    <div class="animated slideInLeft form--container" id="outdoor--form__display">
+    <div class="animated slideInRight  form--container" id="outdoor--form__display">
         <form action="">
             <p class="form--title">   Display Outdoor Field: </p>
                 <br>
@@ -103,7 +124,7 @@
     </div>
       <div class="inline">
     <!-- outdoor-add a single field -->
-    <div class="animated slideInLeft form--container" id="outdoor--form__add">
+    <div class="animated slideInRight  form--container" id="outdoor--form__add">
         <form action="">
             <p class="form--title">   Add Outdoor Field: </p>
                 <br>
@@ -126,7 +147,7 @@
     </div>
 
    <!-- outdoor-update a single field -->
-    <div class="animated slideInLeft form--container" id="outdoor--form__update">
+    <div class="animated slideInRight  form--container" id="outdoor--form__update">
         <form action="">
             <p class="form--title">   Update Outdoor Field: </p>
                 <br>
@@ -148,26 +169,9 @@
         </form>
     </div>
     </div>
-      <br/>
-
-
-
-  <!-- showforms section -->
-  <div class="wrapper">
-  <!-- info -->
-    <div class="info">
-        <p class="name"> Boulder Indoor</p>
-        <p class="city"> Boulder</p>
-        <p class="fields"> 3</p>
-        <p class="id"> 2</p>
-            <span class="lat"> 23.32</span>
-            <span class="long"> -55.09 </span>
-            <button class="url"> Website</button>
-    </div>
-    <!-- map  -->
-    <div class="map">
-    </div>
+<!-- end right -->
 </div>
+<!-- end container -->
 </div>
 </template>
 
@@ -228,7 +232,16 @@ button:hover {
 
 #TheFormSection {
   margin-top: 20px;
-  color: black;
+  display: flex;
+  justify-content: space-between;
+}
+
+#left {
+  color:black;
+}
+
+#right {
+  color:black;
 }
 
 /* indoor---------------------------------------------------------------------- */
@@ -323,7 +336,7 @@ button:hover {
   flex-direction: row;
 }
 
-.display--title {
+/* .display--title {
   font-size: 1rem;
   background-color: black;
   color: white;
@@ -334,13 +347,20 @@ button:hover {
   -webkit-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
   -moz-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
   box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
-}
+} */
 
-.header--logo {
+
+/* .header--logo {
   max-height: 50px;
   display: flex;
   flex-direction: row;
-}
+} */
+
+
+/* .test {
+  float: right;
+  color:#2a876a;
+} */
 
 /* field show styles  */
 

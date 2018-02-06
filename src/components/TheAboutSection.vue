@@ -12,13 +12,23 @@
           <img class="image--arrow animated zoomInDown" src="../../static/white-arrow.png" alt="arrow image" />
         </div>
          <div class="cta--container">
-          <button class="cta--indoor">
+          <!-- <button class="cta--indoor">
             Indoor
           </button>
           <button class="cta--outdoor">
             Outdoor
-          </button>
+          </button> -->
         </div>
+              <!-- begin outdoor -->
+<div id="logos">
+       <h1 class="display--title">      
+          <img class="header--logo" src="../../static/colo2.png" alt="Logo" />INDOOR
+       </h1>
+              <h1 class="display--title">      
+          <img class="header--logo" src="../../static/colo2.png" alt="Logo" />OUTDOOR
+       </h1>
+</div>
+
      </div>
 </template>
 // end html ---------------------------------------------------------------------------
@@ -37,6 +47,32 @@ export default {
   -moz-box-shadow: 0px 29px 53px -19px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 29px 53px -19px rgba(0, 0, 0, 0.75);
 }
+#logos {
+  display: flex;
+  justify-content: space-between;
+}
+.header--logo {
+  max-height: 50px;
+  display: flex;
+  padding-left: 2px;
+  padding-right: 2px;
+  flex-direction: column;
+
+}
+.display--title {
+  font-size: 1rem;
+  background-color: black;
+  color: white;
+  max-width: 70px;
+  padding-top: 5px;
+  padding-left: 10px;
+    padding-right: 10px;
+  padding-bottom: 5px;
+  -webkit-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
+  -moz-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
+  box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
+}
+
 
 /* effect-shine -------------------------------------------------------------------*/
 .shine:hover {
@@ -119,13 +155,14 @@ button:hover {
 }
 
 .cta--container {
+  margin-top: 120px;
   display: flex;
   flex-direction: row;
   justify-content: center;
     align-items: center;
 }
 
-.cta--outdoor{
+/* .cta--outdoor{
 margin-left:150px;
 }
 
@@ -139,7 +176,7 @@ margin-left:150px;
 
 .cta--outdoor:hover{
 margin-right:20px;
-}
+} */
 
 </style>
 // end css ---------------------------------------------------------------------------
