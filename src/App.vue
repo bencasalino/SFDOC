@@ -4,26 +4,29 @@
     <main>
       <TheAboutSection />
       <TheFormSection/>
+      <!-- <TheFieldsDisplay /> -->
     </main>
-    <!-- <footer>
-        <TheFooter/>  
-    </footer> -->
+      <TheFooter/>
   </div>
 </template>
 
 <script>
-import TheHeader from "./components/TheHeader";
-import TheAboutSection from "./components/TheAboutSection";
-import TheFormSection from "./components/TheFormSection";
-// import TheFooter from './components/TheFooter';
+import TheHeader from './components/TheHeader';
+import TheAboutSection from './components/TheAboutSection';
+import TheFormSection from './components/TheFormSection';
+// import TheFieldsDisplay from './components/TheFieldsDisplay';
+import TheFooter from './components/TheFooter';
+/* eslint-disable */
+
 
 export default {
-  name: "App",
+  name: 'App',
   components: {
     TheHeader,
     TheAboutSection,
-    TheFormSection
-    // TheFooter,
+    TheFormSection,
+    // TheFieldsDisplay,
+    TheFooter
   }
 };
 </script>

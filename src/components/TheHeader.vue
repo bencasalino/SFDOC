@@ -1,9 +1,13 @@
 <template>
   <header id="TheHeader">
-    <img class="shine header--github animated slideInDown" src="../../static/github.png" alt="Github Logo and Link" />
+    <img class="shine header--github animated slideInDown"
+    src="../../static/github.png"
+    alt="Github Logo and Link" />
          <a href="https://github.com/bencasalino">
       </a>
-      <img class="header--logo animated slideInLeft" src="../../static/logoblk.png" alt="SFDOC Main Logo" />
+      <img class="header--logo animated slideInLeft"
+      src="../../static/logoblk.png"
+      alt="SFDOC Main Logo" />
       <h1 class="header--logo__text">
         Soccer Field
          Directory
@@ -14,6 +18,7 @@
 </template>
 // end html ---------------------------------------------------------------------------
 <script>
+/* eslint-disable */
 export default {
   name: "TheHeader"
 };

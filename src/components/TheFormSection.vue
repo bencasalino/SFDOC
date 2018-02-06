@@ -1,183 +1,189 @@
 <template>
   <div id="TheFormSection">
     <div id="left">
-    <!-- <h1 class="display--title">      
-                       <img class="header--logo" src="../../static/colo2.png" alt="Logo" />INDOOR</h1> -->
       <div class="inline">
-<!-- indoor-delte a field -->
+    <!-- indoor-delte a field -->
     <div class="animated slideInLeft form--container" id="indoor--form__delete">
-        <form action="">
+           <!-- <form v-on:submit.prevent="">
             <p class="form--title">   Delete Indoor Field: </p>
                 <br>
-                <input v-model="message" placeholder="search by ID">
+                <input v-model="indoorFormDelete.id" placeholder="search by ID">
              <br>
             <input class="form--button" type="submit" value="Submit">
-        </form>
+        </form> -->
     </div>
 
 <!-- indoor-show a single field -->
     <div class="animated slideInLeft form--container" id="indoor--form__display">
-        <form action="">
+           <!-- <form v-on:submit.prevent="">
             <p class="form--title">   Display Indoor Field: </p>
                 <br>
-            <input v-model="message" placeholder="search by ID">
+            <input v-model="indoorFormDisplay.id" placeholder="search by ID">
              <br>
             <input class="form--button" type="submit" value="Submit">
-        </form>
+        </form> -->
     </div>
     </div>
     <div class="inline">
     <!-- indoor-add a single field -->
     <div class="animated slideInLeft form--container" id="indoor--form__add">
-        <form action="">
+           <!-- <form v-on:submit.prevent="">
             <p class="form--title">   Add Indoor Field: </p>
                 <br>
-                <input v-model="message" placeholder="ID">
+                <input v-model="indoorFormAdd.id" placeholder="ID">
                    <br>
-                <input v-model="message" placeholder="Name">
+                <input v-model="indoorFormAdd.name" placeholder="Name">
                    <br>
-                <input v-model="message" placeholder="City">
+                <input v-model="indoorFormAdd.city" placeholder="City">
                    <br>
-                <input v-model="message" placeholder="Field #">
+                <input v-model="indoorFormAdd.field" placeholder="Field #">
                    <br>
-                <input v-model="message" placeholder="Website (if applicable)">
+                <input v-model="indoorFormAdd.website" placeholder="Website (if applicable)">
                    <br>
-                <input v-model="message" placeholder="Latitude">
+                <input v-model="indoorFormAdd.latitude" placeholder="Latitude">
                    <br>
-                <input v-model="message" placeholder="Longitude">
+                <input v-model="indoorFormAdd.longitude" placeholder="Longitude">
                 <br>
                 <input class="form--button" type="submit" value="Submit">
-        </form>
+        </form> -->
     </div>
 
 
    <!-- indoor-update a single field -->
     <div class="animated slideInLeft form--container" id="indoor--form__update">
-        <form action="">
+           <!-- <form v-on:submit.prevent="">
             <p class="form--title">   Update Indoor Field: </p>
                 <br>
-                <input v-model="message" placeholder="ID to be updated">
+                <input v-model="indoorFormUpdate.id" placeholder="ID to be updated">
                    <br>
-                <input v-model="message" placeholder="Name">
+                <input v-model="indoorFormUpdate.name" placeholder="Name">
                    <br>
-                <input v-model="message" placeholder="City">
+                <input v-model="indoorFormUpdate.city" placeholder="City">
                    <br>
-                <input v-model="message" placeholder="Field #">
+                <input v-model="indoorFormUpdate.field" placeholder="Field #">
                    <br>
-                <input v-model="message" placeholder="Website">
+                <input v-model="indoorFormUpdate.website" placeholder="Website">
                    <br>
-                <input v-model="message" placeholder="Latitude">
+                <input v-model="indoorFormUpdate.longitude" placeholder="Latitude">
                    <br>
-                <input v-model="message" placeholder="Longitude">
+                <input v-model="indoorFormUpdate.latitude" placeholder="Longitude">
                 <br>
                 <input class="form--button" type="submit" value="Submit">
-        </form>
+        </form> -->
     </div>
  </div>
-      <!-- <div class="tri animated slideInLeft"></div> -->
       <br/>
-
       <br/>
-
-
-
-  <!-- showforms section -->
-  <div class="wrapper">
-  <!-- info -->
-    <div class="info">
-        <p class="name"> Boulder Indoor</p>
-        <p class="city"> Boulder</p>
-        <p class="fields"> 3</p>
-        <p class="id"> 2</p>
-            <span class="lat"> 23.32</span>
-            <span class="long"> -55.09 </span>
-            <button class="url"> Website</button>
-    </div>
-    <!-- map  -->
-    <div class="map">
-    </div>
-</div>
-<!-- end left  -->
 </div>
 <div id="right">
             <div class="inline">
           <div class="animated slideInRight form--container" id="outdoor--form__delete">
-        <form action="">
-            <p class="form--title">   Delete Outdoor Field: </p>
+           <!-- <form v-on:submit.prevent="">
+            <p class="form--title"> Delete Outdoor Field: </p>
                 <br>
-                <input v-model="message" placeholder="search by ID">
+                <input v-model="outdoorFromDelete.id" placeholder="search by ID">
              <br>
             <input class="form--button" type="submit" value="Submit">
-        </form>
+        </form> -->
     </div>
 
           <!-- outdoor-show a single field -->
     <div class="animated slideInRight  form--container" id="outdoor--form__display">
-        <form action="">
+           <!-- <form v-on:submit.prevent="">
             <p class="form--title">   Display Outdoor Field: </p>
                 <br>
-            <input v-model="message" placeholder="search by ID">
+            <input v-model="outdoorFormDisplay.id" placeholder="search by ID">
              <br>
             <input class="form--button" type="submit" value="Submit">
-        </form>
+        </form> -->
     </div>
     </div>
       <div class="inline">
     <!-- outdoor-add a single field -->
     <div class="animated slideInRight  form--container" id="outdoor--form__add">
-        <form action="">
+        <!-- <form v-on:submit.prevent="">
             <p class="form--title">   Add Outdoor Field: </p>
                 <br>
-                <input v-model="message" placeholder="ID">
+                <input v-model="outdoorFormAdd.id" placeholder="ID">
                    <br>
-                <input v-model="message" placeholder="Name">
+                <input v-model="outdoorFormAdd.name" placeholder="Name">
                    <br>
-                <input v-model="message" placeholder="City">
+                <input v-model="outdoorFormAdd.city" placeholder="City">
                    <br>
-                <input v-model="message" placeholder="Field #">
+                <input v-model="outdoorFormAdd.field" placeholder="Field">
                    <br>
-                <input v-model="message" placeholder="Website (if applicable)">
+                <input v-model="outdoorFormAdd.website" placeholder="Website (if applicable)">
                    <br>
-                <input v-model="message" placeholder="Latitude">
+                <input v-model="outdoorFormAdd.latitude" placeholder="Latitude">
                    <br>
-                <input v-model="message" placeholder="Longitude">
+                <input v-model="outdoorFormAdd.longitude" placeholder="Longitude">
                 <br>
                 <input class="form--button" type="submit" value="Submit">
-        </form>
+        </form> -->
     </div>
 
    <!-- outdoor-update a single field -->
-    <div class="animated slideInRight  form--container" id="outdoor--form__update">
-        <form action="">
+    <div class="animated slideInRight  test form--container" id="outdoor--form__update">
+        <!-- <form v-on:submit.prevent="">
             <p class="form--title">   Update Outdoor Field: </p>
                 <br>
-                <input v-model="message" placeholder="ID to be updated">
+                <input v-model="outdoorFormUpdate.id" placeholder="ID to be updated">
                    <br>
-                <input v-model="message" placeholder="Name">
+                <input v-model="outdoorFormUpdate.name" placeholder="Name">
                    <br>
-                <input v-model="message" placeholder="City">
+                <input v-model="outdoorFormUpdate.city" placeholder="City">
                    <br>
-                <input v-model="message" placeholder="Field #">
+                <input v-model="outdoorFormUpdate.field" placeholder="Field">
                    <br>
-                <input v-model="message" placeholder="Website">
+                <input v-model="outdoorFormUpdate.website" placeholder="Website">
                    <br>
-                <input v-model="message" placeholder="Latitude">
+                <input v-model="outdoorFormUpdate.latitude" placeholder="Latitude">
                    <br>
-                <input v-model="message" placeholder="Longitude">
+                <input v-model="outdoorFormUpdate.longitude" placeholder="Longitude">
                 <br>
                 <input class="form--button" type="submit" value="Submit">
-        </form>
+        </form> -->
     </div>
     </div>
 <!-- end right -->
 </div>
+  <!-- showforms section -->
+  <!-- <div class="wrapper">
+    <div class="info">
+        <p class="name"> Boulder Indoor</p>
+        <p class="city"> Boulder</p>
+        <p class="fields"> 3</p>
+        <p class="id"> 2</p>
+        <span class="lat"> 23.32</span>
+        <span class="long"> -55.09 </span>
+        <button class="url"> Website</button>
+    </div>
+    <div class="map">
+    </div>
+</div> -->
+<!-- end left  -->
 <!-- end container -->
 </div>
 </template>
 
 <script>
+/* eslint-disable */
 export default {
-  name: "TheFormSection"
+  name: "TheFormSection",
+  data(){
+    return {
+      outdoorFormUpdate: {
+        id: "",
+        name: "",
+        city: "",
+        field: "",
+        website: "",
+        latitude: "",
+        longitude: "",
+      }
+    }
+  }
+
 };
 </script>
 
@@ -349,13 +355,11 @@ button:hover {
   box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
 } */
 
-
 /* .header--logo {
   max-height: 50px;
   display: flex;
   flex-direction: row;
 } */
-
 
 /* .test {
   float: right;
@@ -363,7 +367,6 @@ button:hover {
 } */
 
 /* field show styles  */
-
 
 /* .info {
   background-color: white;
@@ -382,9 +385,6 @@ button:hover {
   -moz-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
   box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
 } */
-
-
-
 /* .name {
   font-size: 1.5rem;
   padding: 0.4rem 0rem 1rem 1rem;

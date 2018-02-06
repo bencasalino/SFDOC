@@ -1,15 +1,16 @@
 <template>
   <div id="TheAboutSection">
     <div class="container--herobanner">
-         <img class="drop--shadow image--herobanner" src="../../static/banner4.png" alt="Banner Hero Image" />
+         <img class="drop--shadow image--herobanner"
+         src="../../static/banner4.png" alt="Banner Hero Image" />
     </div>
-     
-    <div class="shine container--herotext">
-     <h2> This is a directory containting all Colorado indoor/outdoor soccer facilities information. </h2>  
-    </div>
+     <div class="shine container--herotext">
+<p>This is a directory containting all Colorado indoor/outdoor soccer facilities information.</p>
+     </div>
     <div class="container--getstarted">
         <p class="text--getstarted" href="#">Get Started!</p>
-          <img class="image--arrow animated zoomInDown" src="../../static/white-arrow.png" alt="arrow image" />
+          <img class="image--arrow animated zoomInDown"
+          src="../../static/white-arrow.png" alt="arrow image" />
         </div>
          <div class="cta--container">
           <!-- <button class="cta--indoor">
@@ -21,16 +22,16 @@
         </div>
               <!-- begin outdoor -->
 <div id="logos">
-       <h1 class="display--title">      
-          <img class="header--logo" src="../../static/colo2.png" alt="Logo" />INDOOR
+       <h1 class="display--title">
+         <img class="header--logo"
+         src="../../static/colo2.png" alt="Logo" />INDOOR
        </h1>
        <div id="middle">
          Use the forms before to List, Update, Create & Delete fields in the directory.
-     
          <br/>
        <hr />   </div>
-              <h1 class="display--title">      
-          <img class="header--logo" src="../../static/colo2.png" alt="Logo" />OUTDOOR
+              <h1 class="display--title">
+                <img class="header--logo" src="../../static/colo2.png" alt="Logo" />OUTDOOR
        </h1>
 </div>
 
@@ -38,6 +39,7 @@
 </template>
 // end html ---------------------------------------------------------------------------
 <script>
+/* eslint-disable */
 export default {
   name: "TheAboutSection"
 };
@@ -132,7 +134,7 @@ button:hover {
 .image--herobanner {
   border-top: white 5px solid;
   border-bottom: white 5px solid;
-  max-width: 1265px;
+  max-width: 1280px;
 }
 .container--herotext {
   color: white;
@@ -141,6 +143,7 @@ button:hover {
   font-size: 2rem;
   margin-top: -90px;
   padding-bottom: 36px;
+  width: 100%;
 }
 /* get started estion */
 

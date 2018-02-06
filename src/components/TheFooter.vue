@@ -1,12 +1,11 @@
 <template>
-<div id="TheFooter" class="wrapper">
-    <!-- <footer class="footer">
-    test
-    </footer> -->
-</div>
+    <footer id="TheFooter" class="wrapper">
+       <p> © Copyright 2018 | Created by <a href="www.bencasalino.com"> Ben Casalino </a> </p>
+    </footer>
 </template>
 
 <script>
+/* eslint-disable */
 export default {
   name: "TheFooter"
 };
@@ -19,6 +18,14 @@ export default {
   height: 10vh;
   display: flex;
   justify-content: center;
-  position: fixed;
+  position: sticky;
+  align-items: center;
+  letter-spacing: 1px;
+}
+
+a {
+    list-style: none; 
+  text-decoration: none; 
+
 }
 </style>
