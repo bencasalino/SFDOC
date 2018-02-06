@@ -1,9 +1,9 @@
 <template>
   <header id="TheHeader">
-    <img class="shine header--github animated slideInDown" src="../../static/github.png" alt="Github Logo" />
+    <img class="shine header--github animated slideInDown" src="../../static/github.png" alt="Github Logo and Link" />
          <a href="https://github.com/bencasalino">
       </a>
-      <img class="shine header--logo animated slideInLeft" src="../../static/colo2.png" alt="Logo" />
+      <img class="header--logo animated slideInLeft" src="../../static/logoblk.png" alt="SFDOC Main Logo" />
       <h1 class="header--logo__text">
         Soccer Field
          Directory
@@ -25,12 +25,14 @@ export default {
   height: 10vh;
 }
 .header--logo {
+  border-right: 5px white solid;
   float: left;
+  margin-right: 1rem;
 }
 .header--logo__text {
   letter-spacing: 0.2rem;
   font-size: 3rem;
-  line-height: 3.4rem;
+  line-height: 3.2rem;
   font-weight: 400;
   color: white;
   font-family: "Arvo", serif;

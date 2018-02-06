@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <TheHeader/>
+    <TheHeader />
     <main>
-      <!-- <TheAboutSection/> -->
+      <TheAboutSection />
       <!-- <TheAside/>
       <TheFields/> -->
     </main>
@@ -14,8 +14,8 @@
 
 <script>
 import TheHeader from "./components/TheHeader";
+import TheAboutSection from "./components/TheAboutSection";
 // import TheAside from "./components/TheAside";
-// import TheAboutSection from "./components/TheAboutSection";
 // import TheFields from "./components/TheFields";
 // import TheFooter from './components/TheFooter';
 
@@ -23,8 +23,8 @@ export default {
   name: "App",
   components: {
     TheHeader,
+    TheAboutSection,
     // TheAside,
-    // TheAboutSection,
     // TheFooter,
     // TheFields
   }
