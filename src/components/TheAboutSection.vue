@@ -1,7 +1,7 @@
 <template>
   <div id="TheAboutSection">
-    <div class="container--hero__banner">
-         <img class="drop-shadow hero--banner__image" src="../../static/banner4.png" alt="Banner Hero Image" />
+    <div class="container--herobanner">
+         <img class="drop--shadow image--herobanner" src="../../static/banner4.png" alt="Banner Hero Image" />
     </div>
      
     <div class="shine container--herotext">
@@ -9,8 +9,8 @@
     </div>
     <div class="container--getstarted">
         <div class="">
-        <p href="#" class="">Get Started!</p>
-          <img class="arrow--image" src="../../static/white-arrow.png" alt="arrow image" />
+        <p class="text--getstarted" href="#">Get Started!</p>
+          <img class="image--arrow" src="../../static/white-arrow.png" alt="arrow image" />
         </div>  
     </div>
          <!-- <div class="cta--container">
@@ -31,38 +31,14 @@ export default {
 #TheAboutSection {
   background-color: #2a876a;
 }
-
-.hero--banner__image {
-  border-top: white 5px solid;
-  border-bottom: white 5px solid;
-}
-
-.container--getstarted {
-  background-color: #2a876a;
-  color: white;
-  display: flex;
-  font-weight: 400;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-  /* height: 180px; */
-  font-family: "Arvo", serif;
-}
-
-.header--logo {
-  height: 50px;
-  padding: 5px;
-  opacity: 50%;
-}
-.drop-shadow {
+.drop--shadow {
   -webkit-box-shadow: 0px 29px 53px -19px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 29px 53px -19px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 29px 53px -19px rgba(0, 0, 0, 0.75);
 }
 
 /* effect-shine -------------------------------------------------------------------*/
-.header--logo__text:hover {
+.shine:hover {
   -webkit-mask-image: linear-gradient(
     -75deg,
     rgba(0, 0, 0, 0.6) 30%,
@@ -77,7 +53,6 @@ export default {
   from {
     -webkit-mask-position: 150%;
   }
-
   to {
     -webkit-mask-position: -50%;
   }
@@ -104,11 +79,12 @@ button:hover {
   margin: 1rem 1rem 1rem 1rem;
   border: 2px rgba(0, 0, 0, 0.05) solid;
 }
+/* end buttons, shine, fallbacks */
 
-p {
-  color: #2a876a;
+.image--herobanner {
+  border-top: white 5px solid;
+  border-bottom: white 5px solid;
 }
-
 .container--herotext {
   color: white;
     display:flex;
@@ -122,23 +98,24 @@ p {
   margin-top: 20px;
 }
 
-/* .cta--container {
-    display:flex;
-  justify-content:center; 
-          color:white;
-} */
 
-/* .to-content {
-    text-decoration: none;
-        list-style: none;
-              color:white;
-} */
-
-.arrow--image {
+.image--arrow {
   padding-top: 10px;
   max-height: 40px;
   max-width: 40px;
   color:white;
+}
+.container--getstarted {
+  background-color: #2a876a;
+  color: white;
+  display: flex;
+  font-weight: 400;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  height: 180px;
+  font-family: "Arvo", serif;
 }
 </style>
 // end css ---------------------------------------------------------------------------
