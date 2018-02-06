@@ -5,7 +5,7 @@
     </div>
      
     <div class="shine container--herotext">
-     <h2> This is a directory containting all Colorado indoor/outdoor soccer facilities information.  </h2>  
+     <h2> This is a directory containting all Colorado indoor/outdoor soccer facilities information. </h2>  
     </div>
     <div class="container--getstarted">
         <p class="text--getstarted" href="#">Get Started!</p>
@@ -24,6 +24,11 @@
        <h1 class="display--title">      
           <img class="header--logo" src="../../static/colo2.png" alt="Logo" />INDOOR
        </h1>
+       <div id="middle">
+         Use the forms before to List, Update, Create & Delete fields in the directory.
+     
+         <br/>
+       <hr />   </div>
               <h1 class="display--title">      
           <img class="header--logo" src="../../static/colo2.png" alt="Logo" />OUTDOOR
        </h1>
@@ -39,8 +44,11 @@ export default {
 </script>
 // end js ---------------------------------------------------------------------------
 <style scoped>
-#TheFormSecton {
+#TheAboutSection {
   background-color: #2a876a;
+  /* width: 100vw; */
+  /* display: flex;
+  justify-content: center; */
 }
 .drop--shadow {
   -webkit-box-shadow: 0px 29px 53px -19px rgba(0, 0, 0, 0.75);
@@ -49,6 +57,7 @@ export default {
 }
 #logos {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 .header--logo {
@@ -72,6 +81,8 @@ export default {
   -moz-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
   box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
 }
+
+
 
 
 /* effect-shine -------------------------------------------------------------------*/
@@ -121,6 +132,7 @@ button:hover {
 .image--herobanner {
   border-top: white 5px solid;
   border-bottom: white 5px solid;
+  max-width: 1265px;
 }
 .container--herotext {
   color: white;
@@ -177,6 +189,14 @@ margin-left:150px;
 .cta--outdoor:hover{
 margin-right:20px;
 } */
+
+#middle {
+  max-width: 550px;
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+}
+
+
 
 </style>
 // end css ---------------------------------------------------------------------------

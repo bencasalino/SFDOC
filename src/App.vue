@@ -165,6 +165,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+main{
+/* max-width: 100%; */
+}
 /* end reset styles-------------------------------------------------------------  */
 
 </style>
