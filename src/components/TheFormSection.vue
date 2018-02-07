@@ -4,7 +4,7 @@
       <div class="inline">
     <!-- indoor-delte a field -->
     <div class="animated slideInLeft form--container" id="indoor--form__delete">
-           <!-- <form v-on:submit.prevent="">
+           <!-- <form v-on:submit.prevent="onSubmit">
             <p class="form--title">   Delete Indoor Field: </p>
                 <br>
                 <input v-model="indoorFormDelete.id" placeholder="search by ID">
@@ -15,8 +15,8 @@
 
 <!-- indoor-show a single field -->
     <div class="animated slideInLeft form--container" id="indoor--form__display">
-           <!-- <form v-on:submit.prevent="">
-            <p class="form--title">   Display Indoor Field: </p>
+           <!-- <form v-on:submit.prevent="onSubmit">
+              <p class="form--title">   Display Indoor Field: </p>
                 <br>
             <input v-model="indoorFormDisplay.id" placeholder="search by ID">
              <br>
@@ -27,7 +27,7 @@
     <div class="inline">
     <!-- indoor-add a single field -->
     <div class="animated slideInLeft form--container" id="indoor--form__add">
-           <!-- <form v-on:submit.prevent="">
+           <!-- <form v-on:submit.prevent="onSubmit">
             <p class="form--title">   Add Indoor Field: </p>
                 <br>
                 <input v-model="indoorFormAdd.id" placeholder="ID">
@@ -51,7 +51,7 @@
 
    <!-- indoor-update a single field -->
     <div class="animated slideInLeft form--container" id="indoor--form__update">
-           <!-- <form v-on:submit.prevent="">
+           <!-- <form v-on:submit.prevent="onSubmit">
             <p class="form--title">   Update Indoor Field: </p>
                 <br>
                 <input v-model="indoorFormUpdate.id" placeholder="ID to be updated">
@@ -78,7 +78,7 @@
 <div id="right">
             <div class="inline">
           <div class="animated slideInRight form--container" id="outdoor--form__delete">
-           <!-- <form v-on:submit.prevent="">
+           <!-- <form v-on:submit.prevent="onSubmit">
             <p class="form--title"> Delete Outdoor Field: </p>
                 <br>
                 <input v-model="outdoorFromDelete.id" placeholder="search by ID">
@@ -89,7 +89,7 @@
 
           <!-- outdoor-show a single field -->
     <div class="animated slideInRight  form--container" id="outdoor--form__display">
-           <!-- <form v-on:submit.prevent="">
+           <!-- <form v-on:submit.prevent="onSubmit">
             <p class="form--title">   Display Outdoor Field: </p>
                 <br>
             <input v-model="outdoorFormDisplay.id" placeholder="search by ID">
@@ -101,7 +101,7 @@
       <div class="inline">
     <!-- outdoor-add a single field -->
     <div class="animated slideInRight  form--container" id="outdoor--form__add">
-        <!-- <form v-on:submit.prevent="">
+        <!-- <form v-on:submit.prevent="onSubmit">
             <p class="form--title">   Add Outdoor Field: </p>
                 <br>
                 <input v-model="outdoorFormAdd.id" placeholder="ID">
@@ -124,7 +124,7 @@
 
    <!-- outdoor-update a single field -->
     <div class="animated slideInRight  test form--container" id="outdoor--form__update">
-        <!-- <form v-on:submit.prevent="">
+        <!-- <form v-on:submit.prevent="onSubmit">
             <p class="form--title">   Update Outdoor Field: </p>
                 <br>
                 <input v-model="outdoorFormUpdate.id" placeholder="ID to be updated">
