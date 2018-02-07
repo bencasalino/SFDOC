@@ -15,7 +15,8 @@
         </span>
       </p>
       <p class="label--text">Website:
-        <span class="displayed--text website--link">{{ field.url }}
+        <span class="displayed--text website--link">
+          <a v-bind:href="field.url">{{ field.url }}</a>
         </span>
       </p>
       <p class="label--text">Latitude:
@@ -45,7 +46,9 @@
         </span>
       </p>
       <p class="label--text">Website:
-        <span class="displayed--text website--link">{{ field.url }}
+        <span class="displayed--text website--link">
+          <a v-bind:href="field.url">{{ field.url }}
+            </a>
         </span>
       </p>
       <p class="label--text">Latitude:
