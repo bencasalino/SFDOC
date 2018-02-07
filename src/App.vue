@@ -29,6 +29,8 @@ export default {
     TheFooter
   },
 }
+
+// var mymap = L.map('mapid').setView([51.505, -0.09], 13);
 </script>
 
 
@@ -37,11 +39,4 @@ export default {
 @import url("https://fonts.googleapis.com/css?family=Lato|Roboto|Roboto+Condensed|PT+Sans+Narrow");
 @import url(https://fonts.googleapis.com/css?family=Dosis:300,400);
 /* end fonts---------------------------------------------------------------------  */
-
-
-main{
-/* max-width: 100%; */
-}
-/* end reset styles-------------------------------------------------------------  */
-
 </style>
