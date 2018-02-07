@@ -4,30 +4,30 @@
       <div class="inline">
     <!-- indoor-delte a field -->
     <div class="animated slideInLeft form--container" id="indoor--form__delete">
-           <!-- <form v-on:submit.prevent="onSubmit">
+           <form v-on:submit.prevent="onSubmit">
             <p class="form--title">   Delete Indoor Field: </p>
                 <br>
                 <input v-model="indoorFormDelete.id" placeholder="search by ID">
              <br>
             <input class="form--button" type="submit" value="Submit">
-        </form> -->
+        </form>
     </div>
 
 <!-- indoor-show a single field -->
     <div class="animated slideInLeft form--container" id="indoor--form__display">
-           <!-- <form v-on:submit.prevent="onSubmit">
+           <form v-on:submit.prevent="onSubmit">
               <p class="form--title">   Display Indoor Field: </p>
                 <br>
             <input v-model="indoorFormDisplay.id" placeholder="search by ID">
              <br>
             <input class="form--button" type="submit" value="Submit">
-        </form> -->
+        </form>
     </div>
     </div>
     <div class="inline">
     <!-- indoor-add a single field -->
     <div class="animated slideInLeft form--container" id="indoor--form__add">
-           <!-- <form v-on:submit.prevent="onSubmit">
+           <form v-on:submit.prevent="onSubmit">
             <p class="form--title">   Add Indoor Field: </p>
                 <br>
                 <input v-model="indoorFormAdd.id" placeholder="ID">
@@ -45,13 +45,13 @@
                 <input v-model="indoorFormAdd.longitude" placeholder="Longitude">
                 <br>
                 <input class="form--button" type="submit" value="Submit">
-        </form> -->
+        </form>
     </div>
 
 
    <!-- indoor-update a single field -->
     <div class="animated slideInLeft form--container" id="indoor--form__update">
-           <!-- <form v-on:submit.prevent="onSubmit">
+           <form v-on:submit.prevent="onSubmit">
             <p class="form--title">   Update Indoor Field: </p>
                 <br>
                 <input v-model="indoorFormUpdate.id" placeholder="ID to be updated">
@@ -69,7 +69,7 @@
                 <input v-model="indoorFormUpdate.latitude" placeholder="Longitude">
                 <br>
                 <input class="form--button" type="submit" value="Submit">
-        </form> -->
+        </form>
     </div>
  </div>
       <br/>
@@ -78,30 +78,30 @@
 <div id="right">
             <div class="inline">
           <div class="animated slideInRight form--container" id="outdoor--form__delete">
-           <!-- <form v-on:submit.prevent="onSubmit">
+           <form v-on:submit.prevent="onSubmit">
             <p class="form--title"> Delete Outdoor Field: </p>
                 <br>
-                <input v-model="outdoorFromDelete.id" placeholder="search by ID">
+                <input v-model="outdoorFormDelete.id" placeholder="search by ID">
              <br>
             <input class="form--button" type="submit" value="Submit">
-        </form> -->
+        </form>
     </div>
 
           <!-- outdoor-show a single field -->
     <div class="animated slideInRight  form--container" id="outdoor--form__display">
-           <!-- <form v-on:submit.prevent="onSubmit">
+           <form v-on:submit.prevent="onSubmit">
             <p class="form--title">   Display Outdoor Field: </p>
                 <br>
             <input v-model="outdoorFormDisplay.id" placeholder="search by ID">
              <br>
             <input class="form--button" type="submit" value="Submit">
-        </form> -->
+        </form>
     </div>
     </div>
       <div class="inline">
     <!-- outdoor-add a single field -->
     <div class="animated slideInRight  form--container" id="outdoor--form__add">
-        <!-- <form v-on:submit.prevent="onSubmit">
+        <form v-on:submit.prevent="onSubmit">
             <p class="form--title">   Add Outdoor Field: </p>
                 <br>
                 <input v-model="outdoorFormAdd.id" placeholder="ID">
@@ -119,12 +119,12 @@
                 <input v-model="outdoorFormAdd.longitude" placeholder="Longitude">
                 <br>
                 <input class="form--button" type="submit" value="Submit">
-        </form> -->
+        </form>
     </div>
 
    <!-- outdoor-update a single field -->
     <div class="animated slideInRight  test form--container" id="outdoor--form__update">
-        <!-- <form v-on:submit.prevent="onSubmit">
+        <form v-on:submit.prevent="onSubmit">
             <p class="form--title">   Update Outdoor Field: </p>
                 <br>
                 <input v-model="outdoorFormUpdate.id" placeholder="ID to be updated">
@@ -142,7 +142,7 @@
                 <input v-model="outdoorFormUpdate.longitude" placeholder="Longitude">
                 <br>
                 <input class="form--button" type="submit" value="Submit">
-        </form> -->
+        </form>
     </div>
     </div>
 <!-- end right -->
@@ -172,6 +172,45 @@ export default {
   name: "TheFormSection",
   data(){
     return {
+      indoorFormDelete: {
+        id: "",
+      },
+      indoorFormDisplay: {
+        id: "",
+      },
+      outdoorFormDelete: {
+        id: "",
+      },
+      outdoorFormDisplay: {
+        id: "",
+      },
+      indoorFormAdd: {
+        id: "",
+        name: "",
+        city: "",
+        field: "",
+        website: "",
+        latitude: "",
+        longitude: "",
+      },
+      indoorFormUpdate: {
+        id: "",
+        name: "",
+        city: "",
+        field: "",
+        website: "",
+        latitude: "",
+        longitude: "",
+      },
+        outdoorFormAdd: {
+        id: "",
+        name: "",
+        city: "",
+        field: "",
+        website: "",
+        latitude: "",
+        longitude: "",
+      },
       outdoorFormUpdate: {
         id: "",
         name: "",
@@ -180,7 +219,8 @@ export default {
         website: "",
         latitude: "",
         longitude: "",
-      }
+      },
+
     }
   }
 
