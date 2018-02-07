@@ -1,56 +1,57 @@
 <template>
 <div class="container">
-  <div v-for="field in data.outdoor" class="indoor">
+  <div v-bind:key="field.id" v-for="field in data.outdoor" class="indoor">
       <p class="field--name__text">{{ field.name }}</p>
-      <p class="label--text">City:
+      <p class="label--text__city">City:
         <span class="displayed--text">{{ field.city }}
         </span>
       </p>
-      <p class="label--text">ID:
+      <span class="label--text">ID#:
         <span class="displayed--text">{{ field.id }}
         </span>
-      </p>
-      <p class="label--text">Field(s):
+      </span>
+      <span class="label--text">Total Fields:
         <span class="displayed--text">{{ field.fields }}
         </span>
-      </p>
-      <p class="label--text">Website:
+      </span>
         <span class="displayed--text website--link">
-          <a v-bind:href="field.url">{{ field.url }}</a>
+          <button>
+          <a v-bind:href="field.url"> Website
+            </a>
+          </button>
         </span>
-      </p>
-      <p class="label--text">Latitude:
+      <span class="label--text">Latitude:
         <span class="displayed--text">{{ field.latitude }}
         </span>
-      </p>
-      <p class="label--text">Longitude:
+      </span>
+      <span class="label--text">Longitude:
         <span class="displayed--text">{{ field.longitude }}
         </span>
-      </p>
+      </span>
        <br>
       <div id="mapid"></div>
   </div>
 <br>
-  <div v-for="field in data.indoor" class="outdoor">
+  <div v-bind:key="field.id" v-for="field in data.indoor" class="outdoor">
       <p class="field--name__text">{{ field.name }}</p>
-      <p class="label--text">City:
+      <p class="label--text__city">City:
         <span class="displayed--text">{{ field.city }}
         </span>
       </p>
-      <p class="label--text">ID:
+      <span class="label--text">ID#:
         <span class="displayed--text">{{ field.id }}
         </span>
-      </p>
-      <p class="label--text">Field(s):
+      </span>
+      <span class="label--text">Total Fields:
         <span class="displayed--text">{{ field.fields }}
         </span>
-      </p>
-      <p class="label--text">Website:
+      </span>
         <span class="displayed--text website--link">
-          <a v-bind:href="field.url">{{ field.url }}
+          <button>
+          <a v-bind:href="field.url"> Website
             </a>
+          </button>
         </span>
-      </p>
       <p class="label--text">Latitude:
         <span class="displayed--text">{{ field.latitude }}
         </span>
@@ -94,6 +95,7 @@ export default {
 <style scoped>
 
 .container {
+  height:500px;
   padding: 0 .5rem 1rem .5rem;
 display: flex; 
 justify-content: space-between;
@@ -130,6 +132,7 @@ justify-content: space-between;
 .field--name__text { 
   font-size: 1.5rem;
   padding-bottom: 2px;
+  text-align: center;
 }
 
 
@@ -139,25 +142,70 @@ justify-content: space-between;
   padding-top: 5px;
 }
 
+.label--text__city { 
+  font-size: 1rem;
+  font-family: "Arvo", serif;
+  padding-bottom: 5px;
+}
+
 .displayed--text {
 color: #2a876a; 
 font-family: "Dosis", serif;
 font-size: 1.2rem;
+padding-left:2px;
+/* margin-top:5px; */
 }
 
 .website--link {
   font-size: .8rem;
 }
 
-
-
 #mapid{ 
-  background-color: red; 
+  background-color: black; 
   max-height: 200px;
-  max-width: 300px;
+  max-width: 250px;
   min-height: 200px;
   min-width: 250px;
   padding:10px;
+  -webkit-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
+  -moz-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
+  box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
+}
 
+button {
+  display: block;
+  background-color: #2a876a;
+  color: white;
+  padding: 4px;
+  border-radius: 4px;
+  font-family: "Arvo", serif;
+  margin-top: 10px;
+  border: 2px rgba(0, 0, 0, 0.05) solid;
+  font-size: 1rem;
+  list-style: none; 
+  text-decoration: none; 
+}
+
+button:hover {
+  display: block;
+  background-color: gold;
+  padding: 4px;
+  color: black;
+  border-radius: 6px;
+  font-family: "Arvo", serif;
+  /* margin: 1rem 1rem 1rem 1rem; */
+  border: 2px rgba(0, 0, 0, 0.05) solid;
+    list-style: none; 
+  text-decoration: none;
+}
+
+a {
+      list-style: none; 
+  text-decoration: none;
+}
+
+a:hover {
+        list-style: none; 
+  text-decoration: none;
 }
 </style>
