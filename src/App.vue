@@ -4,7 +4,7 @@
     <main>
       <TheAboutSection />
       <TheFormSection/>
-      <!-- <TheFieldsDisplay /> -->
+      <TheFieldsDisplay />
     </main>
       <TheFooter/>
   </div>
@@ -14,7 +14,7 @@
 import TheHeader from './components/TheHeader';
 import TheAboutSection from './components/TheAboutSection';
 import TheFormSection from './components/TheFormSection';
-// import TheFieldsDisplay from './components/TheFieldsDisplay';
+import TheFieldsDisplay from './components/TheFieldsDisplay';
 import TheFooter from './components/TheFooter';
 /* eslint-disable */
 
@@ -25,7 +25,7 @@ export default {
     TheHeader,
     TheAboutSection,
     TheFormSection,
-    // TheFieldsDisplay,
+    TheFieldsDisplay,
     TheFooter
   },
 }
