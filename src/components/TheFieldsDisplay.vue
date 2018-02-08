@@ -2,6 +2,7 @@
 <div class="container">
   <div v-bind:key="field.id" v-for="field in data.outdoor" class="indoor">
       <p class="field--name__text">{{ field.name }}</p>
+            <div class="fieldinfo--wrapper">
       <p class="label--text__city">City:
         <span class="displayed--text">{{ field.city }}
         </span>
@@ -14,26 +15,30 @@
         <span class="displayed--text">{{ field.fields }}
         </span>
       </span>
-        <span class="displayed--text website--link">
+        <!-- <span class="displayed--text website--link">
           <button>
           <a v-bind:href="field.url"> Website
             </a>
           </button>
-        </span>
-      <span class="label--text">Latitude:
+        </span> -->
+      <p class="label--text">Latitude:
         <span class="displayed--text">{{ field.latitude }}
         </span>
-      </span>
+      </p>
       <span class="label--text">Longitude:
         <span class="displayed--text">{{ field.longitude }}
         </span>
       </span>
+      <!-- field info wrapper  -->
+      </div>
        <br>
       <div id="mapid"></div>
+      <!-- indoor wrapper  -->
   </div>
-<br>
+<!-- <br> -->
   <div v-bind:key="field.id" v-for="field in data.indoor" class="outdoor">
       <p class="field--name__text">{{ field.name }}</p>
+      <div class="fieldinfo--wrapper">
       <p class="label--text__city">City:
         <span class="displayed--text">{{ field.city }}
         </span>
@@ -46,12 +51,12 @@
         <span class="displayed--text">{{ field.fields }}
         </span>
       </span>
-        <span class="displayed--text website--link">
+        <!-- <span class="displayed--text website--link">
           <button>
           <a v-bind:href="field.url"> Website
             </a>
           </button>
-        </span>
+        </span> -->
       <p class="label--text">Latitude:
         <span class="displayed--text">{{ field.latitude }}
         </span>
@@ -61,8 +66,12 @@
         </span>
       </p>
       <br>
+      <!-- info wrapper -->
+      </div>
       <div id="mapid"></div>
+      <!-- outdoor -->
   </div>
+  <!--  main cont -->
 </div>
 </template>
 
@@ -103,7 +112,10 @@ justify-content: space-between;
 }
 
 .indoor {
-  max-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 320px;
   max-width: 300px;
   min-height: 250px;
   min-width: 250px;
@@ -116,7 +128,10 @@ justify-content: space-between;
 }
 
 .outdoor {
-  max-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 320px;
   max-width: 300px;
   min-height: 250px;
   min-width: 250px;
@@ -130,9 +145,11 @@ justify-content: space-between;
 
 
 .field--name__text { 
+  font-weight: 900;
   font-size: 1.5rem;
-  padding-bottom: 2px;
+  padding-bottom: 6px;
   text-align: center;
+  
 }
 
 
@@ -153,7 +170,7 @@ color: #2a876a;
 font-family: "Dosis", serif;
 font-size: 1.2rem;
 padding-left:2px;
-/* margin-top:5px; */
+padding-top:4px;
 }
 
 .website--link {
@@ -163,9 +180,9 @@ padding-left:2px;
 #mapid{ 
   background-color: black; 
   max-height: 200px;
-  max-width: 250px;
+  max-width: 200px;
   min-height: 200px;
-  min-width: 250px;
+  min-width: 200px;
   padding:10px;
   -webkit-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
   -moz-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
@@ -176,7 +193,7 @@ button {
   display: block;
   background-color: #2a876a;
   color: white;
-  padding: 4px;
+  padding: 5px;
   border-radius: 4px;
   font-family: "Arvo", serif;
   margin-top: 10px;
@@ -189,7 +206,7 @@ button {
 button:hover {
   display: block;
   background-color: gold;
-  padding: 4px;
+  padding: 5px;
   color: black;
   border-radius: 6px;
   font-family: "Arvo", serif;
@@ -207,5 +224,10 @@ a {
 a:hover {
         list-style: none; 
   text-decoration: none;
+}
+
+
+.fieldinfo--wrapper {
+float: left;
 }
 </style>
