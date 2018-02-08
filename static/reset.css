@@ -129,3 +129,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+
+body { 
+  min-width: 1280px;
+    max-width: 1280px;
+    min-width: 100vw;
+}

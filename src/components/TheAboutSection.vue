@@ -134,7 +134,7 @@ button:hover {
 .image--herobanner {
   border-top: white 5px solid;
   border-bottom: white 5px solid;
-  max-width: 1265px;
+  max-width: 1280px;
 }
 .container--herotext {
   color: white;
