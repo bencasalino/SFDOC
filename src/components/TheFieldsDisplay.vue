@@ -32,7 +32,7 @@
       <!-- field info wrapper  -->
       </div>
        <br>
-      <div id="mapid"></div>
+      <div id="map"></div>
       <!-- indoor wrapper  -->
   </div>
 <!-- <br> -->
@@ -68,7 +68,7 @@
       <br>
       <!-- info wrapper -->
       </div>
-      <div id="mapid"></div>
+      <div id="map"></div>
       <!-- outdoor -->
   </div>
   <!--  main cont -->
@@ -99,6 +99,14 @@ export default {
   }
 };
 
+// map function 
+      // var map;
+      // function initMap() {
+      //   map = new google.maps.Map(document.getElementById('map'), {
+      //     center: {lat: -34.397, lng: 150.644},
+      //     zoom: 8
+      //   });
+      // }
 </script>
 
 <style scoped>
@@ -177,7 +185,7 @@ padding-top:4px;
   font-size: .8rem;
 }
 
-#mapid{ 
+#map{ 
   background-color: black; 
   max-height: 200px;
   max-width: 200px;

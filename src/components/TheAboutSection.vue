@@ -21,21 +21,22 @@
           </button> -->
         </div>
               <!-- begin outdoor -->
-<div id="logos">
-       <h1 class="display--title">
-         <img class="header--logo"
-         src="../../static/colo2.png" alt="Logo" />INDOOR
-       </h1>
-       <div id="middle">
-         Use the forms before to List, Update, Create & Delete fields in the directory.
-         <br/>
-       <hr />   </div>
+        <div id="logos">
               <h1 class="display--title">
-                <img class="header--logo" src="../../static/colo2.png" alt="Logo" />OUTDOOR
-       </h1>
+                <img class="header--logo"
+                src="../../static/colo2.png" alt="Logo" />INDOOR
+              </h1>
+              <div id="middle">
+                Use the forms before to List, Update, Create & Delete fields in the directory.
+                <br/>
+                  <hr />
+              </div>
+              <h1 class="display--title">
+                  <img class="header--logo" src="../../static/colo2.png" alt="Logo" />OUTDOOR
+              </h1>
+        </div>
+         <!-- end about section -->
 </div>
-
-     </div>
 </template>
 // end html ---------------------------------------------------------------------------
 <script>
@@ -44,7 +45,7 @@ export default {
   name: "TheAboutSection"
 };
 </script>
-// end js ---------------------------------------------------------------------------
+// end js -----------------------------------------------------------------------------
 <style scoped>
 #TheAboutSection {
   background-color: #2a876a;
@@ -70,6 +71,7 @@ export default {
   flex-direction: column;
 
 }
+
 .display--title {
   font-size: 1rem;
   background-color: black;
@@ -77,15 +79,12 @@ export default {
   max-width: 70px;
   padding-top: 5px;
   padding-left: 10px;
-    padding-right: 10px;
+  padding-right: 10px;
   padding-bottom: 5px;
   -webkit-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
   -moz-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
   box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
 }
-
-
-
 
 /* effect-shine -------------------------------------------------------------------*/
 .shine:hover {
