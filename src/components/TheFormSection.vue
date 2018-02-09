@@ -5,7 +5,7 @@
     <!-- indoor-delte a field -->
     <div class="animated slideInLeft form--container" id="indoor--form__delete">
            <form v-on:submit.prevent="onSubmit">
-            <p class="form--title">   Delete Indoor Field: </p>
+            <p class="form--title"> Delete Indoor Field: </p>
                 <br>
                 <input v-model="indoorFormDelete.id" placeholder="search by ID">
              <br>
@@ -20,6 +20,14 @@
                 <br>
             <input v-model="indoorFormDisplay.id" placeholder="search by ID">
              <br>
+             <!-- <select v-model="indoorFormDisplay" name="fieldType" id="fieldType">
+              <option value="" disable selected> pick a field type </option>
+              <option value="true"> Indoor </option>
+              <option value="false"> Outdoor </option>
+              </select> -->
+
+
+
             <input class="form--button" type="submit" value="Submit">
         </form>
     </div>
@@ -44,7 +52,27 @@
                    <br>
                 <input v-model="indoorFormAdd.longitude" placeholder="Longitude">
                 <br>
-                <input class="form--button" type="submit" value="Submit">
+
+<input type="radio" value="true" v-model="picked">
+<label for="indoor">Indoor</label>
+<br>
+<input type="radio" value="false" v-model="picked">
+<label for="outdoor">Outdoor</label>
+<br>
+<span>Picked: {{ picked }}</span>
+
+
+
+
+                <select v-model="indoorFormDisplay" name="fieldType" id="fieldType">
+                    <option disable value> pick a field type </option>
+                    <option value="true"> Indoor </option>
+                    <option value="false"> Outdoor </option>
+                </select>
+                <input v-on="sendData(indoorFormAdd)" 
+                class="form--button" 
+                type="submit" 
+                value="Submit">
         </form>
     </div>
 
@@ -125,7 +153,7 @@
    <!-- outdoor-update a single field -->
     <div class="animated slideInRight  test form--container" id="outdoor--form__update">
         <form v-on:submit.prevent="onSubmit">
-            <p class="form--title">   Update Outdoor Field: </p>
+            <p class="form--title"> Update Outdoor Field: </p>
                 <br>
                 <input v-model="outdoorFormUpdate.id" placeholder="ID to be updated">
                    <br>
@@ -167,11 +195,13 @@
 </template>
 
 <script>
+
 /* eslint-disable */
 export default {
   name: "TheFormSection",
   data(){
     return {
+    baseURL:"https://dbsfdoc.herokuapp.com/",
       indoorFormDelete: {
         id: "",
       },
@@ -192,6 +222,7 @@ export default {
         website: "",
         latitude: "",
         longitude: "",
+        selected: ""
       },
       indoorFormUpdate: {
         id: "",
@@ -220,11 +251,23 @@ export default {
         latitude: "",
         longitude: "",
       },
-
+    }
+  }, 
+  methods: {
+    sendData(data) {
+    fetch(this.baseURL, {
+    method: 'POST',
+    body: JSON.stringify(data), 
+    headers: new Headers({
+    'Content-Type': 'application/json'
+      })
+    }).then(res => res.json())
+      .catch(error => console.error('Error:', error))
+      .then(response => console.log('Success:', response));
     }
   }
-
 };
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

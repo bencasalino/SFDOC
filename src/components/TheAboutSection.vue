@@ -20,7 +20,7 @@
             Outdoor
           </button> -->
         </div>
-              <!-- begin outdoor -->
+        <!-- begin outdoor -->
         <div id="logos">
               <h1 class="display--title">
                 <img class="header--logo"
