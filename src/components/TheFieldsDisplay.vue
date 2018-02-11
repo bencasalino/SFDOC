@@ -7,20 +7,10 @@
         <span class="displayed--text">{{ field.city }}
         </span>
       </p>
-      <span class="label--text">ID#:
-        <span class="displayed--text">{{ field.id }}
-        </span>
-      </span>
-      <span class="label--text">Total Fields:
+      <p class="label--text">Total Fields:
         <span class="displayed--text">{{ field.fields }}
         </span>
-      </span>
-        <!-- <span class="displayed--text website--link">
-          <button>
-          <a v-bind:href="field.url"> Website
-            </a>
-          </button>
-        </span> -->
+      </p>
       <p class="label--text">Latitude:
         <span class="displayed--text">{{ field.latitude }}
         </span>
@@ -43,20 +33,10 @@
         <span class="displayed--text">{{ field.city }}
         </span>
       </p>
-      <span class="label--text">ID#:
-        <span class="displayed--text">{{ field.id }}
-        </span>
-      </span>
-      <span class="label--text">Total Fields:
+      <p class="label--text">Total Fields:
         <span class="displayed--text">{{ field.fields }}
         </span>
-      </span>
-        <!-- <span class="displayed--text website--link">
-          <button>
-          <a v-bind:href="field.url"> Website
-            </a>
-          </button>
-        </span> -->
+      </p>
       <p class="label--text">Latitude:
         <span class="displayed--text">{{ field.latitude }}
         </span>
