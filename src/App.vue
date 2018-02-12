@@ -1,39 +1,30 @@
 <template>
   <div id="app">
     <TheHeader />
-    <main>
-      <TheAboutSection />
-      <!-- <IndoorAddForm /> -->
-      <TheFormSection/>
-      <TheFieldsDisplay />
-    </main>
-      <TheFooter/>
+      <AllForms /> 
   </div>
 </template>
 
 <script>
 import TheHeader from './components/TheHeader';
-import TheAboutSection from './components/TheAboutSection';
-import TheFormSection from './components/TheFormSection';
-import TheFieldsDisplay from './components/TheFieldsDisplay';
-// import IndoorAddForm from './components/IndoorAddForm';
-import TheFooter from './components/TheFooter';
-/* eslint-disable */
+// import TheAboutSection from './components/TheAboutSection';
+import AllForms from './components/AllForms';
+// import Test from './components/Test';
+// import TheFooter from './components/TheFooter';
 
 
 export default {
   name: 'App',
   components: {
     TheHeader,
-    TheAboutSection,
-    // IndoorAddForm,
-    TheFormSection,
-    TheFieldsDisplay,
-    TheFooter
+    // TheAboutSection,
+    AllForms,
+    // Test,
+    // TheFieldsDisplay,
+    // TheFooter
   },
 }
 
-// var mymap = L.map('mapid').setView([51.505, -0.09], 13);
 </script>
 
 

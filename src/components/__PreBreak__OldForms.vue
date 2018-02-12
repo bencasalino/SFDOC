@@ -497,3 +497,42 @@ button:hover {
   padding: 0.2rem 0rem 0.5rem 1rem;
 } */
 </style>
+
+          <div id="left">
+            <div class="inline">
+                <div class="animated slideInLeft form--container" id="form__delete">
+                <!-- INDOOR DELETE FORM  -->
+                <Test />
+                </div>
+                <div class="animated slideInLeft form--container" id="form__display">
+                <!-- INDOOR DISPLAY FORM  -->
+                </div>
+            </div>
+            <div class="inline">
+            <div class="animated slideInLeft form--container" id="form__add">
+                <!-- INDOOR ADD FORM  -->
+            </div>
+            <div class="animated slideInLeft form--container" id="form__update">
+                <!-- INDOOR UPDATE FORM  -->
+            </div>
+        </div>
+        </div>
+        <div id="right">
+            <div class="inline">
+                <div class="animated slideInRight form--container" id="form__delete">
+                <!-- OUTDOOR DELETE FORM  -->
+                </div>
+                <div class="animated slideInRight form--container" id="form__display">
+                <!-- OUTDOOR DISPLAY FORM  -->
+                </div>
+            </div>
+            <div class="inline">
+            <div class="animated slideInRight form--container" id="form__add">
+                <!-- OUTDOOR ADD FORM  -->
+            </div>
+            <div class="animated slideInRight form--container" id="form__update">
+                <!-- OUTDOOR UPDATE FORM  -->
+            </div>
+        </div>
+        </div>
+

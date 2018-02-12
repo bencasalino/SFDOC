@@ -5,9 +5,9 @@
 </template>
 
 <script>
-/* eslint-disable */
+// eslint-disable
 export default {
-  name: "TheFooter"
+  name: 'TheFooter'
 };
 </script>
 
@@ -24,8 +24,10 @@ export default {
 }
 
 a {
-    list-style: none; 
-  text-decoration: none; 
+  list-style: none;
+  text-decoration: none;
 
 }
+
+
 </style>
