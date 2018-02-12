@@ -3,7 +3,7 @@
     <TheHeader />
     <main>
       <TheAboutSection />
-      <IndoorAddForm />
+      <!-- <IndoorAddForm /> -->
       <TheFormSection/>
       <TheFieldsDisplay />
     </main>
@@ -16,7 +16,7 @@ import TheHeader from './components/TheHeader';
 import TheAboutSection from './components/TheAboutSection';
 import TheFormSection from './components/TheFormSection';
 import TheFieldsDisplay from './components/TheFieldsDisplay';
-import IndoorAddForm from './components/IndoorAddForm';
+// import IndoorAddForm from './components/IndoorAddForm';
 import TheFooter from './components/TheFooter';
 /* eslint-disable */
 
@@ -26,7 +26,7 @@ export default {
   components: {
     TheHeader,
     TheAboutSection,
-    IndoorAddForm,
+    // IndoorAddForm,
     TheFormSection,
     TheFieldsDisplay,
     TheFooter

@@ -2,30 +2,22 @@
              <form v-on:submit.prevent="onSubmit">
             <p class="form--title">   Add a Field: </p>
                    <br>
-                <input v-model="outdoorFormAdd.name" class="input--default" placeholder="Name"> 
+                <input v-model="outdoorFormUpdate.name" class="input--default" placeholder="Name"> 
                    <br>
-                <input v-model="outdoorFormAdd.city" class="input--default" placeholder="City">
+                <input v-model="outdoorFormUpdate.city" class="input--default" placeholder="City">
                    <br>
-                <input v-model="outdoorFormAdd.field" 
+                <input v-model="outdoorFormUpdate.field" 
                 class="input--default" 
                 type="number" 
                 placeholder="Total fields available">
                    <br>
-                <input v-model="outdoorFormAdd.latitude" class="input--default" 
+                <input v-model="outdoorFormUpdate.latitude" class="input--default" 
                 type="number" 
                 placeholder="Latitude ex: 00.00">
                    <br>
-                <input v-model="outdoorFormAdd.longitude" class="input--default" type="number"  placeholder="Longitude ex: 00.00">
+                <input v-model="outdoorFormUpdate.longitude" class="input--default" type="number"  placeholder="Longitude ex: 00.00">
                 <br>
-                <!-- <p class="form--title">   Field type: </p> 
-                <br>
-                <input type="radio" value="true" v-model="formAdd.fieldType">
-                <label for="indoor">Indoor</label>
-                <br>
-                <input type="radio" value="false" v-model="formAdd.fieldType">
-                <label for="outdoor">Outdoor</label>
-                <br> -->
-                <input v-on="sendData(outdoorFormAdd)" 
+                <input v-on="sendData(outdoorFormUpdate)" 
                 class="form--button" 
                 type="submit" 
                 value="Submit">

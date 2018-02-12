@@ -14,10 +14,10 @@
 <script>
 /* eslint-disable */
 export default {
-  name: "TheFormSection",
+  name: "IndoorFormDisplay",
   data(){
     return {
-    baseURL:"https://dbsfdoc.herokuapp.com/outdoor",
+    baseURL:"https://dbsfdoc.herokuapp.com/indoor",
       indoorFormDisplay: {
         name: "",
       },

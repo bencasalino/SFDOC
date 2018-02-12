@@ -14,7 +14,7 @@
 <script>
 /* eslint-disable */
 export default {
-  name: "TheFormSection",
+  name: "OutdoorFromDisplay",
   data(){
     return {
     baseURL:"https://dbsfdoc.herokuapp.com/outdoor",
