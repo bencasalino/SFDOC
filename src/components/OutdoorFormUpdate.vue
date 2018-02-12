@@ -1,12 +1,14 @@
 <template>
              <form v-on:submit.prevent='onSubmit'>
-            <p class='form--title'>   Update Outdoor Field: </p>
+              <p class='form--title'>   Update Outdoor Field: </p>
                    <br>
                 <input v-model='outdoorFormUpdate.name'
-                class='input--default' placeholder='Name'>
+                class='input--default'
+                placeholder='Name'>
                    <br>
                 <input v-model='outdoorFormUpdate.city'
-                class='input--default' placeholder='City'>
+                class='input--default'
+                placeholder='City'>
                    <br>
                 <input v-model='outdoorFormUpdate.field'
                 class='input--default'
@@ -16,10 +18,11 @@
                 <input v-model='outdoorFormUpdate.latitude'
                 class='input--default'
                 type='number'
-                placeholder=' Latitude ex: 00.00'>
+                placeholder='Latitude ex: 00.00'>
                    <br>
                 <input v-model='outdoorFormUpdate.longitude'
-                class='input--default' type='number'
+                class='input--default'
+                type='number'
                 placeholder='Longitude ex: 00.00'>
                 <br>
                 <input v-on='sendData(outdoorFormUpdate)'
@@ -31,11 +34,11 @@
 
 <script>
 export default {
-  name: 'OutdoorFormAdd',
+  name: 'OutdoorFormUpdate',
   data() {
     return {
     baseURL: 'https://dbsfdoc.herokuapp.com/outdoor',
-      OutdoorFormAdd: {
+      outdoorFormUpdate: {
         name: ' ',
         city: ' ',
         field: ' ',
@@ -54,7 +57,7 @@ export default {
     'Content-Type': 'application/json'
       })
     }).then(res => res.json())
-    // eslint-disable-next-line
+      // eslint-disable-next-line
       .catch(error => console.error('Error:', error))
       // eslint-disable-next-line
       .then(response => console.log('Success:', response));
@@ -122,3 +125,4 @@ button:hover {
 }
 /* fallbacks buttons --------------- */
 </style>
+

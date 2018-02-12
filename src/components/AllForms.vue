@@ -1,47 +1,42 @@
 <template>
-  <div id="AllForms">
-    <!-- <div class="inline--flex--row"> -->
-        <IndoorFormDelete class="animated slideInLeft form--container form__delete"/>
-        <IndoorFormDisplay class="animated slideInLeft form--container form__delete"/>
-        <IndoorFormAdd class="animated slideInLeft form--container form__add"/>
-        <IndoorFormUpdate class="animated slideInLeft form--container form__add"/>
-    <!-- </div>
-        <div class="inline--flex--row"> -->
-        <OutdoorFormDelete class="animated slideInRight form--container form__delete"/>
-        <OutdoorFormDisplay class="animated slideInRight form--container form__delete"/>
-        <OutdoorFormAdd class="animated slideInRight form--container form__add"/>
-        <OutdoorFormUpdate class="animated slideInRight form--container form__add"/>
-    <!-- </div>   -->
+  <div id='AllForms'>
+    <div class='inline--flex--row'>
+        <IndoorFormDelete class='animated slideInLeft form--container form'/>
+        <IndoorFormDisplay class='animated slideInLeft form--container form'/>
+        <IndoorFormAdd class='animated slideInLeft form--container form'/>
+        <IndoorFormUpdate class='animated slideInLeft form--container form'/>
+    </div>
+        <div class='inline--flex--row'>
+        <OutdoorFormDelete class='animated slideInLeft form--container form'/>
+        <OutdoorFormDisplay class='animated slideInLeft form--container form'/>
+        <OutdoorFormAdd class='animated slideInLeft form--container form'/>
+        <OutdoorFormUpdate class='animated slideInLeft form--container form'/>
+    </div>
   </div>
 </template>
 
 <script>
+
 import IndoorFormDelete from './IndoorFormDelete';
-import OutdoorFormDelete from './OutdoorFormDelete';
-
 import IndoorFormDisplay from './IndoorFormDisplay';
-import OutdoorFormDisplay from './OutdoorFormDisplay';
-
-import IndoorFormAdd from './IndoorFormAdd';
-import OutdoorFormAdd from './OutdoorFormAdd';
-
 import IndoorFormUpdate from './IndoorFormUpdate';
+import IndoorFormAdd from './IndoorFormAdd';
+import OutdoorFormDelete from './OutdoorFormDelete';
+import OutdoorFormDisplay from './OutdoorFormDisplay';
 import OutdoorFormUpdate from './OutdoorFormUpdate';
+import OutdoorFormAdd from './OutdoorFormAdd';
 
 export default {
   name: 'AllForms',
   components: {
     IndoorFormDelete,
-    OutdoorFormDelete,
-
     IndoorFormDisplay,
-    OutdoorFormDisplay,
-
-    IndoorFormAdd,
-    OutdoorFormAdd,
-
     IndoorFormUpdate,
+    IndoorFormAdd,
+    OutdoorFormDelete,
+    OutdoorFormDisplay,
     OutdoorFormUpdate,
+    OutdoorFormAdd,
   },
 };
 
@@ -72,7 +67,8 @@ export default {
 
 
 /* forms ----------------------------- */
-/* .form__delete {
+
+.form {
   max-height: 300px;
   max-width: 200px;
   background-color: white;
@@ -80,15 +76,6 @@ export default {
   padding: 20px 2px 20px 20px;
   margin-top: 1rem;
 }
-
-.form__add {
-  max-height: 300px;
-  max-width: 200px;
-  background-color: white;
-  color: black;
-  padding: 20px 2px 20px 20px;
-  margin-top: 1rem;
-} */
 /* forms ----------------------------- */
 
 </style>

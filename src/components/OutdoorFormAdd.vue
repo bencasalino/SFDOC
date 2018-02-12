@@ -1,12 +1,14 @@
 <template>
-             <form v-on:submit.prevent='onSubmit'>
-            <p class='form--title'>   Add Outdoor Field: </p>
+        <form v-on:submit.prevent='onSubmit'>
+            <p class='form--title'> Add Outdoor Field: </p>
                    <br>
                 <input v-model='outdoorFormAdd.name'
-                class='input--default' placeholder='Name'>
+                class='input--default'
+                placeholder='Name'>
                    <br>
                 <input v-model='outdoorFormAdd.city'
-                class='input--default' placeholder='City'>
+                class='input--default'
+                placeholder='City'>
                    <br>
                 <input v-model='outdoorFormAdd.field'
                 class='input--default'
@@ -36,7 +38,7 @@ export default {
   data() {
     return {
     baseURL: 'https://dbsfdoc.herokuapp.com/outdoor',
-      OutdoorFormAdd: {
+      outdoorFormAdd: {
         name: ' ',
         city: ' ',
         field: ' ',
@@ -45,7 +47,6 @@ export default {
       },
       };
       },
-
   methods: {
     sendData(data) {
     fetch(this.baseURL, {
@@ -55,7 +56,7 @@ export default {
     'Content-Type': 'application/json'
       })
     }).then(res => res.json())
-    // eslint-disable-next-line
+       // eslint-disable-next-line
       .catch(error => console.error('Error:', error))
       // eslint-disable-next-line
       .then(response => console.log('Success:', response));
@@ -123,3 +124,4 @@ button:hover {
 }
 /* fallbacks buttons --------------- */
 </style>
+

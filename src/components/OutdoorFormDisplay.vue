@@ -1,14 +1,13 @@
 <template>
     <form v-on:submit.prevent='onSubmit'>
-        <p class='form--title'> Display Outdoor Field:</p>
-        <br>
-        <input v-model='outdoorFormDisplay.name'
-        placeholder='Search by name'>
-        <br>
-        <input v-on='sendData(outdoorFormDisplay)'
-            class='form--button'
-            type='submit'
-            value='Submit'>
+    <p class='form--title'> Show Outdoor Field: </p>
+    <br>
+    <input v-model='outdoorFormDisplay.name' placeholder='Search by name'>
+    <br>
+    <input v-on='sendData(outdoorFormDisplay)'
+        class='form--button'
+        type='submit'
+        value='Submit'>
     </form>
 </template>
 
@@ -16,18 +15,19 @@
 /* eslint-disable */
 export default {
   name: 'OutdoorFormDisplay',
-  data() {
+  data() { 
     return {
     baseURL: 'https://dbsfdoc.herokuapp.com/outdoor',
       outdoorFormDisplay: {
-        name: '',
+        name: ' ',
       },
-    }
-  }, 
+      };
+      },
+
   methods: {
     sendData(data) {
     fetch(this.baseURL, {
-    method: 'GET',
+    method: 'DELETE',
     body: JSON.stringify(data), 
     headers: new Headers({
     'Content-Type': 'application/json'
@@ -103,3 +103,4 @@ button:hover {
 /* fallbacks buttons --------------- */
 
 </style>
+

@@ -1,25 +1,25 @@
 <template>
-    <form v-on:submit.prevent="onSubmit">
-    <p class="form--title"> Show Indoor Field: </p>
+    <form v-on:submit.prevent='onSubmit'>
+    <p class='form--title'> Show Indoor Field: </p>
     <br>
-    <input v-model="indoorFormDisplay.name" placeholder="Search by name">
+    <input v-model='indoorFormDisplay.name' placeholder='Search by name'>
     <br>
-    <input v-on="sendData(indoorFormDisplay)"
-        class="form--button"
-        type="submit"
-        value="Submit">
+    <input v-on='sendData(indoorFormDisplay)'
+        class='form--button'
+        type='submit'
+        value='Submit'>
     </form>
 </template>
 
 <script>
 /* eslint-disable */
 export default {
-  name: "IndoorFormDisplay",
+  name: 'IndoorFormDisplay',
   data() { 
     return {
     baseURL: 'https://dbsfdoc.herokuapp.com/indoor',
       indoorFormDisplay: {
-        name: " ",
+        name: ' ',
       },
       };
       },
@@ -51,7 +51,7 @@ button {
   color: white;
   padding: 4px;
   border-radius: 4px;
-  font-family: "Arvo", serif;
+  font-family: 'Arvo', serif;
   margin: 1rem 1rem 1rem 1rem;
   border: 2px rgba(0, 0, 0, 0.05) solid;
   font-size: 1rem;
@@ -63,7 +63,7 @@ button:hover {
   padding: 4px;
   color: black;
   border-radius: 6px;
-  font-family: "Arvo", serif;
+  font-family: 'Arvo', serif;
   margin: 1rem 1rem 1rem 1rem;
   border: 2px rgba(0, 0, 0, 0.05) solid;
 }
@@ -73,7 +73,7 @@ button:hover {
   color: white;
   padding: 8px;
   border-radius: 4px;
-  font-family: "Arvo", serif;
+  font-family: 'Arvo', serif;
   /* margin:1rem 1rem 1rem 1rem; */
   border: 2px rgba(0, 0, 0, 0.05) solid;
   font-size: 1rem;
@@ -88,7 +88,7 @@ button:hover {
   padding: 8px;
   color: black;
   border-radius: 6px;
-  font-family: "Arvo", serif;
+  font-family: 'Arvo', serif;
   /* margin:1rem 1rem 1rem 1rem; */
   border: 2px rgba(0, 0, 0, 0.05) solid;
    cursor: pointer;
