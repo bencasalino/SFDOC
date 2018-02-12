@@ -1,6 +1,6 @@
 <template>
-             <form v-on:submit.prevent="onSubmit">
-            <p class="form--title">   Add a Field: </p>
+        <form v-on:submit.prevent="onSubmit">
+            <p class="form--title"> Add a Field: </p>
                    <br>
                 <input v-model="indoorFormAdd.name" class="input--default" placeholder="Name"> 
                    <br>
