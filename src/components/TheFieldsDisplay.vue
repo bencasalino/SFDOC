@@ -1,6 +1,6 @@
 <template>
 <div class="container">
-  <div v-bind:key="field.id" v-for="field in data.outdoor" class="indoor">
+  <!-- <div v-bind:key="field.id" v-for="field in data.outdoor" class="indoor">
       <p class="field--name__text">{{ field.name }}</p>
             <div class="fieldinfo--wrapper">
       <p class="label--text__city">City:
@@ -19,14 +19,12 @@
         <span class="displayed--text">{{ field.longitude }}
         </span>
       </span>
-      <!-- field info wrapper  -->
       </div>
        <br>
       <div id="map"></div>
-      <!-- indoor wrapper  -->
-  </div>
+  </div> -->
 <!-- <br> -->
-  <div v-bind:key="field.id" v-for="field in data.indoor" class="outdoor">
+  <div v-bind:key="field.name" v-for="field in data.indoor" class="outdoor">
       <p class="field--name__text">{{ field.name }}</p>
       <div class="fieldinfo--wrapper">
       <p class="label--text__city">City:
@@ -78,15 +76,6 @@ export default {
     }
   }
 };
-
-// map function 
-      // var map;
-      // function initMap() {
-      //   map = new google.maps.Map(document.getElementById('map'), {
-      //     center: {lat: -34.397, lng: 150.644},
-      //     zoom: 8
-      //   });
-      // }
 </script>
 
 <style scoped>

@@ -45,14 +45,14 @@
                    <br>
                 <input v-model="formAdd.longitude" class="input--default" placeholder="Longitude ex: 00.00">
                 <br>
-                <p class="form--title">   Field type: </p> 
+                <!-- <p class="form--title">   Field type: </p> 
                 <br>
                 <input type="radio" value="true" v-model="formAdd.fieldType">
                 <label for="indoor">Indoor</label>
                 <br>
                 <input type="radio" value="false" v-model="formAdd.fieldType">
                 <label for="outdoor">Outdoor</label>
-                <br>
+                <br> -->
                 <input v-on="sendData(formAdd)" 
                 class="form--button" 
                 type="submit" 
@@ -74,14 +74,14 @@
                    <br>
                 <input v-model="formUpdate.longitude" class="input--default" placeholder="Longitude ex: 00.00">
                 <br>
-                <p class="form--title">   Field type: </p> 
+                <!-- <p class="form--title">   Field type: </p> 
                 <br>
                 <input type="radio" value="true" v-model="formUpdate.fieldType">
                 <label for="indoor">Indoor</label>
                 <br>
                 <input type="radio" value="false" v-model="formUpdate.fieldType">
                 <label for="outdoor">Outdoor</label>
-                <br>
+                <br> -->
                 <input v-on="sendData(formUpdate)" 
                 class="form--button" 
                 type="submit" 
@@ -111,7 +111,7 @@ export default {
   name: "TheFormSection",
   data(){
     return {
-    baseURL:"https://dbsfdoc.herokuapp.com/",
+    baseURL:"https://dbsfdoc.herokuapp.com/indoor",
       formDelete: {
         name: "",
       },
@@ -124,7 +124,7 @@ export default {
         field: "",
         latitude: "",
         longitude: "",
-        fieldType: ""
+        // fieldType: ""
       },
       formUpdate: {
         name: "",
@@ -132,7 +132,7 @@ export default {
         field: "",
         latitude: "",
         longitude: "",
-        fieldType: ""
+        // fieldType: ""
       },
     }
   }, 
