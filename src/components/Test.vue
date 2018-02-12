@@ -1,7 +1,5 @@
 <template>
-<div>
-test inside 
- </div>
+<div>test inside</div>
 </template>
 
 <script>

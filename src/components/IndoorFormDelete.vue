@@ -4,19 +4,20 @@
     <br>
     <input v-model="indoorFormDelete.name" placeholder="Search by name">
     <br>
-    <input v-on="sendData(indoorFormDelete)" 
-        class="form--button" 
-        type="submit" 
+    <input v-on="sendData(indoorFormDelete)"
+        class="form--button"
+        type="submit"
         value="Submit">
-    </form>  
+    </form>
 </template>
 
 <script>
+/* eslint-disable */
 export default {
   name: "IndoorFormDelete",
-  data(){
+  data(){ 
     return {
-    baseURL:"https://dbsfdoc.herokuapp.com/indoor",
+    baseURL: 'https://dbsfdoc.herokuapp.com/indoor',
       indoorFormDelete: {
         name: " ",
       },
@@ -39,7 +40,63 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+/* fallbacks buttons --------------- */
+button {
+  display: block;
+  background-color: #2a876a;
+  color: white;
+  padding: 4px;
+  border-radius: 4px;
+  font-family: "Arvo", serif;
+  margin: 1rem 1rem 1rem 1rem;
+  border: 2px rgba(0, 0, 0, 0.05) solid;
+  font-size: 1rem;
+}
 
+button:hover {
+  display: block;
+  background-color: gold;
+  padding: 4px;
+  color: black;
+  border-radius: 6px;
+  font-family: "Arvo", serif;
+  margin: 1rem 1rem 1rem 1rem;
+  border: 2px rgba(0, 0, 0, 0.05) solid;
+}
+
+.form--button {
+  background-color: #2a876a;
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+  font-family: "Arvo", serif;
+  /* margin:1rem 1rem 1rem 1rem; */
+  border: 2px rgba(0, 0, 0, 0.05) solid;
+  font-size: 1rem;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
+
+.form--button:hover {
+  background-color: gold;
+  padding: 8px;
+  color: black;
+  border-radius: 6px;
+  font-family: "Arvo", serif;
+  /* margin:1rem 1rem 1rem 1rem; */
+  border: 2px rgba(0, 0, 0, 0.05) solid;
+   cursor: pointer;
+  -webkit-box-shadow: 0px 10px 5px -2px rgba(124, 42, 42, 0.83);
+  -moz-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.83);
+  box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.83);
+  -webkit-transition: box-shadow 1s ease-in;
+  -moz-transition: box-shadow 1s ease-in;
+  -o-transition: box-shadow 1s ease-in;
+  transition: box-shadow  1s ease-in;
+}
+/* fallbacks buttons --------------- */
 </style>
 

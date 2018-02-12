@@ -1,27 +1,31 @@
 <template>
   <div id="app">
     <TheHeader />
-      <AllForms /> 
+    <main>
+      <TheAboutSection />
+      <AllForms />
+    </main>
+    <TheFooter />
   </div>
 </template>
 
 <script>
 import TheHeader from './components/TheHeader';
-// import TheAboutSection from './components/TheAboutSection';
+import TheAboutSection from './components/TheAboutSection';
 import AllForms from './components/AllForms';
 // import Test from './components/Test';
-// import TheFooter from './components/TheFooter';
+import TheFooter from './components/TheFooter';
 
-
+/* eslint-disable */
 export default {
   name: 'App',
   components: {
     TheHeader,
-    // TheAboutSection,
+    TheAboutSection,
     AllForms,
     // Test,
     // TheFieldsDisplay,
-    // TheFooter
+    TheFooter
   },
 }
 

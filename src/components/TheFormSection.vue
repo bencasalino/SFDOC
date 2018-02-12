@@ -192,10 +192,6 @@ button:hover {
   -moz-transition: background-color 2s ease-out;
   -o-transition: background-color 2s ease-out;
   transition: background-color 2s ease-out;
-
-
-
-
 }
 
 .form--button:hover {
@@ -217,31 +213,6 @@ button:hover {
   
 }
 
-/* fallbacks end  */
-
-#TheFormSection {
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-between;
-}
-
-#left {
-  color:black;
-}
-
-#right {
-  color:black;
-}
-
-/* crud---------------------------------------------------------------------- */
-#form__delete {
-  max-height: 300px;
-  max-width: 200px;
-  background-color: white;
-  color: black;
-  padding: 20px 2px 20px 20px;
-  margin-top: 1rem;
-}
 
 #form__display {
   max-height: 300px;

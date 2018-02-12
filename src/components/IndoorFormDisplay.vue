@@ -1,68 +1,46 @@
 <template>
-  <div id="AllForms">
-    <div class="inline--flex--row">
-        <IndoorFormDelete class="animated slideInLeft form--container form__delete"/>
-        <IndoorFormDisplay class="animated slideInLeft form--container form__delete"/>
-    </div>
-    <br />
-    <div class="inline--flex--row">
-      <OutdoorFormDelete class="animated slideInRight form--container form__delete"/>
-      <OutdoorFormDisplay class="animated slideInRight form--container form__delete"/>
-    </div>
-  </div>
+    <form v-on:submit.prevent="onSubmit">
+    <p class="form--title"> Delete a Field: </p>
+    <br>
+    <input v-model="indoorFormDisplay.name" placeholder="Search by name">
+    <br>
+    <input v-on="sendData(indoorFormDisplay)"
+        class="form--button"
+        type="submit"
+        value="Submit">
+    </form>
 </template>
 
 <script>
-import IndoorFormDelete from './IndoorFormDelete';
-import OutdoorFormDelete from './OutdoorFormDelete';
-import IndoorFormDisplay from './IndoorFormDisplay';
-import OutdoorFormDisplay from './IndoorFormDisplay';
-
+/* eslint-disable */
 export default {
-  name: 'AllForms',
-  components: {
-    IndoorFormDelete,
-    OutdoorFormDelete,
-    IndoorFormDisplay,
-    OutdoorFormDisplay,
-  },
-};
+  name: "IndoorFormDisplay",
+  data(){ 
+    return {
+    baseURL: 'https://dbsfdoc.herokuapp.com/indoor',
+      indoorFormDisplay: {
+        name: " ",
+      },
+      }
+      },
 
+  methods: {
+    sendData(data) {
+    fetch(this.baseURL, {
+    method: 'DELETE',
+    body: JSON.stringify(data), 
+    headers: new Headers({
+    'Content-Type': 'application/json'
+      })
+    }).then(res => res.json())
+      .catch(error => console.error('Error:', error))
+      .then(response => console.log('Success:', response));
+    }
+  }
+};
 </script>
 
 <style scoped>
-/* display styles------------------------- */
-#AllForms {
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-between;
-  color: black;
-}
-
-.inline--flex--row {
-  display: flex;
-  flex-direction: row;
-}
-
-.form--container {
-  -webkit-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
-  -moz-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
-  box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
-}
-/* display styles------------------------- */
-
-
-/* forms ----------------------------- */
-.form__delete {
-  max-height: 300px;
-  max-width: 200px;
-  background-color: white;
-  color: black;
-  padding: 20px 2px 20px 20px;
-  margin-top: 1rem;
-}
-/* forms ----------------------------- */
-
 /* fallbacks buttons --------------- */
 button {
   display: block;
@@ -120,5 +98,5 @@ button:hover {
   transition: box-shadow  1s ease-in;
 }
 /* fallbacks buttons --------------- */
-
 </style>
+
