@@ -4,6 +4,7 @@
     <main>
       <TheAboutSection />
       <AllForms />
+      <!-- <TheFieldsDisplay /> -->
     </main>
     <TheFooter />
   </div>
@@ -14,6 +15,7 @@ import TheHeader from './components/TheHeader';
 import TheAboutSection from './components/TheAboutSection';
 import AllForms from './components/AllForms';
 // import Test from './components/Test';
+// import TheFieldsDisplay from './components/TheFieldsDisplay';
 import TheFooter from './components/TheFooter';
 
 /* eslint-disable */
@@ -30,7 +32,6 @@ export default {
 }
 
 </script>
-
 
 <style scoped>
 /* fonts imports------------------------------------------------------------------ */

@@ -1,6 +1,6 @@
 <template>
     <form v-on:submit.prevent='onSubmit'>
-    <p class='form--title'> Delete a Field: </p>
+    <p class='form--title'> Delete Outdoor Field: </p>
     <br>
     <input v-model='outdoorFormDelete.name' placeholder='Search by name'>
     <br>
@@ -14,7 +14,7 @@
 <script>
 /* eslint-disable */
 export default {
-  name: 'OutdoorFromDelete',
+  name: 'OutdoorFormDelete',
   data(){ 
     return {
     baseURL: 'https://dbsfdoc.herokuapp.com/outdoor',
@@ -39,8 +39,8 @@ export default {
   }
 };
 </script>
+<style scoped>
 
-<style>
 /* fallbacks buttons --------------- */
 button {
   display: block;
@@ -98,5 +98,6 @@ button:hover {
   transition: box-shadow  1s ease-in;
 }
 /* fallbacks buttons --------------- */
+
 </style>
 

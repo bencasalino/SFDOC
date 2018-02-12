@@ -1,6 +1,6 @@
 <template>
     <form v-on:submit.prevent="onSubmit">
-    <p class="form--title"> Delete a Field: </p>
+    <p class="form--title"> Delete Indoor Field: </p>
     <br>
     <input v-model="indoorFormDelete.name" placeholder="Search by name">
     <br>
@@ -41,6 +41,7 @@ export default {
 </script>
 
 <style scoped>
+
 /* fallbacks buttons --------------- */
 button {
   display: block;
@@ -98,5 +99,6 @@ button:hover {
   transition: box-shadow  1s ease-in;
 }
 /* fallbacks buttons --------------- */
+
 </style>
 
