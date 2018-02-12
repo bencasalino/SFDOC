@@ -20,7 +20,7 @@ export default {
     return {
     baseURL: 'https://dbsfdoc.herokuapp.com/indoor',
       indoorFormDelete: {
-        name: ' ',
+        name: '',
       },
       }
       },
@@ -75,7 +75,7 @@ button:hover {
   padding: 8px;
   border-radius: 4px;
   font-family: 'Arvo', serif;
-  /* margin:1rem 1rem 1rem 1rem; */
+  margin:1rem 0 0 0;
   border: 2px rgba(0, 0, 0, 0.05) solid;
   font-size: 1rem;
   -webkit-transition: background-color 2s ease-out;
@@ -90,7 +90,7 @@ button:hover {
   color: black;
   border-radius: 6px;
   font-family: 'Arvo', serif;
-  /* margin:1rem 1rem 1rem 1rem; */
+  margin:1rem 0 0 0;
   border: 2px rgba(0, 0, 0, 0.05) solid;
    cursor: pointer;
   -webkit-box-shadow: 0px 10px 5px -2px rgba(124, 42, 42, 0.83);
