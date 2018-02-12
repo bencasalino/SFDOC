@@ -20,15 +20,13 @@ import IndoorFormDelete from './IndoorFormDelete';
 import OutdoorFormDelete from './OutdoorFormDelete';
 
 import IndoorFormDisplay from './IndoorFormDisplay';
-import OutdoorFormDisplay from './IndoorFormDisplay';
+import OutdoorFormDisplay from './OutdoorFormDisplay';
 
 import IndoorFormAdd from './IndoorFormAdd';
 import OutdoorFormAdd from './OutdoorFormAdd';
 
 import IndoorFormUpdate from './IndoorFormUpdate';
 import OutdoorFormUpdate from './OutdoorFormUpdate';
-
-
 
 export default {
   name: 'AllForms',

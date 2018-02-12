@@ -55,7 +55,9 @@ export default {
     'Content-Type': 'application/json'
       })
     }).then(res => res.json())
+    // eslint-disable-next-line
       .catch(error => console.error('Error:', error))
+      // eslint-disable-next-line
       .then(response => console.log('Success:', response));
     }
   }

@@ -1,25 +1,26 @@
 <template>
-    <form v-on:submit.prevent="onSubmit">
-        <p class="form--title"> Display Outdoor Field:</p>
+    <form v-on:submit.prevent='onSubmit'>
+        <p class='form--title'> Display Outdoor Field:</p>
         <br>
-        <input v-model="outdoorFormDisplay.name" placeholder="Search by name">
+        <input v-model='outdoorFormDisplay.name'
+        placeholder='Search by name'>
         <br>
-        <input v-on="sendData(outdoorFormDisplay)" 
-            class="form--button" 
-            type="submit" 
-            value="Submit">
+        <input v-on='sendData(outdoorFormDisplay)'
+            class='form--button'
+            type='submit'
+            value='Submit'>
     </form>
 </template>
 
 <script>
 /* eslint-disable */
 export default {
-  name: "OutdoorFormDisplay",
-  data(){
+  name: 'OutdoorFormDisplay',
+  data() {
     return {
-    baseURL:"https://dbsfdoc.herokuapp.com/outdoor",
+    baseURL: 'https://dbsfdoc.herokuapp.com/outdoor',
       outdoorFormDisplay: {
-        name: "",
+        name: '',
       },
     }
   }, 
@@ -32,7 +33,9 @@ export default {
     'Content-Type': 'application/json'
       })
     }).then(res => res.json())
+    // eslint-disable-next-line
       .catch(error => console.error('Error:', error))
+      // eslint-disable-next-line
       .then(response => console.log('Success:', response));
     }
   }
@@ -48,7 +51,7 @@ button {
   color: white;
   padding: 4px;
   border-radius: 4px;
-  font-family: "Arvo", serif;
+  font-family: 'Arvo', serif;
   margin: 1rem 1rem 1rem 1rem;
   border: 2px rgba(0, 0, 0, 0.05) solid;
   font-size: 1rem;
@@ -60,7 +63,7 @@ button:hover {
   padding: 4px;
   color: black;
   border-radius: 6px;
-  font-family: "Arvo", serif;
+  font-family: 'Arvo', serif;
   margin: 1rem 1rem 1rem 1rem;
   border: 2px rgba(0, 0, 0, 0.05) solid;
 }
@@ -70,7 +73,7 @@ button:hover {
   color: white;
   padding: 8px;
   border-radius: 4px;
-  font-family: "Arvo", serif;
+  font-family: 'Arvo', serif;
   /* margin:1rem 1rem 1rem 1rem; */
   border: 2px rgba(0, 0, 0, 0.05) solid;
   font-size: 1rem;
@@ -85,7 +88,7 @@ button:hover {
   padding: 8px;
   color: black;
   border-radius: 6px;
-  font-family: "Arvo", serif;
+  font-family: 'Arvo', serif;
   /* margin:1rem 1rem 1rem 1rem; */
   border: 2px rgba(0, 0, 0, 0.05) solid;
    cursor: pointer;
