@@ -66,6 +66,7 @@ export default {
 </script>
 
 <style scoped>
+
 /* fallbacks buttons --------------- */
 button {
   display: block;
