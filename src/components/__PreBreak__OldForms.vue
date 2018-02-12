@@ -272,52 +272,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-/* fallbacks buttons  */
-button {
-  display: block;
-  background-color: #2a876a;
-  color: white;
-  padding: 4px;
-  border-radius: 4px;
-  font-family: "Arvo", serif;
-  margin: 1rem 1rem 1rem 1rem;
-  border: 2px rgba(0, 0, 0, 0.05) solid;
-  font-size: 1rem;
-}
 
-button:hover {
-  display: block;
-  background-color: gold;
-  padding: 4px;
-  color: black;
-  border-radius: 6px;
-  font-family: "Arvo", serif;
-  margin: 1rem 1rem 1rem 1rem;
-  border: 2px rgba(0, 0, 0, 0.05) solid;
-}
-
-.form--button {
-  background-color: #2a876a;
-  color: white;
-  padding: 8px;
-  border-radius: 4px;
-  font-family: "Arvo", serif;
-  /* margin:1rem 1rem 1rem 1rem; */
-  border: 2px rgba(0, 0, 0, 0.05) solid;
-  font-size: 1rem;
-}
-
-.form--button:hover {
-  background-color: gold;
-  padding: 8px;
-  color: black;
-  border-radius: 6px;
-  font-family: "Arvo", serif;
-  /* margin:1rem 1rem 1rem 1rem; */
-  border: 2px rgba(0, 0, 0, 0.05) solid;
-}
-
-/* fallbacks end  */
 
 #TheFormSection {
   margin-top: 20px;
@@ -333,206 +288,17 @@ button:hover {
   color:black;
 }
 
-/* indoor---------------------------------------------------------------------- */
-#indoor--form__delete {
-  max-height: 300px;
-  max-width: 200px;
-  background-color: white;
-  color: black;
-  padding: 20px 2px 20px 20px;
-  margin-top: 1rem;
-}
-
-#indoor--form__display {
-  max-height: 300px;
-  max-width: 200px;
-  background-color: white;
-  color: black;
-  padding: 20px 2px 20px 20px;
-  margin-top: 1rem;
-}
-/* indoor---------------------------------------------------------------------- */
-#indoor--form__add {
-  max-height: 300px;
-  max-width: 200px;
-  background-color: white;
-  color: black;
-  padding: 20px 2px 20px 20px;
-  margin-top: 1rem;
-}
-
-#indoor--form__update {
-  max-height: 300px;
-  max-width: 200px;
-  background-color: white;
-  color: black;
-  padding: 20px 2px 20px 20px;
-  margin-top: 1rem;
-}
-
-/* outdoor---------------------------------------------------------------------- */
-
-#outdoor--form__delete {
-  max-height: 300px;
-  max-width: 200px;
-  background-color: white;
-  color: black;
-  padding: 20px 2px 20px 20px;
-  margin-top: 1rem;
-}
-
-#outdoor--form__display {
-  max-height: 300px;
-  max-width: 200px;
-  background-color: white;
-  color: black;
-  padding: 20px 2px 20px 20px;
-  margin-top: 1rem;
-}
-/* outdoor---------------------------------------------------------------------- */
-
-#outdoor--form__add {
-  max-height: 300px;
-  max-width: 200px;
-  background-color: white;
-  color: black;
-  padding: 20px 2px 20px 20px;
-  margin-top: 1rem;
-}
-#outdoor--form__update {
-  max-height: 300px;
-  max-width: 200px;
-  background-color: white;
-  color: black;
-  padding: 20px 2px 20px 20px;
-  margin-top: 1rem;
-}
-
-.form--button {
-  margin: 10px 0 0 0;
-}
 
 
 
-.form--container {
-  -webkit-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
-  -moz-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
-  box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
-}
 
 .inline {
   display: flex;
   flex-direction: row;
 }
 
-/* .display--title {
-  font-size: 1rem;
-  background-color: black;
-  color: white;
-  max-width: 70px;
-  padding-top: 5px;
-  padding-left: 10px;
-  padding-bottom: 5px;
-  -webkit-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
-  -moz-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
-  box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
-} */
 
-/* .header--logo {
-  max-height: 50px;
-  display: flex;
-  flex-direction: row;
-} */
 
-/* .test {
-  float: right;
-  color:#2a876a;
-} */
-
-/* field show styles  */
-
-/* .info {
-  background-color: white;
-  height: 200px;
-  width: 250px;
-  -webkit-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
-  -moz-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
-  box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
-} */
-
-/* .map {
-  background-color: white;
-  height: 200px;
-  width: 200px;
-  -webkit-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
-  -moz-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
-  box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
-} */
-/* .name {
-  font-size: 1.5rem;
-  padding: 0.4rem 0rem 1rem 1rem;
-}
-
-.city {
-  font-size: 1rem;
-  padding: 0rem 0rem 0.5rem 1rem;
-}
-
-.fields {
-  font-size: 1rem;
-  padding: 0.2rem 0rem 0.5rem 1rem;
-}
-.id {
-  font-size: 1rem;
-  padding: 0.2rem 0rem 0.5rem 1rem;
-}
-
-.long {
-  font-size: 0.85rem;
-  padding: 0.2rem 0rem 0.5rem 1rem;
-}
-
-.lat {
-  font-size: 0.85rem;
-  padding: 0.2rem 0rem 0.5rem 1rem;
-} */
 </style>
 
-          <div id="left">
-            <div class="inline">
-                <div class="animated slideInLeft form--container" id="form__delete">
-                <!-- INDOOR DELETE FORM  -->
-                <Test />
-                </div>
-                <div class="animated slideInLeft form--container" id="form__display">
-                <!-- INDOOR DISPLAY FORM  -->
-                </div>
-            </div>
-            <div class="inline">
-            <div class="animated slideInLeft form--container" id="form__add">
-                <!-- INDOOR ADD FORM  -->
-            </div>
-            <div class="animated slideInLeft form--container" id="form__update">
-                <!-- INDOOR UPDATE FORM  -->
-            </div>
-        </div>
-        </div>
-        <div id="right">
-            <div class="inline">
-                <div class="animated slideInRight form--container" id="form__delete">
-                <!-- OUTDOOR DELETE FORM  -->
-                </div>
-                <div class="animated slideInRight form--container" id="form__display">
-                <!-- OUTDOOR DISPLAY FORM  -->
-                </div>
-            </div>
-            <div class="inline">
-            <div class="animated slideInRight form--container" id="form__add">
-                <!-- OUTDOOR ADD FORM  -->
-            </div>
-            <div class="animated slideInRight form--container" id="form__update">
-                <!-- OUTDOOR UPDATE FORM  -->
-            </div>
-        </div>
-        </div>
 
