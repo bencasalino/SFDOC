@@ -9,8 +9,10 @@
      </div>
     <div class="container--getstarted">
         <p class="text--getstarted" href="#">Get Started!</p>
+          <a href="#start">
           <img class="image--arrow animated zoomInDown"
           src="../../static/white-arrow.png" alt="arrow image" />
+          </a>
         </div>
          <div class="cta--container">
         </div>
@@ -155,6 +157,7 @@ button:hover {
   max-height: 40px;
   max-width: 40px;
   color:white;
+  cursor: pointer;
 }
 
 .cta--container {
