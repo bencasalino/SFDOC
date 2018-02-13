@@ -1,53 +1,57 @@
 <template>
-<div class="container">
-<div v-bind:key="field.name" v-for="field in data.indoorfields" class="indoor">
-      <p class="field--name__text">{{ field.name }}</p>
-            <div class="fieldinfo--wrapper">
-      <p class="label--text__city">City:
-        <span class="displayed--text">{{ field.city }}
-        </span>
-      </p>
-      <p class="label--text">Total Fields:
-        <span class="displayed--text">{{ field.fields }}
-        </span>
-      </p>
-      <p class="label--text">Latitude:
-        <span class="displayed--text">{{ field.latitude }}
-        </span>
-      </p>
-      <span class="label--text">Longitude:
-        <span class="displayed--text">{{ field.longitude }}
-        </span>
-      </span>
-      </div>
-       <br>
-      <div id="map"></div>
-  </div>
+<div id="field--display--container">
+  <div id="indoor">
+    <div v-bind:key="field.name" v-for="field in data.indoorfields" class="card">
+                <p class="field--name__text">{{ field.name }}</p>
+              <div class="fieldinfo--wrapper">
+                <p class="label--text__city">City:
+                  <span class="displayed--text">{{ field.city }}
+                  </span>
+                </p>
+                <p class="label--text">Total Fields:
+                  <span class="displayed--text">{{ field.fields }}
+                  </span>
+                </p>
+                <p class="label--text">Latitude:
+                  <span class="displayed--text">{{ field.latitude }}
+                  </span>
+                </p>
+                <span class="label--text">Longitude:
+                  <span class="displayed--text">{{ field.longitude }}
+                  </span>
+                </span>
+                </div>
+                <br>
+                <div id="map"></div>
+          </div>
+    </div>
 <!-- <br> -->
-  <div v-bind:key="field.name" v-for="field in data.outdoorfields" class="outdoor">
-      <p class="field--name__text">{{ field.name }}</p>
-      <div class="fieldinfo--wrapper">
-      <p class="label--text__city">City:
-        <span class="displayed--text">{{ field.city }}
-        </span>
-      </p>
-      <p class="label--text">Total Fields:
-        <span class="displayed--text">{{ field.fields }}
-        </span>
-      </p>
-      <p class="label--text">Latitude:
-        <span class="displayed--text">{{ field.latitude }}
-        </span>
-      </p>
-      <p class="label--text">Longitude:
-        <span class="displayed--text">{{ field.longitude }}
-        </span>
-      </p>
-      <br>
-      <!-- info wrapper -->
-      </div>
-      <div id="map"></div>
-      <!-- outdoor -->
+  <div id="outdoor">
+    <div v-bind:key="field.name" v-for="field in data.outdoorfields" class="card">
+            <p class="field--name__text">{{ field.name }}</p>
+            <div class="fieldinfo--wrapper">
+            <p class="label--text__city">City:
+              <span class="displayed--text">{{ field.city }}
+              </span>
+            </p>
+            <p class="label--text">Total Fields:
+              <span class="displayed--text">{{ field.fields }}
+              </span>
+            </p>
+            <p class="label--text">Latitude:
+              <span class="displayed--text">{{ field.latitude }}
+              </span>
+            </p>
+            <p class="label--text">Longitude:
+              <span class="displayed--text">{{ field.longitude }}
+              </span>
+            </p>
+            <br>
+            <!-- info wrapper -->
+            </div>
+            <div id="map"></div>
+            <!-- outdoor -->
+    </div>
   </div>
   <!--  main cont -->
 </div>
@@ -80,15 +84,15 @@ export default {
 
 <style scoped>
 
-.container {
-  height:500px;
-  padding: 0 .5rem 1rem .5rem;
+#field--display--container {
+/* height:500px; */
+padding: 0 .5rem 1rem .5rem;
 display: flex; 
 justify-content: space-between;
 /* flex-direction: column; */
 }
 
-.indoor {
+.card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -102,22 +106,18 @@ justify-content: space-between;
     -webkit-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
   -moz-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
   box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
+  margin-bottom: 3.5rem;
 }
 
-.outdoor {
+#indoor {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-height: 320px;
-  max-width: 300px;
-  min-height: 250px;
-  min-width: 250px;
-  color: black; 
-  background-color: white;
-  padding:10px;
-    -webkit-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
-  -moz-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
-  box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+#outdoor {
+   display: flex;
+  justify-content: space-around;
+  flex-flow: wrap; 
 }
 
 
