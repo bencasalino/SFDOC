@@ -13,12 +13,6 @@
           src="../../static/white-arrow.png" alt="arrow image" />
         </div>
          <div class="cta--container">
-          <!-- <button class="cta--indoor">
-            Indoor
-          </button>
-          <button class="cta--outdoor">
-            Outdoor
-          </button> -->
         </div>
         <!-- begin outdoor -->
         <div id="logos">
@@ -26,11 +20,6 @@
                 <img class="header--logo"
                 src="../../static/colo2.png" alt="Logo" />INDOOR
               </h1>
-              <div id="middle">
-                Use the forms before to List, Update, Create & Delete fields in the directory.
-                <br/>
-                  <hr />
-              </div>
               <h1 class="display--title">
                   <img class="header--logo" src="../../static/colo2.png" alt="Logo" />OUTDOOR
               </h1>
@@ -176,27 +165,6 @@ button:hover {
     align-items: center;
 }
 
-/* .cta--outdoor{
-margin-left:150px;
-}
-
-.cta--outdoor{
-margin-right:20px;
-}
-
-.cta--outdoor:hover{
-margin-left:150px;
-}
-
-.cta--outdoor:hover{
-margin-right:20px;
-} */
-
-#middle {
-  max-width: 550px;
-  font-size: 1.2rem;
-  padding-bottom: 10px;
-}
 
 
 

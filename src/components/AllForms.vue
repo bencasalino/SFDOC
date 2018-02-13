@@ -10,7 +10,13 @@
         <IndoorFormUpdate class='animated slideInLeft form'/>
     </div>
     </div>
-    <br>
+    <div id='middle' class='animated zoomIn'>
+      Use the forms to List, Update, Create & Delete fields in the directory.
+      <br>
+      <img class="middlelogo"
+      src="../../static/wtf_hover.svg"
+      alt="SFDOC Main Logo" />
+    </div>
     <div id='right'>
     <div class='inline'>
         <OutdoorFormDelete class='animated slideInRight form'/>
@@ -57,8 +63,29 @@ export default {
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 2rem;
 }
 
+#middle {
+  margin-top:20px;
+  /* max-width: 550px; */
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  opacity: 50%;
+}
+
+.middlelogo {
+  max-height: 400px;
+}
+.middlelogo:hover {
+  opacity: 50%;
+}
 
 .inline {
   display: flex;
@@ -79,5 +106,6 @@ export default {
   margin-top: 1rem;
 }
 /* forms ----------------------------- */
+
 
 </style>
