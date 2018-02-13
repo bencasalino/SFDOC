@@ -2,12 +2,13 @@
 <div id="field--display--container">
   <div id="indoor">
     <div v-bind:key="field.name" v-for="field in data.indoorfields" class="card">
+                <div class="corner">Indoor
+                </div>
                 <p class="field--name__text">{{ field.name }}</p>
               <div class="fieldinfo--wrapper">
                 <p class="label--text__city">City:
                   <span class="displayed--text">{{ field.city }}
                   </span>
-                </p>
                 <p class="label--text">Total Fields:
                   <span class="displayed--text">{{ field.fields }}
                   </span>
@@ -28,6 +29,8 @@
 <!-- <br> -->
   <div id="outdoor">
     <div v-bind:key="field.name" v-for="field in data.outdoorfields" class="card">
+                <div class="corner">Outdoor
+                </div>
             <p class="field--name__text">{{ field.name }}</p>
             <div class="fieldinfo--wrapper">
             <p class="label--text__city">City:
@@ -96,7 +99,7 @@ justify-content: space-between;
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-height: 320px;
+  max-height: 420px;
   max-width: 300px;
   min-height: 250px;
   min-width: 250px;
@@ -107,6 +110,18 @@ justify-content: space-between;
   -moz-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
   box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
   margin-bottom: 3.5rem;
+}
+
+.card:hover {
+  background-color: #eeecec;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.93);
+  -moz-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.93);
+  box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.93);
+  -webkit-transition: box-shadow .3s ease-in;
+  -moz-transition: box-shadow .3s ease-in;
+  -o-transition: box-shadow .3s ease-in;
+  transition: box-shadow  .3s ease-in;
 }
 
 #indoor {
@@ -164,6 +179,24 @@ padding-top:4px;
   -webkit-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
   -moz-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
   box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
+    cursor: pointer;
+}
+
+#map:hover{ 
+  background-color: gray; 
+  max-height: 200px;
+  max-width: 200px;
+  min-height: 200px;
+  min-width: 200px;
+  padding:10px;
+  -webkit-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.73);
+  -moz-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.73);
+  box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.73);
+  -webkit-transition: box-shadow 2s ease-in;
+  -moz-transition: box-shadow 2s ease-in;
+  -o-transition: box-shadow 2s ease-in;
+  transition: box-shadow  2s ease-in;
+  cursor: pointer;
 }
 
 button {
@@ -206,5 +239,13 @@ a:hover {
 
 .fieldinfo--wrapper {
 float: left;
+}
+
+
+.corner {
+  display: flex;
+  justify-content: flex-start;
+  color: #2a876a;
+  padding-bottom: 10px;
 }
 </style>
