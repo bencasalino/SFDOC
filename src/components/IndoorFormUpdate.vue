@@ -37,7 +37,7 @@ export default {
   name: 'IndoorFormUpdate',
   data() {
     return {
-    baseURL: 'https://dbsfdoc.herokuapp.com/indoor',
+    baseURL: 'https://dbsfdoc.herokuapp.com/indoorfields',
       indoorFormUpdate: {
         name: '',
         city: '',

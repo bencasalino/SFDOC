@@ -18,7 +18,7 @@ export default {
   name: 'IndoorFormDelete',
   data(){ 
     return {
-    baseURL: 'https://dbsfdoc.herokuapp.com/indoor',
+    baseURL: 'https://dbsfdoc.herokuapp.com/indoorfields',
       indoorFormDelete: {
         name: '',
       },

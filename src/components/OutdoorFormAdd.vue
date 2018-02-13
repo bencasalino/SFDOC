@@ -37,7 +37,7 @@ export default {
   name: 'OutdoorFormAdd',
   data() {
     return {
-    baseURL: 'https://dbsfdoc.herokuapp.com/outdoor',
+    baseURL: 'https://dbsfdoc.herokuapp.com/outdoorfields',
       outdoorFormAdd: {
         name: '',
         city: '',

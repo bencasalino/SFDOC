@@ -17,7 +17,7 @@ export default {
   name: 'IndoorFormDisplay',
   data() { 
     return {
-    baseURL: 'https://dbsfdoc.herokuapp.com/indoor',
+    baseURL: 'https://dbsfdoc.herokuapp.com/indoorfields',
       indoorFormDisplay: {
         name: '',
       },

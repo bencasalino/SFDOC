@@ -1,6 +1,6 @@
 <template>
 <div class="container">
-  <!-- <div v-bind:key="field.id" v-for="field in data.outdoor" class="indoor">
+<div v-bind:key="field.name" v-for="field in data.indoorfields" class="indoor">
       <p class="field--name__text">{{ field.name }}</p>
             <div class="fieldinfo--wrapper">
       <p class="label--text__city">City:
@@ -22,9 +22,9 @@
       </div>
        <br>
       <div id="map"></div>
-  </div> -->
+  </div>
 <!-- <br> -->
-  <div v-bind:key="field.name" v-for="field in data.indoor" class="outdoor">
+  <div v-bind:key="field.name" v-for="field in data.outdoorfields" class="outdoor">
       <p class="field--name__text">{{ field.name }}</p>
       <div class="fieldinfo--wrapper">
       <p class="label--text__city">City:

@@ -17,7 +17,7 @@ export default {
   name: 'OutdoorFormDisplay',
   data() { 
     return {
-    baseURL: 'https://dbsfdoc.herokuapp.com/outdoor',
+    baseURL: 'https://dbsfdoc.herokuapp.com/outdoorfields',
       outdoorFormDisplay: {
         name: '',
       },

@@ -4,7 +4,7 @@
     <main>
       <TheAboutSection />
       <AllForms />
-      <!-- <TheFieldsDisplay /> -->
+      <TheFieldsDisplay />
     </main>
     <TheFooter />
   </div>
@@ -15,7 +15,7 @@ import TheHeader from './components/TheHeader';
 import TheAboutSection from './components/TheAboutSection';
 import AllForms from './components/AllForms';
 // import Test from './components/Test';
-// import TheFieldsDisplay from './components/TheFieldsDisplay';
+import TheFieldsDisplay from './components/TheFieldsDisplay';
 import TheFooter from './components/TheFooter';
 
 /* eslint-disable */
@@ -26,7 +26,7 @@ export default {
     TheAboutSection,
     AllForms,
     // Test,
-    // TheFieldsDisplay,
+    TheFieldsDisplay,
     TheFooter
   },
 }
@@ -38,4 +38,8 @@ export default {
 @import url("https://fonts.googleapis.com/css?family=Lato|Roboto|Roboto+Condensed|PT+Sans+Narrow");
 @import url(https://fonts.googleapis.com/css?family=Dosis:300,400);
 /* end fonts---------------------------------------------------------------------  */
+
+#app {
+
+}
 </style>
