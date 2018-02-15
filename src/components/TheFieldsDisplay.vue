@@ -74,7 +74,7 @@ export default {
   },
   methods: {
     load() {
-      fetch("https://dbsfdoc.herokuapp.com/")
+      fetch("http://localhost:3000/")
         .then(res => res.json())
         .then(data => {
           this.data = data;

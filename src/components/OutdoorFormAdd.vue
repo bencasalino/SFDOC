@@ -1,16 +1,18 @@
 <template>
-        <form v-on:submit.prevent='onSubmit'>
+        <form v-on:submit.prevent='sendData(outdoorFormAdd)'>
             <p class='form--title'> Add Outdoor Field: </p>
                    <br>
                 <input v-model='outdoorFormAdd.name'
                 class='input--default'
+                type='text'
                 placeholder='Name'>
                    <br>
                 <input v-model='outdoorFormAdd.city'
                 class='input--default'
+                type='text'
                 placeholder='City'>
                    <br>
-                <input v-model='outdoorFormAdd.field'
+                <input v-model='outdoorFormAdd.fields'
                 class='input--default'
                 type='number'
                 placeholder='Total fields available'>
@@ -25,8 +27,7 @@
                 type='number'
                 placeholder='Longitude ex: 00.00'>
                 <br>
-                <input v-on='sendData(outdoorFormAdd)'
-                class='form--button'
+                <input class='form--button'
                 type='submit'
                 value='Submit'>
         </form>
@@ -37,11 +38,11 @@ export default {
   name: 'OutdoorFormAdd',
   data() {
     return {
-    baseURL: 'https://dbsfdoc.herokuapp.com/outdoorfields',
+    baseURL: 'http://localhost:3000/outdoorfields',
       outdoorFormAdd: {
         name: '',
         city: '',
-        field: '',
+        fields: '',
         latitude: '',
         longitude: '',
       },
