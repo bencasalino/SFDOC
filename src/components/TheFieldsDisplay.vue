@@ -13,17 +13,8 @@
                   <span class="displayed--text">{{ field.fields }}
                   </span>
                 </p>
-                <p class="label--text">Latitude:
-                  <span class="displayed--text">{{ field.latitude }}
-                  </span>
-                </p>
-                <span class="label--text">Longitude:
-                  <span class="displayed--text">{{ field.longitude }}
-                  </span>
-                </span>
                 </div>
                 <br>
-                <div id="map"></div>
           </div>
     </div>
 <!-- <br> -->
@@ -41,18 +32,9 @@
               <span class="displayed--text">{{ field.fields }}
               </span>
             </p>
-            <p class="label--text">Latitude:
-              <span class="displayed--text">{{ field.latitude }}
-              </span>
-            </p>
-            <p class="label--text">Longitude:
-              <span class="displayed--text">{{ field.longitude }}
-              </span>
-            </p>
             <br>
             <!-- info wrapper -->
             </div>
-            <div id="map"></div>
             <!-- outdoor -->
     </div>
   </div>
@@ -99,9 +81,9 @@ justify-content: space-between;
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-height: 420px;
+  max-height: 200px;
   max-width: 300px;
-  min-height: 250px;
+  /* min-height: 150px; */
   min-width: 250px;
   color: black; 
   background-color: white;

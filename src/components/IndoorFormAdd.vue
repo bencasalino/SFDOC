@@ -17,16 +17,6 @@
                 type='number'
                 placeholder='Total fields available'>
                    <br>
-                <input v-model='indoorFormAdd.latitude'
-                class='input--default'
-                type='number'
-                placeholder='Latitude ex: 00.00'>
-                   <br>
-                <input v-model='indoorFormAdd.longitude'
-                class='input--default'
-                type='number'
-                placeholder='Longitude ex: 00.00'>
-                <br>
                 <input class='form--button'
                 type='submit'
                 value='Submit'>
@@ -43,8 +33,6 @@ export default {
         name: '',
         city: '',
         fields: '',
-        latitude: '',
-        longitude: ''
       }
     };
   },

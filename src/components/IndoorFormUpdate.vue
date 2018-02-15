@@ -51,7 +51,7 @@ export default {
   methods: {
     sendData(data) {
     fetch(this.baseURL, {
-    method: 'POST',
+    method: 'PUT',
     body: JSON.stringify(data),
     headers: new Headers({
     'Content-Type': 'application/json'

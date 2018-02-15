@@ -1,5 +1,5 @@
 <template>
-    <form v-on:submit.prevent='onSubmit'>
+    <form v-on:submit.prevent='sendData(outdoorFormDelete)'>
     <p class='form--title'> Delete Outdoor Field: </p>
     <br>
     <input v-model='outdoorFormDelete.name' placeholder='Search by name'>
@@ -15,25 +15,24 @@
 /* eslint-disable */
 export default {
   name: 'OutdoorFormDelete',
-  data() { 
+  data() {
     return {
-    baseURL: 'https://dbsfdoc.herokuapp.com/outdoorfields',
+      baseURL: 'http://localhost:3000/outdoorfields',
       outdoorFormDelete: {
-        name: '',
+        name: ' ',
       },
-      };
-    },
-
+    };
+  },
   methods: {
     sendData(data) {
-    fetch(this.baseURL, {
-    method: 'DELETE',
-    body: JSON.stringify(data),
-    headers: new Headers({
-    'Content-Type': 'application/json'
+      fetch(this.baseURL, {
+        method: 'DELETE',
+        body: JSON.stringify(data),
+        headers: new Headers({
+        'Content-Type': 'application/json'
       })
-      }).then(res => res.json())
-      // eslint-disable-next-line
+        }).then(res => res.json())
+        // eslint-disable-next-line
         .catch(error => console.error('Error:', error))
         // eslint-disable-next-line
         .then(response => console.log('Success:', response));

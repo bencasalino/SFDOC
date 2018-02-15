@@ -17,16 +17,6 @@
                 type='number'
                 placeholder='Total fields available'>
                    <br>
-                <input v-model='outdoorFormAdd.latitude'
-                class='input--default'
-                type='number'
-                placeholder='Latitude ex: 00.00'>
-                   <br>
-                <input v-model='outdoorFormAdd.longitude'
-                class='input--default'
-                type='number'
-                placeholder='Longitude ex: 00.00'>
-                <br>
                 <input class='form--button'
                 type='submit'
                 value='Submit'>
@@ -35,6 +25,7 @@
 
 <script>
 export default {
+  /* eslint-disable */
   name: 'OutdoorFormAdd',
   data() {
     return {
@@ -43,8 +34,6 @@ export default {
         name: '',
         city: '',
         fields: '',
-        latitude: '',
-        longitude: '',
       },
       };
       },

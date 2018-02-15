@@ -1,12 +1,11 @@
 <template>
-    <form v-on:submit.prevent='onSubmit'>
+    <form v-on:submit.prevent='sendData(indoorFormDelete)'>
     <p class='form--title'> Delete Indoor Field: </p>
     <br>
     <input v-model='indoorFormDelete.name'
     placeholder='Search by name'>
     <br>
-    <input v-on='sendData(indoorFormDelete)'
-        class='form--button'
+    <input class='form--button'
         type='submit'
         value='Submit'>
     </form>
@@ -15,29 +14,32 @@
 <script>
 /* eslint-disable */
 export default {
-  name: "IndoorFormDelete",
+  name: 'IndoorFormDelete',
   data() {
     return {
-      baseURL: "https://dbsfdoc.herokuapp.com/indoorfields",
+      baseURL: 'http://localhost:3000/indoorfields',
       indoorFormDelete: {
-        name: ""
-      }
+        name: ' ',
+      },
     };
   },
-
   methods: {
     sendData(data) {
       fetch(this.baseURL, {
-        method: "DELETE"
+        method: 'DELETE',
+        body: JSON.stringify(data),
+        headers: new Headers({
+        'Content-Type': 'application/json'
       })
-        .then(res => res.json())
+        }).then(res => res.json())
         // eslint-disable-next-line
-        .catch(error => console.error("Error:", error))
+        .catch(error => console.error('Error:', error))
         // eslint-disable-next-line
-        .then(response => console.log("Success:", response));
+        .then(response => console.log('Success:', response));
     }
   }
 };
+
 </script>
 
 <style scoped>
@@ -48,7 +50,7 @@ button {
   color: white;
   padding: 4px;
   border-radius: 4px;
-  font-family: "Arvo", serif;
+  font-family: 'Arvo', serif;
   margin: 1rem 1rem 1rem 1rem;
   border: 2px rgba(0, 0, 0, 0.05) solid;
   font-size: 1rem;
@@ -60,7 +62,7 @@ button:hover {
   padding: 4px;
   color: black;
   border-radius: 6px;
-  font-family: "Arvo", serif;
+  font-family: 'Arvo', serif;
   margin: 1rem 1rem 1rem 1rem;
   border: 2px rgba(0, 0, 0, 0.05) solid;
 }
@@ -70,7 +72,7 @@ button:hover {
   color: white;
   padding: 8px;
   border-radius: 4px;
-  font-family: "Arvo", serif;
+  font-family: 'Arvo', serif;
   margin: 1rem 0 0 0;
   border: 2px rgba(0, 0, 0, 0.05) solid;
   font-size: 1rem;
@@ -85,7 +87,7 @@ button:hover {
   padding: 8px;
   color: black;
   border-radius: 6px;
-  font-family: "Arvo", serif;
+  font-family: 'Arvo', serif;
   margin: 1rem 0 0 0;
   border: 2px rgba(0, 0, 0, 0.05) solid;
   cursor: pointer;

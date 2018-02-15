@@ -14,7 +14,6 @@
 import TheHeader from './components/TheHeader';
 import TheAboutSection from './components/TheAboutSection';
 import AllForms from './components/AllForms';
-// import Test from './components/Test';
 import TheFieldsDisplay from './components/TheFieldsDisplay';
 import TheFooter from './components/TheFooter';
 
@@ -25,7 +24,6 @@ export default {
     TheHeader,
     TheAboutSection,
     AllForms,
-    // Test,
     TheFieldsDisplay,
     TheFooter
   },

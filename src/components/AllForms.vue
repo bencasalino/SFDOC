@@ -2,8 +2,8 @@
   <div id='AllForms'>
     <div id='left'>
     <div class='inline'>
-        <!-- <IndoorFormDelete class='animated slideInLeft form'/>
-        <IndoorFormDisplay class='animated slideInLeft form'/> -->
+        <!-- <IndoorFormDelete class='animated slideInLeft form'/> -->
+        <!-- <IndoorFormDisplay class='animated slideInLeft form'/> -->
      </div>
         <div class='inline'>
         <IndoorFormAdd class='animated slideInLeft form'/>
@@ -21,8 +21,8 @@
     </div>
     <div id='right'>
     <div class='inline'>
-        <!-- <OutdoorFormDelete class='animated slideInRight form'/>
-        <OutdoorFormDisplay class='animated slideInRight form'/> -->
+        <!-- <OutdoorFormDelete class='animated slideInRight form'/> -->
+        <!-- <OutdoorFormDisplay class='animated slideInRight form'/> -->
       </div>
     <div class='inline'>
         <OutdoorFormAdd class='animated slideInRight form'/>
