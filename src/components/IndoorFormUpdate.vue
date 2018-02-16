@@ -1,5 +1,5 @@
 <template>
-             <form v-on:submit.prevent='onSubmit'>
+        <form v-on:submit.prevent='sendData(indoorFormUpdate)'>
               <p class='form--title'>   Update Indoor Field: </p>
                    <br>
                 <input v-model='indoorFormUpdate.name'
@@ -10,22 +10,11 @@
                 class='input--default'
                 placeholder='City'>
                    <br>
-                <input v-model='indoorFormUpdate.field'
+                <input v-model='indoorFormUpdate.fields'
                 class='input--default'
                 type='number'
                 placeholder='Total fields available'>
-                   <br>
-                <input v-model='indoorFormUpdate.latitude'
-                class='input--default'
-                type='number'
-                placeholder='Latitude ex: 00.00'>
-                   <br>
-                <input v-model='indoorFormUpdate.longitude'
-                class='input--default'
-                type='number'
-                placeholder='Longitude ex: 00.00'>
-                <br>
-                <input v-on='sendData(indoorFormUpdate)'
+                <input
                 class='form--button'
                 type='submit'
                 value='Submit'>
@@ -37,13 +26,11 @@ export default {
   name: 'IndoorFormUpdate',
   data() {
     return {
-    baseURL: 'https://dbsfdoc.herokuapp.com/indoorfields',
+      baseURL: 'http://localhost:3000/indoorfields/',
       indoorFormUpdate: {
         name: '',
         city: '',
-        field: '',
-        latitude: '',
-        longitude: '',
+        fields: '',
       },
       };
       },

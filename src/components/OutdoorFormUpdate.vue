@@ -1,32 +1,19 @@
 <template>
-             <form v-on:submit.prevent='sendData(outdoorFormUpdate)'>
+        <form v-on:submit.prevent='sendData(outdoorFormUpdate)'>
               <p class='form--title'>   Update Outdoor Field: </p>
                    <br>
                 <input v-model='outdoorFormUpdate.name'
                 class='input--default'
-                type='text'
                 placeholder='Name'>
                    <br>
                 <input v-model='outdoorFormUpdate.city'
                 class='input--default'
-                type='text'
                 placeholder='City'>
                    <br>
-                <input v-model='outdoorFormUpdate.field'
+                <input v-model='outdoorFormUpdate.fields'
                 class='input--default'
                 type='number'
                 placeholder='Total fields available'>
-                   <br>
-                <input v-model='outdoorFormUpdate.latitude'
-                class='input--default'
-                type='number'
-                placeholder='Latitude ex: 00.00'>
-                   <br>
-                <input v-model='outdoorFormUpdate.longitude'
-                class='input--default'
-                type='number'
-                placeholder='Longitude ex: 00.00'>
-                <br>
                 <input
                 class='form--button'
                 type='submit'
@@ -39,13 +26,11 @@ export default {
   name: 'OutdoorFormUpdate',
   data() {
     return {
-    baseURL: 'http://localhost:3000/outdoorfields',
+      baseURL: 'http://localhost:3000/outoorfields/',
       outdoorFormUpdate: {
         name: '',
         city: '',
-        field: '',
-        latitude: '',
-        longitude: '',
+        fields: '',
       },
       };
       },
