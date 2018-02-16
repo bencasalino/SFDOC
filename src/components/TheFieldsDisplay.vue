@@ -77,33 +77,46 @@ justify-content: space-between;
 /* flex-direction: column; */
 }
 
+
 .card {
-  display: flex;
+   display: flex;
   flex-direction: column;
   align-items: center;
   max-height: 200px;
   max-width: 300px;
-  /* min-height: 150px; */
   min-width: 250px;
   color: black; 
-  background-color: white;
+    
+            background: #e6e9f0;
+            background: -webkit-linear-gradient(top left,#e6e9f0,#eef1f5);
+            background: -moz-linear-gradient(top left,#e6e9f0,#eef1f5);
+            background: linear-gradient(top left,#e6e9f0,#eef1f5);
   padding:10px;
-    -webkit-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
-  -moz-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
-  box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.33);
-  margin-bottom: 3.5rem;
+    margin-bottom: 3.5rem;
+  -webkit-transition: background 2s ease-out;
+  -moz-transition: background 2s ease-out;
+  -o-transition: background 2s ease-out;
+  transition: background 2s ease-out;
 }
 
+
+            
+
+
 .card:hover {
-  background-color: #eeecec;
-  border-radius: 3px;
-  -webkit-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.93);
-  -moz-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.93);
-  box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.93);
-  -webkit-transition: box-shadow .3s ease-in;
-  -moz-transition: box-shadow .3s ease-in;
-  -o-transition: box-shadow .3s ease-in;
-  transition: box-shadow  .3s ease-in;
+            background: #f5f7fa;
+            background: -webkit-linear-gradient(top,#f5f7fa,#c3cfe2);
+            background: -moz-linear-gradient(top,#f5f7fa,#c3cfe2);
+            background: linear-gradient(top,#f5f7fa,#c3cfe2);          
+  /* border: 2px rgba(0, 0, 0, 0.05) solid; */
+  cursor: pointer;
+  -webkit-box-shadow: 0px 10px 5px -2px rgba(124, 42, 42, 0.83);
+  -moz-box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.83);
+  box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.83);
+  -webkit-transition: box-shadow  1.3s ease-in;
+  -moz-transition: box-shadow  1.3s ease-in;
+  -o-transition: box-shadow  1.3s ease-in;
+  transition: box-shadow 1.3s ease-in;
 }
 
 #indoor {

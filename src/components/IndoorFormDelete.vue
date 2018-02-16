@@ -17,7 +17,7 @@ export default {
   name: 'IndoorFormDelete',
   data() {
     return {
-      baseURL: 'http://localhost:3000/indoorfields',
+      baseURL: 'http://localhost:3000/indoorfields/',
       indoorFormDelete: {
         name: ' ',
       },
@@ -25,12 +25,8 @@ export default {
   },
   methods: {
     sendData(data) {
-      fetch(this.baseURL, {
+      fetch(`${this.baseURL}${this.indoorFormDelete.name}`, {
         method: 'DELETE',
-        body: JSON.stringify(data),
-        headers: new Headers({
-        'Content-Type': 'application/json'
-      })
         }).then(res => res.json())
         // eslint-disable-next-line
         .catch(error => console.error('Error:', error))

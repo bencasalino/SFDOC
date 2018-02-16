@@ -4,7 +4,7 @@
     <br>
     <input v-model='outdoorFormDelete.name' placeholder='Search by name'>
     <br>
-    <input v-on='sendData(outdoorFormDelete)'
+    <input
         class='form--button'
         type='submit'
         value='Submit'>
@@ -17,20 +17,16 @@ export default {
   name: 'OutdoorFormDelete',
   data() {
     return {
-      baseURL: 'http://localhost:3000/outdoorfields',
+      baseURL: 'http://localhost:3000/outdoorfields/',
       outdoorFormDelete: {
         name: ' ',
       },
     };
   },
   methods: {
-    sendData(data) {
-      fetch(this.baseURL, {
+    sendData() {
+      fetch(`${this.baseURL}${this.outdoorFormDelete.name}`, {
         method: 'DELETE',
-        body: JSON.stringify(data),
-        headers: new Headers({
-        'Content-Type': 'application/json'
-      })
         }).then(res => res.json())
         // eslint-disable-next-line
         .catch(error => console.error('Error:', error))

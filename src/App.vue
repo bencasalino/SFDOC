@@ -5,6 +5,7 @@
       <TheAboutSection />
       <AllForms />
       <TheFieldsDisplay />
+      <!-- <TheChartSection /> -->
     </main>
     <TheFooter />
   </div>
@@ -15,7 +16,11 @@ import TheHeader from './components/TheHeader';
 import TheAboutSection from './components/TheAboutSection';
 import AllForms from './components/AllForms';
 import TheFieldsDisplay from './components/TheFieldsDisplay';
+// import TheChartSection from './components/TheChartSection';
 import TheFooter from './components/TheFooter';
+
+// import VueCharts from 'vue-chartjs'
+// import { Bar, Line } from 'vue-chartjs'
 
 /* eslint-disable */
 export default {
@@ -25,6 +30,7 @@ export default {
     TheAboutSection,
     AllForms,
     TheFieldsDisplay,
+    // Bar,
     TheFooter
   },
 }
