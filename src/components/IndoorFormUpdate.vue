@@ -1,6 +1,6 @@
 <template>
         <form v-on:submit.prevent='sendData(indoorFormUpdate)'>
-              <p class='form--title'>   Update Indoor Field: </p>
+              <p class='form--title'> Update Indoor Field: </p>
                    <br>
                 <input v-model='indoorFormUpdate.name'
                 class='input--default'
@@ -37,7 +37,7 @@ export default {
 
   methods: {
     sendData(data) {
-    fetch(this.baseURL, {
+      fetch(`${this.baseURL}${this.indoorFormUpdate.name}`, {
     method: 'PUT',
     body: JSON.stringify(data),
     headers: new Headers({

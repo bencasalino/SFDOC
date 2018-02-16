@@ -1,6 +1,6 @@
 <template>
         <form v-on:submit.prevent='sendData(outdoorFormUpdate)'>
-              <p class='form--title'>   Update Outdoor Field: </p>
+              <p class='form--title'> Update Indoor Field: </p>
                    <br>
                 <input v-model='outdoorFormUpdate.name'
                 class='input--default'
@@ -26,7 +26,7 @@ export default {
   name: 'OutdoorFormUpdate',
   data() {
     return {
-      baseURL: 'http://localhost:3000/outoorfields/',
+      baseURL: 'http://localhost:3000/outdoorfields/',
       outdoorFormUpdate: {
         name: '',
         city: '',
@@ -37,7 +37,7 @@ export default {
 
   methods: {
     sendData(data) {
-    fetch(this.baseURL, {
+      fetch(`${this.baseURL}${this.outdoorFormUpdate.name}`, {
     method: 'PUT',
     body: JSON.stringify(data),
     headers: new Headers({
