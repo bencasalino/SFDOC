@@ -1,11 +1,11 @@
 <template>
-  <div id="app">
+  <div id='app'>
     <TheHeader />
     <main>
       <TheAboutSection />
       <AllForms />
       <TheFieldsDisplay />
-      <!-- <TheChartSection /> -->
+      <ShowChart />
     </main>
     <TheFooter />
   </div>
@@ -16,11 +16,8 @@ import TheHeader from './components/TheHeader';
 import TheAboutSection from './components/TheAboutSection';
 import AllForms from './components/AllForms';
 import TheFieldsDisplay from './components/TheFieldsDisplay';
-// import TheChartSection from './components/TheChartSection';
+import ShowChart from './components/ShowChart';
 import TheFooter from './components/TheFooter';
-
-// import VueCharts from 'vue-chartjs'
-// import { Bar, Line } from 'vue-chartjs'
 
 /* eslint-disable */
 export default {
@@ -30,7 +27,7 @@ export default {
     TheAboutSection,
     AllForms,
     TheFieldsDisplay,
-    // Bar,
+    ShowChart,
     TheFooter
   },
 }
@@ -39,7 +36,7 @@ export default {
 
 <style scoped>
 /* fonts imports------------------------------------------------------------------ */
-@import url("https://fonts.googleapis.com/css?family=Lato|Roboto|Roboto+Condensed|PT+Sans+Narrow");
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto|Roboto+Condensed|PT+Sans+Narrow');
 @import url(https://fonts.googleapis.com/css?family=Dosis:300,400);
 /* end fonts---------------------------------------------------------------------  */
 

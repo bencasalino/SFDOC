@@ -86,11 +86,10 @@ justify-content: space-between;
   max-width: 300px;
   min-width: 250px;
   color: black; 
-    
-            background: #e6e9f0;
-            background: -webkit-linear-gradient(top left,#e6e9f0,#eef1f5);
-            background: -moz-linear-gradient(top left,#e6e9f0,#eef1f5);
-            background: linear-gradient(top left,#e6e9f0,#eef1f5);
+ background: #e6e9f0;
+ background: -webkit-linear-gradient(top left,#e6e9f0,#eef1f5);
+ background: -moz-linear-gradient(top left,#e6e9f0,#eef1f5);
+ background: linear-gradient(top left,#e6e9f0,#eef1f5);
   padding:10px;
     margin-bottom: 3.5rem;
   -webkit-transition: background 2s ease-out;
