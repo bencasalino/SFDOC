@@ -20,22 +20,22 @@ export default {
         .then(response => {
           this.indoorFields = response.indoorfields.length;
           this.outdoorFields = response.outdoorfields.length;
-          console.log('indoor', this.indoorFields, 'outdoor', this.outdoorFields);
+          // console.log('indoor', this.indoorFields, 'outdoor', this.outdoorFields);
       })
       .then(() => {
         this.renderChart(
         {
-          labels: ['Indoor'],
+          labels: ['All Fields'],
           datasets: [
             {
               label: 'Indoor',
               backgroundColor: '#FF530D',
-              data: [this.indoorFields]
+              data: [this.indoorFields, 0]
             },
             {
               label: 'Outdoor',
               backgroundColor: '#05CBE1',
-              data: [this.outdoorFields]
+              data: [this.outdoorFields, 0]
             }
           ]
         },
