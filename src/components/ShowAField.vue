@@ -25,7 +25,7 @@ export default {
   },
   methods: {
     load() {
-      fetch("http://localhost:3000/")
+      fetch("https://dbsfdoc.herokuapp.com/")
         .then(res => res.json())
         .then(data => {
           this.displayIndoorField = true;

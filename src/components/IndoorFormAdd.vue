@@ -28,7 +28,7 @@ export default {
   name: 'IndoorFormAdd',
   data() {
     return {
-      baseURL: 'http://localhost:3000/indoorfields',
+      baseURL: 'https://dbsfdoc.herokuapp.com/indoorfields',
       indoorFormAdd: {
         name: '',
         city: '',
@@ -49,7 +49,7 @@ export default {
         // eslint-disable-next-line
         .catch(error => console.error('Error:', error))
         // eslint-disable-next-line
-        .then(response => console.log('Success:', response));   
+        .then(response => console.log('Success:', response));
     }
   }
 };

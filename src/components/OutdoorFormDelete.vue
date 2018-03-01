@@ -17,7 +17,7 @@ export default {
   name: 'OutdoorFormDelete',
   data() {
     return {
-      baseURL: 'http://localhost:3000/outdoorfields/',
+      baseURL: 'https://dbsfdoc.herokuapp.com/outdoorfields/',
       outdoorFormDelete: {
         name: ' ',
       },

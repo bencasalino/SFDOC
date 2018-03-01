@@ -56,7 +56,7 @@ export default {
   },
   methods: {
     load() {
-      fetch("http://localhost:3000/")
+      fetch("https://dbsfdoc.herokuapp.com/")
         .then(res => res.json())
         .then(data => {
           this.data = data;
@@ -72,7 +72,7 @@ export default {
 #field--display--container {
 /* height:500px; */
 padding: 0 .5rem 1rem .5rem;
-display: flex; 
+display: flex;
 justify-content: space-between;
 /* flex-direction: column; */
 }
@@ -85,7 +85,7 @@ justify-content: space-between;
   max-height: 200px;
   max-width: 300px;
   min-width: 250px;
-  color: black; 
+  color: black;
  background: #e6e9f0;
  background: -webkit-linear-gradient(top left,#e6e9f0,#eef1f5);
  background: -moz-linear-gradient(top left,#e6e9f0,#eef1f5);
@@ -99,14 +99,14 @@ justify-content: space-between;
 }
 
 
-            
+
 
 
 .card:hover {
             background: #f5f7fa;
             background: -webkit-linear-gradient(top,#f5f7fa,#c3cfe2);
             background: -moz-linear-gradient(top,#f5f7fa,#c3cfe2);
-            background: linear-gradient(top,#f5f7fa,#c3cfe2);          
+            background: linear-gradient(top,#f5f7fa,#c3cfe2);
   /* border: 2px rgba(0, 0, 0, 0.05) solid; */
   cursor: pointer;
   -webkit-box-shadow: 0px 10px 5px -2px rgba(124, 42, 42, 0.83);
@@ -126,33 +126,33 @@ justify-content: space-between;
 #outdoor {
    display: flex;
   justify-content: space-around;
-  flex-flow: wrap; 
+  flex-flow: wrap;
 }
 
 
-.field--name__text { 
+.field--name__text {
   font-weight: 900;
   font-size: 1.5rem;
   padding-bottom: 6px;
   text-align: center;
-  
+
 }
 
 
-.label--text { 
+.label--text {
   font-size: 1rem;
   font-family: "Arvo", serif;
   padding-top: 5px;
 }
 
-.label--text__city { 
+.label--text__city {
   font-size: 1rem;
   font-family: "Arvo", serif;
   padding-bottom: 5px;
 }
 
 .displayed--text {
-color: #2a876a; 
+color: #2a876a;
 font-family: "Dosis", serif;
 font-size: 1.2rem;
 padding-left:2px;
@@ -163,8 +163,8 @@ padding-top:4px;
   font-size: .8rem;
 }
 
-#map{ 
-  background-color: black; 
+#map{
+  background-color: black;
   max-height: 200px;
   max-width: 200px;
   min-height: 200px;
@@ -176,8 +176,8 @@ padding-top:4px;
     cursor: pointer;
 }
 
-#map:hover{ 
-  background-color: gray; 
+#map:hover{
+  background-color: gray;
   max-height: 200px;
   max-width: 200px;
   min-height: 200px;
@@ -203,8 +203,8 @@ button {
   margin-top: 10px;
   border: 2px rgba(0, 0, 0, 0.05) solid;
   font-size: 1rem;
-  list-style: none; 
-  text-decoration: none; 
+  list-style: none;
+  text-decoration: none;
 }
 
 button:hover {
@@ -216,17 +216,17 @@ button:hover {
   font-family: "Arvo", serif;
   /* margin: 1rem 1rem 1rem 1rem; */
   border: 2px rgba(0, 0, 0, 0.05) solid;
-    list-style: none; 
+    list-style: none;
   text-decoration: none;
 }
 
 a {
-      list-style: none; 
+      list-style: none;
   text-decoration: none;
 }
 
 a:hover {
-        list-style: none; 
+        list-style: none;
   text-decoration: none;
 }
 

@@ -26,7 +26,7 @@ export default {
   name: 'OutdoorFormUpdate',
   data() {
     return {
-      baseURL: 'http://localhost:3000/outdoorfields/',
+      baseURL: 'https://dbsfdoc.herokuapp.com/outdoorfields/',
       outdoorFormUpdate: {
         name: '',
         city: '',
