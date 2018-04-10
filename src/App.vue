@@ -14,24 +14,24 @@
 
 <script>
 import TheHeader from './components/TheHeader';
-import TheAboutSection from './components/TheAboutSection';
-import AllForms from './components/AllForms';
-import TheFieldsDisplay from './components/TheFieldsDisplay';
-import ShowChart from './components/ShowChart';
-import TheFooter from './components/TheFooter';
-import read from './components/read';
+// import TheAboutSection from './components/TheAboutSection';
+// import AllForms from './components/AllForms';
+// import TheFieldsDisplay from './components/TheFieldsDisplay';
+// import ShowChart from './components/ShowChart';
+// import TheFooter from './components/TheFooter';
+// import read from './components/read';
 
 /* eslint-disable */
 export default {
   name: 'App',
   components: {
-    TheHeader,
-    TheAboutSection,
-    AllForms,
-    TheFieldsDisplay,
-    read,
-    ShowChart,
-    TheFooter
+    TheHeader
+    // TheAboutSection,
+    // AllForms,
+    // TheFieldsDisplay,
+    // read,
+    // ShowChart,
+    // TheFooter
   },
   methods: {
     getafield() {
