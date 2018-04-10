@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+
+
     <div class="container">
       <div class="Chart__list">
         <div class="Chart">

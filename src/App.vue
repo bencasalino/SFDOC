@@ -5,6 +5,7 @@
       <TheAboutSection />
       <AllForms />
       <TheFieldsDisplay />
+      <read v-bind:field='field'/>
       <ShowChart />
     </main>
     <TheFooter />
@@ -18,6 +19,7 @@ import AllForms from './components/AllForms';
 import TheFieldsDisplay from './components/TheFieldsDisplay';
 import ShowChart from './components/ShowChart';
 import TheFooter from './components/TheFooter';
+import read from './components/read';
 
 /* eslint-disable */
 export default {
@@ -27,9 +29,34 @@ export default {
     TheAboutSection,
     AllForms,
     TheFieldsDisplay,
+    read,
     ShowChart,
     TheFooter
   },
+  methods: {
+    getafield() {
+    fetch(`${this.baseURL}${this.fieldtype}/${this.name}`).then(res => res.json())
+    // eslint-disable-next-line
+      .catch(error => console.error('Error:', error))
+      // eslint-disable-next-line
+
+      .then(response => {
+        console.log(response.outdoorfields[0]);
+        this.field = response.outdoorfields[0]
+      });
+    }
+  },
+    data() {
+    return {
+    baseURL: 'https://dbsfdoc.herokuapp.com/',
+      field: {},
+      fieldtype: 'outdoorfields',
+      name: 'Cheeseman'
+    };
+  },
+  created() {
+      this.getafield();
+  }
 }
 
 </script>
