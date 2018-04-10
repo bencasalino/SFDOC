@@ -13,7 +13,7 @@ This is a directory containting all Colorado indoor/outdoor soccer facilities in
 ![Layout of the Website](Layout.png)
 
 - Link to: [Deployed front-end URL](https://soccer-directory-colorado.firebaseapp.com/)
-- Link to: [Code Frontend Repo](https://github.com/bencasalino/BenCasalino-Portfolio/)
+- Link to: [Code Frontend Repo](https://github.com/bencasalino/SFDOC)
 
 - Link to: [Deployed back-end URL](https://dbsfdoc.herokuapp.com/)
 - Link to: [Code Backend Repo](https://github.com/bencasalino/sfdoc-server)
