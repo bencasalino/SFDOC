@@ -1,34 +1,29 @@
 <template>
   <div id='AllForms'>
-    <div id='left'>
-    <div class='inline'>
-        <IndoorFormDelete class='animated slideInLeft form'/>
-        <!-- <IndoorFormDisplay class='animated slideInLeft form'/> -->
-     </div>
-        <div class='inline'>
-        <IndoorFormAdd class='animated slideInLeft form'/>
-        <IndoorFormUpdate class='animated slideInLeft form'/>
-    </div>
-    </div>
-    <div id='middle' class='animated zoomIn'>
-      <a name="start"> </a>
-      Use the forms to List, Update, Create & Delete fields in the directory.
-      <br>
-      <img class="middlelogo"
-      src="../../static/wtf_hover.svg"
-      alt="SFDOC Main Logo" />
-
-    </div>
-    <div id='right'>
-    <div class='inline'>
-        <OutdoorFormDelete class='animated slideInRight form'/>
-        <!-- <OutdoorFormDisplay class='animated slideInRight form'/> -->
+      <div id='left'>
+      <div class='inline'>
+      <IndoorFormAdd class='animated slideInLeft form'/>
+      <IndoorFormUpdate class='animated slideInLeft form'/>
+       <IndoorFormDelete class='animated slideInLeft form'/>
       </div>
-    <div class='inline'>
-        <OutdoorFormAdd class='animated slideInRight form'/>
-        <OutdoorFormUpdate class='animated slideInRight form'/>
-    </div>
-    </div>
+ </div>
+
+  <div id='middle' class='animated zoomIn'>
+    SFDOC
+    <br>
+  <img class="middlelogo"
+  src="../../static/wtf_hover.svg"
+  alt="SFDOC Main Logo" />
+  </div>
+
+<div id='right'>
+  <div class='inline'>
+  <OutdoorFormDelete class='animated slideInRight form'/>
+  <OutdoorFormUpdate class='animated slideInRight form'/>
+    <OutdoorFormAdd class='animated slideInRight form'/>
+  </div>
+</div>
+
   </div>
 </template>
 
@@ -71,7 +66,7 @@ export default {
 #middle {
   margin-top:20px;
   /* max-width: 550px; */
-  font-size: 1.2rem;
+  font-size: 2rem;
   padding-bottom: 10px;
   display: flex;
   flex-direction: column;
@@ -83,7 +78,7 @@ export default {
 }
 
 .middlelogo {
-  max-height: 400px;
+  max-height: 200px;
 }
 .middlelogo:hover {
   opacity: 50%;

@@ -3,9 +3,9 @@
     <TheHeader />
     <main>
       <TheAboutSection />
-      <!-- <AllForms />
+      <AllForms />
       <TheFieldsDisplay />
-      <read v-bind:field='field'/>
+      <!-- <read v-bind:field='field'/>
       <ShowChart /> -->
     </main>
     <TheFooter />
@@ -15,10 +15,10 @@
 <script>
 import TheHeader from './components/TheHeader';
 import TheAboutSection from './components/TheAboutSection';
-// import AllForms from './components/AllForms';
-// import TheFieldsDisplay from './components/TheFieldsDisplay';
+import AllForms from './components/AllForms';
+import TheFieldsDisplay from './components/TheFieldsDisplay';
 // import ShowChart from './components/ShowChart';
-// import TheFooter from './components/TheFooter';
+import TheFooter from './components/TheFooter';
 // import read from './components/read';
 
 /* eslint-disable */
@@ -26,12 +26,12 @@ export default {
   name: 'App',
   components: {
     TheHeader,
-    TheAboutSection
-    // AllForms,
-    // TheFieldsDisplay,
+    TheAboutSection,
+    AllForms,
+    TheFieldsDisplay,
     // read,
     // ShowChart,
-    // TheFooter
+    TheFooter
   },
   methods: {
     getafield() {
