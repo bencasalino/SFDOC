@@ -3,10 +3,10 @@
     <TheHeader />
     <main>
       <TheAboutSection />
-      <AllForms />
+      <!-- <AllForms />
       <TheFieldsDisplay />
       <read v-bind:field='field'/>
-      <ShowChart />
+      <ShowChart /> -->
     </main>
     <TheFooter />
   </div>
@@ -14,7 +14,7 @@
 
 <script>
 import TheHeader from './components/TheHeader';
-// import TheAboutSection from './components/TheAboutSection';
+import TheAboutSection from './components/TheAboutSection';
 // import AllForms from './components/AllForms';
 // import TheFieldsDisplay from './components/TheFieldsDisplay';
 // import ShowChart from './components/ShowChart';
@@ -25,8 +25,8 @@ import TheHeader from './components/TheHeader';
 export default {
   name: 'App',
   components: {
-    TheHeader
-    // TheAboutSection,
+    TheHeader,
+    TheAboutSection
     // AllForms,
     // TheFieldsDisplay,
     // read,

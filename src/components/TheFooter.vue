@@ -26,8 +26,5 @@ export default {
 a {
   list-style: none;
   text-decoration: none;
-
 }
-
-
 </style>

@@ -1,48 +1,44 @@
 <template>
   <div id="TheAboutSection">
-    <div class="container--herobanner">
-         <img class="drop--shadow image--herobanner"
-         src="../../static/banner4.png" alt="Banner Hero Image" />
-    </div>
-     <div class="shine container--herotext">
-<p>This is a directory containting all Colorado indoor/outdoor soccer facilities information.</p>
-     </div>
-    <div class="container--getstarted">
-        <p class="text--getstarted" href="#">Get Started!</p>
-          <a href="#start">
-          <img class="image--arrow animated zoomInDown"
-          src="../../static/white-arrow.png" alt="arrow image" />
-          </a>
-        </div>
-         <div class="cta--container">
-        </div>
-        <!-- begin outdoor -->
-        <div id="logos">
-              <h1 class="display--title">
-                <img class="header--logo"
-                src="../../static/colo2.png" alt="Logo" />INDOOR
-              </h1>
-              <h1 class="display--title">
-                  <img class="header--logo" src="../../static/colo2.png" alt="Logo" />OUTDOOR
-              </h1>
-        </div>
-         <!-- end about section -->
+  <div class="container--herobanner">
+  <img class="drop--shadow image--herobanner"
+  src="../../static/banner4.png" alt="Banner Hero Image" />
+  </div>
+  <div class="shine container--herotext">
+  <p>This is a directory containting all Colorado indoor/outdoor soccer facilities information.</p>
+  </div>
+<div class="container--getstarted">
+<p class="text--getstarted" href="#">Get Started!</p>
+<a href="#start">
+<img class="image--arrow animated zoomInDown"
+src="../../static/white-arrow.png" alt="arrow image" />
+</a>
+</div>
+<div class="cta--container">
+</div>
+<!-- begin outdoor -->
+<div id="logos">
+<h1 class="display--title">
+<img class="header--logo"
+src="../../static/colo2.png" alt="Logo" />INDOOR
+</h1>
+<h1 class="display--title">
+<img class="header--logo" src="../../static/colo2.png" alt="Logo" />OUTDOOR
+</h1>
+</div>
 </div>
 </template>
-// end html ---------------------------------------------------------------------------
 <script>
 /* eslint-disable */
 export default {
   name: "TheAboutSection"
 };
 </script>
-// end js -----------------------------------------------------------------------------
+
 <style scoped>
 #TheAboutSection {
   background-color: #2a876a;
-  /* width: 100vw; */
-  /* display: flex;
-  justify-content: center; */
+  width: 100vw;
 }
 .drop--shadow {
   -webkit-box-shadow: 0px 29px 53px -19px rgba(0, 0, 0, 0.75);
@@ -60,7 +56,6 @@ export default {
   padding-left: 2px;
   padding-right: 2px;
   flex-direction: column;
-
 }
 
 .display--title {
@@ -124,12 +119,12 @@ button:hover {
 .image--herobanner {
   border-top: white 5px solid;
   border-bottom: white 5px solid;
-  max-width: 1265px;
+  /* max-width: 1265px; */
 }
 .container--herotext {
   color: white;
     display:flex;
-  justify-content:center; 
+  justify-content:center;
   font-size: 2rem;
   margin-top: -90px;
   padding-bottom: 36px;
@@ -161,15 +156,12 @@ button:hover {
 }
 
 .cta--container {
-  margin-top: 120px;
+  /* margin-top: 20px; */
   display: flex;
   flex-direction: row;
   justify-content: center;
     align-items: center;
 }
 
-
-
-
 </style>
-// end css ---------------------------------------------------------------------------
+

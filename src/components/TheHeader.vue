@@ -1,22 +1,24 @@
 <template>
   <header id="TheHeader">
-    <img class="shine header--github animated slideInDown"
-    src="../../static/github.png"
-    alt="Github Logo and Link" />
-         <a href="https://github.com/bencasalino">
+      <img class="shine header--github animated slideInDown"
+      src="../../static/github.png"
+      alt="Github Logo and Link" />
+      <a href="https://github.com/bencasalino">
       </a>
       <img class="header--logo animated slideInLeft"
       src="../../static/logoblk.png"
       alt="SFDOC Main Logo" />
       <h1 class="header--logo__text">
-        Soccer Field
-         Directory
-       <br />
-       <em> of Colorado</em>
+      Soccer Field
+      Directory
+      <br />
+      <em> of Colorado</em>
       </h1>
   </header>
 </template>
+
 <script>
+
 /* eslint-disable */
 export default {
   name: "TheHeader"
@@ -44,7 +46,6 @@ export default {
   float: right;
 }
 
-/* effect-shine -------------------------------------------------------------------*/
 .header--logo__text:hover {
   -webkit-mask-image: linear-gradient(
     -75deg,
@@ -65,6 +66,4 @@ export default {
     -webkit-mask-position: -50%;
   }
 }
-/* end shine --------------------------------------------------------------------- */
 </style>
-// end styles -----------------------------------------------------------------------
